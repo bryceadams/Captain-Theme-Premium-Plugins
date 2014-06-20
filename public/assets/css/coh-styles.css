@@ -1,0 +1,58 @@
+.locations-display .locations-single .location-name {
+  margin-bottom: 10px; }
+  .locations-display .locations-single .location-name .coh-circle {
+    margin-bottom: 5px; }
+.locations-display .locations-single .location-address {
+  padding-bottom: 10px; }
+.locations-display .locations-single ul.location-hours {
+  font-size: 15px;
+  list-style-type: none;
+  margin-left: 0; }
+  .locations-display .locations-single ul.location-hours li {
+    padding-bottom: 6px; }
+    .locations-display .locations-single ul.location-hours li.open-today {
+      color: #111;
+      font-weight: bold; }
+      .locations-display .locations-single ul.location-hours li.open-today .hours {
+        color: #111; }
+      .locations-display .locations-single ul.location-hours li.open-today .coh-circle {
+        display: inline-block; }
+    .locations-display .locations-single ul.location-hours li .day {
+      width: 110px;
+      display: inline-block;
+      font-weight: bold;
+      color: #444; }
+    .locations-display .locations-single ul.location-hours li .hours {
+      color: #888; }
+    .locations-display .locations-single ul.location-hours li .coh-circle {
+      display: none; }
+.locations-display .locations-single .location-photo {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 3px;
+  margin-bottom: 15px;
+  max-width: 300px; }
+.locations-display .locations-single .we-open-image,
+.locations-display .locations-single .we-closed-image {
+  max-width: 350px; }
+.locations-display .locations-single.we-open-single h2 {
+  margin-top: 15px; }
+
+.widget-area .widget .we-open-widget-display h2 {
+  text-align: center; }
+
+.coh-circle {
+  width: 12px !important;
+  height: 12px;
+  vertical-align: bottom;
+  margin-left: 6px;
+  margin-bottom: 4px;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  display: inline-block;
+  box-shadow: 1px 1px 1px #ddd; }
+  .coh-circle.open {
+    background: #02d738; }
+  .coh-circle.close {
+    background: #de1309; }
