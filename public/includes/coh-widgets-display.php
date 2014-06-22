@@ -62,18 +62,18 @@ function coh_widget_display_we_open( $location_id ) {
  *
  * @package   Captain Opening Hours
  * @author    Captain Theme <info@captaintheme.com>
- * @since 	  1.0
+ * @since 	  1.1
  */
 
 function coh_widget_display_hours( $location_id ) {
 
-	$args = array(
+	$args = array (
 		'post_type' => 'location',
 		'p'			=> $location_id,
 		);
 
 	// The Query
-	$the_query = new WP_Query( $args );
+	$the_query = new WP_Query ( $args );
 
 	// The Loop
 	if ( $the_query->have_posts() ) {
@@ -101,4 +101,48 @@ function coh_widget_display_hours( $location_id ) {
 
 }
 
-?>
+
+/**
+ * Display Output Structure for Special Dates Widget
+ *
+ * @package   Captain Opening Hours
+ * @author    Captain Theme <info@captaintheme.com>
+ * @since 	  1.1
+ */
+
+function coh_widget_display_special_dates( $location_id ) {
+
+	$args = array (
+		'post_type' => 'location',
+		'p'			=> $location_id,
+		);
+
+	// The Query
+	$the_query = new WP_Query ( $args );
+
+	// The Loop
+	if ( $the_query->have_posts() ) {
+
+
+		echo '<div class="locations-display special-dates-widget-display">';
+
+		while ( $the_query->have_posts() ) {
+			$the_query->the_post();
+			
+			echo '<div class="locations-single-special-dates">';
+			
+				do_action( 'coh_special_dates_content' );
+
+			echo '</div>';
+		}
+
+		echo '</div>';
+
+	} else {
+		// no posts found
+	}
+	/* Restore original Post Data */
+	wp_reset_postdata();
+
+}
+

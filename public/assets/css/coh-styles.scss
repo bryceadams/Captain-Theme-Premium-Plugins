@@ -58,6 +58,22 @@
 	}
 }
 
+.special-dates-widget-display {
+	.date-head {
+		font-weight: bold;
+		font-size: 15px;
+		padding-bottom: 5px;
+		color: #666;
+		margin-top: 12px;
+	}
+	.date-time {
+		margin-bottom: 10px;
+		.closed {
+			font-style: italic;
+		}
+	}
+}
+
 .widget-area .widget {
 	.we-open-widget-display {
 		h2 {

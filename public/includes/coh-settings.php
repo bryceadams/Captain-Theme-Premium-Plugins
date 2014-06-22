@@ -14,6 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 /**
  * CMB Theme Options
  * @version 0.1.0
+ * @since 1.1
  */
 class COH_Admin_Settings {
 
@@ -86,7 +87,7 @@ class COH_Admin_Settings {
 
     /**
      * Defines the theme option metabox and field configuration
-     * @since  0.1.0
+     * @since  1.1
      * @return array
      */
     public static function option_fields() {
@@ -118,6 +119,24 @@ class COH_Admin_Settings {
                     'name' => __( 'We\'re Closed - Image', 'cmb' ),
                     'desc' => __( 'Upload an image or enter a URL.', 'cmb' ),
                     'id'   => $prefix . 'closed_image',
+                    'type' => 'file',
+                ),
+                array(
+                    'name' => __( 'Are you open / available? - Manual', 'cmb' ),
+                    'desc' => __( 'There is an additional widget/shortcode that will show the images below for being open or not. For example, it could be used to show an image for when you\'re available for work or hire, etc. or maybe just to show an \'open image\' all of the time, regardless of each location\'s opening hours.', 'cmb' ),
+                    'id'   => $prefix . 'manual_available_image',
+                    'type' => 'checkbox',
+                ),
+                array(
+                    'name' => __( 'Manual Open / Available Image', 'cmb' ),
+                    'desc' => __( 'Upload an image or enter a URL.', 'cmb' ),
+                    'id'   => $prefix . 'available_image',
+                    'type' => 'file',
+                ),
+                array(
+                    'name' => __( 'Manual Not Open / Not Available Image', 'cmb' ),
+                    'desc' => __( 'Upload an image or enter a URL.', 'cmb' ),
+                    'id'   => $prefix . 'not_available_image',
                     'type' => 'file',
                 ),
             ),

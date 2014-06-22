@@ -12,7 +12,7 @@
  * Plugin Name:       Captain Opening Hours
  * Plugin URI:        http://captaintheme.com/plugins/opening-hours
  * Description:       Show off your store's opening hours easily.
- * Version:           1.0.0
+ * Version:           1.1.0
  * Author:            Captain Theme
  * Author URI:        http://captaintheme.com/
  * Text Domain:       coh
@@ -39,6 +39,9 @@ if( !defined( 'COH_PLUGIN_DIR' ) ) {
 /*----------------------------------------------------------------------------*
  * Public-Facing Functionality
  *----------------------------------------------------------------------------*/
+
+// Plugin Updater
+require( 'update-notifier.php' );
 
 require_once( plugin_dir_path( __FILE__ ) . 'public/class-coh.php' );
 

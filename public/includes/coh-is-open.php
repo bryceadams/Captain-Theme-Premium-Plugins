@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  *
  * @package   Captain Opening Hours
  * @author    Captain Theme <info@captaintheme.com>
- * @since 	  1.0
+ * @since 	  1.1
  */
 
 function coh_location_is_open() {
@@ -30,7 +30,7 @@ function coh_location_is_open() {
 
 		$timezone_offset = preg_replace( "/[^0-9,.]/", "", $timezone_pre );
 		$timezone = timezone_name_from_abbr( null, $timezone_offset * 3600, true );
-		if( $timezone === false ) $timezone = timezone_name_from_abbr( null, $timezone_offset * 3600, false );
+		if ( $timezone === false ) $timezone = timezone_name_from_abbr( null, $timezone_offset * 3600, false );
 	
 	} else {
 		
@@ -41,6 +41,7 @@ function coh_location_is_open() {
 	date_default_timezone_set( $timezone );
 
 	$current_day = strtolower( date( 'l' ) );
+	$current_date = date( 'm.d.Y' );
 	$now = time();
 
 	$monday_bool	= get_post_meta ( $post->ID, '_coh_location_mon_open_bool', true );
@@ -70,7 +71,6 @@ function coh_location_is_open() {
 	$sunday_bool	= get_post_meta ( $post->ID, '_coh_location_sun_open_bool', true );
 	$sunday_open	= strtotime ( get_post_meta ( $post->ID, '_coh_location_sun_open_time', true ) );
 	$sunday_close	= strtotime ( get_post_meta ( $post->ID, '_coh_location_sun_close_time', true ) );
-
 
 	if ( ( $current_day == 'monday' ) && ( $monday_bool ) ) { 
         if ( ( $monday_open <= $now ) && ( $now <= $monday_close ) ) {

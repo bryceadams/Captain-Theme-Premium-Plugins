@@ -34,3 +34,9 @@ add_action( 'coh_main_content', 'coh_output_opening_hours', 40 );
 add_action( 'coh_widget_we_open_content', 'coh_output_we_are_open', 10 );
 
 
+/**
+ * Widget - Special Dates
+ *
+ * @see coh_output_special_dates - 10
+ */
+add_action( 'coh_special_dates_content', 'coh_output_special_dates', 10 );

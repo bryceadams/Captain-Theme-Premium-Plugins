@@ -263,3 +263,111 @@ function coh_output_we_are_open() {
 	}
 
 }
+
+/**
+ * Manual Available / Not Available Image
+ *
+ * @package   Captain Opening Hours
+ * @author    Captain Theme <info@captaintheme.com>
+ * @since 	  1.1
+ */
+
+function coh_ouput_manual_available_image() {
+
+	if ( cmb_get_option( 'coh_options', '_coh_manual_available_image' ) ) {
+		
+		echo '<img class="manual-open-image" title="' . __( 'We Are Available!', 'coh' ) . '" src="' . cmb_get_option( 'coh_options', '_coh_available_image' ) . '" />';
+
+	} else {
+		
+		echo '<img class="manual-closed-image" title="' . __( 'We Are Not Available!', 'coh' ) . '" src="' . cmb_get_option( 'coh_options', '_coh_not_available_image' ) . '" />';
+
+	}
+
+}
+
+/**
+ * Location Special Dates / Holidays
+ *
+ * @package   Captain Opening Hours
+ * @author    Captain Theme <info@captaintheme.com>
+ * @since 	  1.1
+ */
+
+function coh_output_special_dates() {
+
+	// Variables
+	global $post;
+	$special_dates = get_post_meta( $post->ID, '_coh_custom_date_group', true );
+
+	if ( $special_dates ) {
+
+		// Variables
+		$get_title = get_the_title( $post->ID );
+
+		$title = '<h2 class="location-name" itemprop="name">';
+		$title .= $get_title;
+		$title .= coh_location_is_open_circle();
+		$title .= '</h2>';
+
+		echo $title;
+
+		foreach ( (array) $special_dates as $key => $special_date ) {
+
+			$sd_desc = $sd_date = $sd_open_bool = $sd_open_time = $sd_close_time = '';
+
+				    if ( isset( $special_date['date_desc'] ) ) {
+				        $sd_desc = $special_date['date_desc'];
+				    }
+
+				    if ( isset( $special_date['date_date'] ) ) {
+				        $sd_date = date ( 'F jS', strtotime ( $special_date['date_date'] ) );
+				    }
+
+				    if ( isset( $special_date['date_open_bool'] ) ) {
+				        $sd_open_bool = $special_date['date_open_bool'];
+				    }
+
+				    if ( isset( $special_date['date_opening_time'] ) ) {
+				        $sd_open_time = $special_date['date_opening_time'];
+				    }
+
+				    if ( isset( $special_date['date_closing_time'] ) ) {
+				        $sd_close_time = $special_date['date_closing_time'];
+				    }
+
+				    ?>
+
+
+				    <div class="date-head">
+				    	<?php if ( $sd_desc ) { ?>
+					    	<span class="date-desc"><?php echo $sd_desc; ?> - </span>
+					    <?php } ?>
+					    <span class="date-date"><?php echo $sd_date; ?></span>
+					</div>
+
+					<div class="date-time">
+					<?php
+					    if ( $sd_open_bool ) {
+					    	echo date( "g:i A", strtotime ( $sd_open_time ) );
+					    	echo ' - ';
+					    	echo date( "g:i A", strtotime ( $sd_close_time ) );
+					    } else {
+					    	echo '<span class="closed">';
+					    	echo __( 'Closed', 'coh' );
+					    	echo '</span>';
+					    }
+					?>
+					</div>
+
+		<?php
+		}
+
+	}
+	
+
+	/*$monday_bool	= get_post_meta ( $post->ID, '_coh_location_mon_open_bool', true );
+	$monday_open	= date( "g:i A", strtotime ( get_post_meta ( $post->ID, '_coh_location_mon_open_time', true ) ) );
+	$monday_close	= date( "g:i A", strtotime ( get_post_meta ( $post->ID, '_coh_location_mon_close_time', true ) ) );*/
+
+}
