@@ -66,10 +66,10 @@ class COH_Admin_Settings {
 
     /**
      * Add menu options page
-     * @since 0.1.0
+     * @since 1.1.1
      */
     public function add_options_page() {
-        $this->options_page = add_submenu_page( 'edit.php?post_type=location', $this->other_title, $this->title, 'manage_options', self::$key, array( $this, 'admin_page_display' ) );
+        $this->options_page = add_submenu_page( 'edit.php?post_type=coh_location', $this->other_title, $this->title, 'manage_options', self::$key, array( $this, 'admin_page_display' ) );
     }
 
     /**

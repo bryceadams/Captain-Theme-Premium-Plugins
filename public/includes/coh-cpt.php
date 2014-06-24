@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  *
  * @package   Captain Opening Hours
  * @author    Captain Theme <info@captaintheme.com>
- * @since 	  1.0
+ * @since 	  1.1.1
  */
 
 	function coh_register_location_posttype() {
@@ -57,6 +57,6 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 			'menu_icon' 		=> 'dashicons-location-alt',
 			'taxonomies'		=> $taxonomies
 		 );
-		 register_post_type( 'location',$post_type_args );
+		 register_post_type( 'coh_location',$post_type_args );
 	}
 	add_action( 'init', 'coh_register_location_posttype' );

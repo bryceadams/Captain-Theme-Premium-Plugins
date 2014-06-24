@@ -14,13 +14,13 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  *
  * @package   Captain Opening Hours
  * @author    Captain Theme <info@captaintheme.com>
- * @since 	  1.0
+ * @since 	  1.1.1
  */
 
 function coh_widget_display_we_open( $location_id ) {
 
 	$args = array(
-		'post_type' => 'location',
+		'post_type' => 'coh_location',
 		'p'			=> $location_id,
 		);
 
@@ -62,13 +62,13 @@ function coh_widget_display_we_open( $location_id ) {
  *
  * @package   Captain Opening Hours
  * @author    Captain Theme <info@captaintheme.com>
- * @since 	  1.1
+ * @since 	  1.1.1
  */
 
 function coh_widget_display_hours( $location_id ) {
 
 	$args = array (
-		'post_type' => 'location',
+		'post_type' => 'coh_location',
 		'p'			=> $location_id,
 		);
 
@@ -107,13 +107,13 @@ function coh_widget_display_hours( $location_id ) {
  *
  * @package   Captain Opening Hours
  * @author    Captain Theme <info@captaintheme.com>
- * @since 	  1.1
+ * @since 	  1.1.1
  */
 
 function coh_widget_display_special_dates( $location_id ) {
 
 	$args = array (
-		'post_type' => 'location',
+		'post_type' => 'coh_location',
 		'p'			=> $location_id,
 		);
 

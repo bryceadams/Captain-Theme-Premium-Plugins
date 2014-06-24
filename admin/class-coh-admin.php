@@ -148,13 +148,13 @@ class COH_Admin {
 	/**
 	 * Add settings action link to the plugins page.
 	 *
-	 * @since    1.0.0
+	 * @since    1.1.1
 	 */
 	public function add_action_links( $links ) {
 
 		return array_merge(
 			array(
-				'settings' => '<a href="' . admin_url( 'edit.php?post_type=location&page=coh-settings' ) . '">' . __( 'Settings', $this->plugin_slug ) . '</a>'
+				'settings' => '<a href="' . admin_url( 'edit.php?post_type=coh_location&page=coh-settings' ) . '">' . __( 'Settings', $this->plugin_slug ) . '</a>'
 			),
 			$links
 		);

@@ -31,7 +31,7 @@ function coh_widget() {
  *
  * @package   Captain Opening Hours
  * @author    Captain Theme <info@captaintheme.com>
- * @since 	  1.0
+ * @since 	  1.1.1
  */
 
 class COH_Widget_We_Open extends WP_Widget {
@@ -103,7 +103,7 @@ class COH_Widget_We_Open extends WP_Widget {
 				<?php
 
 				$args = array(
-					'post_type' => 'location',
+					'post_type' => 'coh_location',
 				);
 
 				// The Query
@@ -141,7 +141,7 @@ class COH_Widget_We_Open extends WP_Widget {
  *
  * @package   Captain Opening Hours
  * @author    Captain Theme <info@captaintheme.com>
- * @since 	  1.1
+ * @since 	  1.1.1
  */
 
 class COH_Widget_Opening_Hours extends WP_Widget {
@@ -211,7 +211,7 @@ class COH_Widget_Opening_Hours extends WP_Widget {
 				<?php
 
 				$args = array(
-					'post_type' => 'location',
+					'post_type' => 'coh_location',
 				);
 
 				// The Query
@@ -314,7 +314,7 @@ class COH_Widget_We_Available extends WP_Widget {
  *
  * @package   Captain Opening Hours
  * @author    Captain Theme <info@captaintheme.com>
- * @since 	  1.1
+ * @since 	  1.1.1
  */
 
 class COH_Widget_Special_Dates extends WP_Widget {
@@ -378,13 +378,9 @@ class COH_Widget_Special_Dates extends WP_Widget {
 			<select name="<?php echo $this->get_field_name('select'); ?>" id="<?php echo $this->get_field_id('select'); ?>" class="widefat">
 
 				<?php
-					echo '<option value="all" id="all"', $instance['select'] == 'all' ? ' selected="selected"' : '', '>', 'All Locations', '</option>';
-				?>
-				
-				<?php
 
 				$args = array(
-					'post_type' => 'location',
+					'post_type' => 'coh_location',
 				);
 
 				// The Query
@@ -392,6 +388,8 @@ class COH_Widget_Special_Dates extends WP_Widget {
 
 				// The Loop
 				if ( $the_query->have_posts() ) {
+
+					echo '<option value="all" id="all"', $instance['select'] == 'all' ? ' selected="selected"' : '', '>', 'All Locations', '</option>';
 
 					while ( $the_query->have_posts() ) {
 						$the_query->the_post();

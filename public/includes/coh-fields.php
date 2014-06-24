@@ -15,7 +15,7 @@ add_filter( 'cmb_meta_boxes', 'coh_sample_metaboxes' );
 /**
  * Define the metabox and field configurations.
  *
- * @package   Recipe Hero
+ * @package   Captain Opening Hours
  * @author    Captain Theme <info@captaintheme.com>
  * @param  	  array $meta_boxes
  * @return 	  array
@@ -32,7 +32,7 @@ function coh_sample_metaboxes( array $meta_boxes ) {
 	$meta_boxes['location_details'] = array(
 		'id'         => 'details_container',
 		'title'      => __( 'Location Details', 'cmb' ),
-		'pages'      => array( 'location', ), // Post type
+		'pages'      => array( 'coh_location', ), // Post type
 		'context'    => 'normal',
 		'priority'   => 'high',
 		'show_names' => true, // Show field names on the left
@@ -213,7 +213,7 @@ function coh_sample_metaboxes( array $meta_boxes ) {
 	$meta_boxes['location_special_dates'] = array(
 		'id'         => 'special_dates_container',
 		'title'      => __( 'Special Dates / Holidays', 'cmb' ),
-		'pages'      => array( 'location', ),
+		'pages'      => array( 'coh_location', ),
 		'fields'     => array(
 			array(
 				'id'          => $prefix . 'custom_date_group',
