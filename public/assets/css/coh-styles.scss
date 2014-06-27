@@ -55,6 +55,20 @@
 				margin-top: 15px;
 			}
 		}
+		.we-open-text,
+		.we-closed-text {
+			color: #fff;
+			padding: 8px 12px;
+			display: inline-block;
+			border-radius: 2px;
+			font-size: 16px;
+		}
+		.we-open-text {
+			background: #02d738;
+		}
+		.we-closed-text {
+			background: #de1309;
+		}
 	}
 }
 
@@ -76,6 +90,9 @@
 
 .widget-area .widget {
 	.we-open-widget-display {
+		.we-open-single {
+			text-align: center;
+		}
 		h2 {
 			text-align: center;
 		}

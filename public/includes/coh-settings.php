@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 /**
  * CMB Theme Options
  * @version 0.1.0
- * @since 1.1
+ * @since 1.2.0
  */
 class COH_Admin_Settings {
 
@@ -87,7 +87,7 @@ class COH_Admin_Settings {
 
     /**
      * Defines the theme option metabox and field configuration
-     * @since  1.1
+     * @since  1.2.0
      * @return array
      */
     public static function option_fields() {
@@ -110,16 +110,34 @@ class COH_Admin_Settings {
                     'type' => 'checkbox',
                 ),
                 array(
+                    'name' => __( 'Hide Closed Days', 'cmb' ),
+                    'desc' => __( 'Checking this option will hide the closed days from the opening hours info widget/shortcode - only showing the open days.', 'cmb' ),
+                    'id'   => $prefix . 'hide_closed_days',
+                    'type' => 'checkbox',
+                ),
+                array(
                     'name' => __( 'We\'re Open - Image', 'cmb' ),
-                    'desc' => __( 'Upload an image or enter a URL.', 'cmb' ),
+                    'desc' => __( 'Upload an image or enter a URL - this will override the text option below.', 'cmb' ),
                     'id'   => $prefix . 'open_image',
                     'type' => 'file',
                 ),
                 array(
+                    'name' => __( 'We\'re Open - Text', 'cmb' ),
+                    'desc' => __( 'A small amount of text to display when you are open.', 'cmb' ),
+                    'id'   => $prefix . 'open_text',
+                    'type' => 'text_medium',
+                ),
+                array(
                     'name' => __( 'We\'re Closed - Image', 'cmb' ),
-                    'desc' => __( 'Upload an image or enter a URL.', 'cmb' ),
+                    'desc' => __( 'Upload an image or enter a URL - this will override the text option below.', 'cmb' ),
                     'id'   => $prefix . 'closed_image',
                     'type' => 'file',
+                ),
+                array(
+                    'name' => __( 'We\'re Closed - Text', 'cmb' ),
+                    'desc' => __( 'A small amount of text to display when you are closed.', 'cmb' ),
+                    'id'   => $prefix . 'closed_text',
+                    'type' => 'text_medium',
                 ),
                 array(
                     'name' => __( 'Are you open / available? - Manual', 'cmb' ),

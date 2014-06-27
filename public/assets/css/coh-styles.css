@@ -37,6 +37,17 @@
   max-width: 350px; }
 .locations-display .locations-single.we-open-single h2 {
   margin-top: 15px; }
+.locations-display .locations-single .we-open-text,
+.locations-display .locations-single .we-closed-text {
+  color: #fff;
+  padding: 8px 12px;
+  display: inline-block;
+  border-radius: 2px;
+  font-size: 16px; }
+.locations-display .locations-single .we-open-text {
+  background: #02d738; }
+.locations-display .locations-single .we-closed-text {
+  background: #de1309; }
 
 .special-dates-widget-display .date-head {
   font-weight: bold;
@@ -49,6 +60,8 @@
   .special-dates-widget-display .date-time .closed {
     font-style: italic; }
 
+.widget-area .widget .we-open-widget-display .we-open-single {
+  text-align: center; }
 .widget-area .widget .we-open-widget-display h2 {
   text-align: center; }
 

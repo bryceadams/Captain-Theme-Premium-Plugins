@@ -20,11 +20,11 @@ class COH {
 	/**
 	 * Plugin version, used for cache-busting of style and script file references.
 	 *
-	 * @since   1.0.0
+	 * @since   1.2.0
 	 *
 	 * @var     string
 	 */
-	const VERSION = '1.0.0';
+	const VERSION = '1.2.0';
 
 	/**
 	 * The variable name is used as the text domain when internationalizing strings
@@ -50,7 +50,7 @@ class COH {
 	 * Initialize the plugin by setting localization and loading public scripts
 	 * and styles.
 	 *
-	 * @since     1.0.0
+	 * @since     1.2.0
 	 */
 	private function __construct() {
 
@@ -76,6 +76,8 @@ class COH {
 		require_once( COH_PLUGIN_DIR . 'public/includes/coh-widgets.php' );
 		require_once( COH_PLUGIN_DIR . 'public/includes/coh-widgets-display.php' );
 		require_once( COH_PLUGIN_DIR . 'public/includes/coh-shortcodes.php' );
+
+		require_once( COH_PLUGIN_DIR . 'public/includes/coh-styles.php' );
 
 	}
 

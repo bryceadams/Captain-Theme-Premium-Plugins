@@ -131,6 +131,8 @@ function coh_output_opening_hours() {
 	if ( date( 'l' ) == 'Monday' ) echo 'class="open-today" ';
 	if ( $monday_bool ) {
 		echo 'itemprop="openingHours" content="Mo ' . date( "H:i", strtotime( $monday_open ) ) . '-' . date( "H:i", strtotime( $monday_close ) ) . '"';
+	} else {
+		echo ' id="closed-location" ';
 	}
 	echo '>';
 	echo '<span class="day">Monday</span>';
@@ -147,6 +149,8 @@ function coh_output_opening_hours() {
 	if ( date( 'l' ) == 'Tuesday' ) echo 'class="open-today" ';
 	if ( $tuesday_bool ) {
 		echo 'itemprop="openingHours" content="Tu ' . date( "H:i", strtotime( $tuesday_open ) ) . '-' . date( "H:i", strtotime( $tuesday_close ) ) . '"';
+	} else {
+		echo ' id="closed-location" ';
 	}
 	echo '>';
 	echo '<span class="day">Tuesday</span>';
@@ -163,6 +167,8 @@ function coh_output_opening_hours() {
 	if ( date( 'l' ) == 'Wednesday' ) echo 'class="open-today" ';
 	if ( $wednesday_bool ) {
 		echo 'itemprop="openingHours" content="We ' . date( "H:i", strtotime( $wednesday_open ) ) . '-' . date( "H:i", strtotime( $wednesday_close ) ) . '"';
+	} else {
+		echo ' id="closed-location" ';
 	}
 	echo '>';
 	echo '<span class="day">Wednesday</span>';
@@ -179,6 +185,8 @@ function coh_output_opening_hours() {
 	if ( date( 'l' ) == 'Thursday' ) echo 'class="open-today" ';
 	if ( $thursday_bool ) {
 		echo 'itemprop="openingHours" content="Th ' . date( "H:i", strtotime( $thursday_open ) ) . '-' . date( "H:i", strtotime( $thursday_close ) ) . '"';
+	} else {
+		echo ' id="closed-location" ';
 	}
 	echo '>';
 	echo '<span class="day">Thursday</span>';
@@ -195,6 +203,8 @@ function coh_output_opening_hours() {
 	if ( date( 'l' ) == 'Friday' ) echo 'class="open-today" ';
 	if ( $friday_bool ) {
 		echo 'itemprop="openingHours" content="Fr ' . date( "H:i", strtotime( $friday_open ) ) . '-' . date( "H:i", strtotime( $friday_close ) ) . '"';
+	} else {
+		echo ' id="closed-location" ';
 	}
 	echo '>';
 	echo '<span class="day">Friday</span>';
@@ -211,6 +221,8 @@ function coh_output_opening_hours() {
 	if ( date( 'l' ) == 'Saturday' ) echo 'class="open-today" ';
 	if ( $saturday_bool ) {
 		echo 'itemprop="openingHours" content="Sa ' . date( "H:i", strtotime( $saturday_open ) ) . '-' . date( "H:i", strtotime( $saturday_close ) ) . '"';
+	} else {
+		echo ' id="closed-location" ';
 	}
 	echo '>';
 	echo '<span class="day">Saturday</span>';
@@ -227,6 +239,8 @@ function coh_output_opening_hours() {
 	if ( date( 'l' ) == 'Sunday' ) echo 'class="open-today" ';
 	if ( $sunday_bool ) {
 		echo 'itemprop="openingHours" content="Su ' . date( "H:i", strtotime( $sunday_open ) ) . '-' . date( "H:i", strtotime( $sunday_close ) ) . '"';
+	} else {
+		echo ' id="closed-location" ';
 	}
 	echo '>';
 	echo '<span class="day">Sunday</span>';
@@ -247,19 +261,42 @@ function coh_output_opening_hours() {
  *
  * @package   Captain Opening Hours
  * @author    Captain Theme <info@captaintheme.com>
- * @since 	  1.0
+ * @since 	  1.2
  */
 
 function coh_output_we_are_open() {
 
 	if ( coh_location_is_open() ) {
+
+		if ( cmb_get_option( 'coh_options', '_coh_open_image' ) ) {
 		
-		echo '<img class="we-open-image" title="' . __( 'We Are Open!', 'coh' ) . '" src="' . cmb_get_option( 'coh_options', '_coh_open_image' ) . '" />';
+			echo '<img class="we-open-image" title="' . __( 'We Are Open!', 'coh' ) . '" src="' . cmb_get_option( 'coh_options', '_coh_open_image' ) . '" />';
+
+		} elseif ( cmb_get_option( 'coh_options',  '_coh_open_text' ) ) {
+
+			echo '<div class="we-open-text">' . cmb_get_option( 'coh_options',  '_coh_open_text' ) . '</div>';
+
+		} else {
+
+			echo '<div class="we-open-text">' . __( 'We Are Open!', 'coh' ) . '</div>';
+
+		}
 
 	} else {
-		
-		echo '<img class="we-closed-image" title="' . __( 'We Are Closed!', 'coh' ) . '" src="' . cmb_get_option( 'coh_options', '_coh_closed_image' ) . '" />';
 
+		if ( cmb_get_option( 'coh_options', '_coh_closed_image' ) ) {
+		
+			echo '<img class="we-closed-image" title="' . __( 'We Are Closed!', 'coh' ) . '" src="' . cmb_get_option( 'coh_options', '_coh_closed_image' ) . '" />';
+
+		} elseif ( cmb_get_option( 'coh_options',  '_coh_closed_text' ) ) {
+
+			echo '<div class="we-closed-text">' . cmb_get_option( 'coh_options',  '_coh_closed_text' ) . '</div>';
+
+		} else {
+
+			echo '<div class="we-closed-text">' . __( 'We Are Closed!', 'coh' ) . '</div>';
+
+		}
 	}
 
 }
