@@ -44,7 +44,7 @@ add_action('admin_menu', 'COH_update_plugin_notifier_menu');
 
 // Adds an update notification to the WordPress 3.1+ Admin Bar
 function COH_update_notifier_bar_menu() {
-	if ( function_exists( 'simplexml_load_string' ) ) { // Stop if simplexml_load_string funtion isn't available
+	if ( function_exists( 'simplexml_load_string' ) && is_admin() ) { // Stop if simplexml_load_string funtion isn't available
 		global $wp_admin_bar, $wpdb;
 
 		if ( ! is_super_admin() || ! is_admin_bar_showing() ) // Don't display notification in admin bar if it's disabled or the current user isn't an administrator
