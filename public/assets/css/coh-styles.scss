@@ -4,6 +4,7 @@
 			margin-bottom: 10px;
 			.coh-circle {
 				margin-bottom: 5px;
+				float: none;
 			}
 		}
 		.location-address {
@@ -23,6 +24,7 @@
 					}
 					.coh-circle {
 						display: inline-block;
+						float: none;
 					}
 				}
 				.day {
@@ -44,7 +46,7 @@
 			border-radius: 3px;
 			padding: 3px;
 			margin-bottom: 15px;
-			max-width: 300px;
+			max-width: 100%;
 		}
 		.we-open-image,
 		.we-closed-image {

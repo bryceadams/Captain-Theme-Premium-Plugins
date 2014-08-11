@@ -1,7 +1,8 @@
 .locations-display .locations-single .location-name {
   margin-bottom: 10px; }
   .locations-display .locations-single .location-name .coh-circle {
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    float: none; }
 .locations-display .locations-single .location-address {
   padding-bottom: 10px; }
 .locations-display .locations-single ul.location-hours {
@@ -16,7 +17,8 @@
       .locations-display .locations-single ul.location-hours li.open-today .hours {
         color: #111; }
       .locations-display .locations-single ul.location-hours li.open-today .coh-circle {
-        display: inline-block; }
+        display: inline-block;
+        float: none; }
     .locations-display .locations-single ul.location-hours li .day {
       width: 110px;
       display: inline-block;
@@ -31,7 +33,7 @@
   border-radius: 3px;
   padding: 3px;
   margin-bottom: 15px;
-  max-width: 300px; }
+  max-width: 100%; }
 .locations-display .locations-single .we-open-image,
 .locations-display .locations-single .we-closed-image {
   max-width: 350px; }

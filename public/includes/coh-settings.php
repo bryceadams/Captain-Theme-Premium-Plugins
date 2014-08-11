@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 /**
  * CMB Theme Options
  * @version 0.1.0
- * @since 1.2.0
+ * @since 1.3.0
  */
 class COH_Admin_Settings {
 
@@ -77,6 +77,13 @@ class COH_Admin_Settings {
      * @since  0.1.0
      */
     public function admin_page_display() {
+
+        // Temporary solution for auto-added backslashes (see https://gist.github.com/jtsternberg/8601075)
+        $_POST      = array_map( 'stripslashes_deep', $_POST );
+        $_GET       = array_map( 'stripslashes_deep', $_GET );
+        $_COOKIE    = array_map( 'stripslashes_deep', $_COOKIE );
+        $_REQUEST   = array_map( 'stripslashes_deep', $_REQUEST );
+
         ?>
         <div class="wrap cmb_options_page <?php echo self::$key; ?>">
             <h2><?php echo esc_html( get_admin_page_title() ); ?></h2>
@@ -86,8 +93,8 @@ class COH_Admin_Settings {
     }
 
     /**
-     * Defines the theme option metabox and field configuration
-     * @since  1.2.0
+     * Defines the settings options metaboxs and field configuration
+     * @since  1.3.0
      * @return array
      */
     public static function option_fields() {
@@ -104,58 +111,82 @@ class COH_Admin_Settings {
             'show_names' => true,
             'fields'     => array(
                 array(
-                    'name' => __( 'Hide Open / Closed Light', 'cmb' ),
-                    'desc' => __( 'Checkong this option will hide the green/red circle that appears showing if the location is open or closed.', 'cmb' ),
+                    'name' => __( 'Hide Open / Closed Light', 'coh' ),
+                    'desc' => __( 'Checkong this option will hide the green/red circle that appears showing if the location is open or closed.', 'coh' ),
                     'id'   => $prefix . 'open_close_light',
                     'type' => 'checkbox',
                 ),
                 array(
-                    'name' => __( 'Hide Closed Days', 'cmb' ),
-                    'desc' => __( 'Checking this option will hide the closed days from the opening hours info widget/shortcode - only showing the open days.', 'cmb' ),
+                    'name' => __( 'Hide Closed Days', 'coh' ),
+                    'desc' => __( 'Checking this option will hide the closed days from the opening hours info widget/shortcode - only showing the open days.', 'coh' ),
                     'id'   => $prefix . 'hide_closed_days',
                     'type' => 'checkbox',
                 ),
                 array(
-                    'name' => __( 'We\'re Open - Image', 'cmb' ),
-                    'desc' => __( 'Upload an image or enter a URL - this will override the text option below.', 'cmb' ),
+                    'name'    => __( '12 / 24 Hour Time', 'coh' ),
+                    'desc'    => __( 'How would you like to display the opening hours?', 'coh' ),
+                    'id'      => $prefix . 'twelve_twentyfour_time',
+                    'type'    => 'select',
+                    'options' => array(
+                        'twelve'        => __( '12 Hour Time (eg. 5:00 PM)', 'coh' ),
+                        'twentyfour'    => __( '24 Hour Time (eg. 17:00)', 'coh' ),
+                        'twentyfouralt' => __( '24 Hour Time without leading zero (eg. 9:00)', 'coh' ),
+                    ),
+                    'default' => 'twelve',
+                ),
+                array(
+                    'name' => __( 'We\'re Open - Image', 'coh' ),
+                    'desc' => __( 'Upload an image or enter a URL - this will override the text option below.', 'coh' ),
                     'id'   => $prefix . 'open_image',
                     'type' => 'file',
                 ),
                 array(
-                    'name' => __( 'We\'re Open - Text', 'cmb' ),
-                    'desc' => __( 'A small amount of text to display when you are open.', 'cmb' ),
+                    'name' => __( 'We\'re Open - Text', 'coh' ),
+                    'desc' => __( 'A small amount of text to display when you are open.', 'coh' ),
                     'id'   => $prefix . 'open_text',
                     'type' => 'text_medium',
                 ),
                 array(
-                    'name' => __( 'We\'re Closed - Image', 'cmb' ),
-                    'desc' => __( 'Upload an image or enter a URL - this will override the text option below.', 'cmb' ),
+                    'name' => __( 'We\'re Closed - Image', 'coh' ),
+                    'desc' => __( 'Upload an image or enter a URL - this will override the text option below.', 'coh' ),
                     'id'   => $prefix . 'closed_image',
                     'type' => 'file',
                 ),
                 array(
-                    'name' => __( 'We\'re Closed - Text', 'cmb' ),
-                    'desc' => __( 'A small amount of text to display when you are closed.', 'cmb' ),
+                    'name' => __( 'We\'re Closed - Text', 'coh' ),
+                    'desc' => __( 'A small amount of text to display when you are closed.', 'coh' ),
                     'id'   => $prefix . 'closed_text',
                     'type' => 'text_medium',
                 ),
                 array(
-                    'name' => __( 'Are you open / available? - Manual', 'cmb' ),
-                    'desc' => __( 'There is an additional widget/shortcode that will show the images below for being open or not. For example, it could be used to show an image for when you\'re available for work or hire, etc. or maybe just to show an \'open image\' all of the time, regardless of each location\'s opening hours.', 'cmb' ),
+                    'name' => __( 'Are you open / available? - Manual', 'coh' ),
+                    'desc' => __( 'There is an additional widget/shortcode that will show the images below for being open or not. For example, it could be used to show an image for when you\'re available for work or hire, etc. or maybe just to show an \'open image\' all of the time, regardless of each location\'s opening hours.', 'coh' ),
                     'id'   => $prefix . 'manual_available_image',
                     'type' => 'checkbox',
                 ),
                 array(
-                    'name' => __( 'Manual Open / Available Image', 'cmb' ),
-                    'desc' => __( 'Upload an image or enter a URL.', 'cmb' ),
+                    'name' => __( 'Manual Open / Available - Image', 'coh' ),
+                    'desc' => __( 'Upload an image or enter a URL - this will override the text option below.', 'coh' ),
                     'id'   => $prefix . 'available_image',
                     'type' => 'file',
                 ),
                 array(
-                    'name' => __( 'Manual Not Open / Not Available Image', 'cmb' ),
-                    'desc' => __( 'Upload an image or enter a URL.', 'cmb' ),
+                    'name' => __( 'Manual Open / Available  - Text', 'coh' ),
+                    'desc' => __( 'A small amount of text to display when you are manually available.', 'coh' ),
+                    'id'   => $prefix . 'man_available_text',
+                    'type' => 'text_medium',
+                ),
+                array(
+                    'name' => __( 'Manual Not Open / Not Available - Image', 'coh' ),
+                    'desc' => __( 'Upload an image or enter a URL - this will override the text option below.', 'coh' ),
                     'id'   => $prefix . 'not_available_image',
                     'type' => 'file',
+                ),
+                array(
+                    'name' => __( 'Manual Not Open / Not Available - Text', 'coh' ),
+                    'desc' => __( 'A small amount of text to display when you are manually not available.', 'coh' ),
+                    'id'   => $prefix . 'man_not_available_text',
+                    'type' => 'text_medium',
                 ),
             ),
         );

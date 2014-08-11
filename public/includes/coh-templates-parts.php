@@ -96,33 +96,41 @@ function coh_output_opening_hours() {
 	// Variables
 	global $post;
 
+	if ( cmb_get_option( 'coh_options', '_coh_twelve_twentyfour_time' ) == 'twelve' ) {
+		$time_format = 'g:i A';
+	} elseif ( cmb_get_option( 'coh_options', '_coh_twelve_twentyfour_time' ) == 'twentyfour' ) {
+		$time_format = 'H:i';
+	} else {
+		$time_format = 'G:i';
+	}
+
 	$monday_bool	= get_post_meta ( $post->ID, '_coh_location_mon_open_bool', true );
-	$monday_open	= date( "g:i A", strtotime ( get_post_meta ( $post->ID, '_coh_location_mon_open_time', true ) ) );
-	$monday_close	= date( "g:i A", strtotime ( get_post_meta ( $post->ID, '_coh_location_mon_close_time', true ) ) );
+	$monday_open	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_mon_open_time', true ) ) );
+	$monday_close	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_mon_close_time', true ) ) );
 
 	$tuesday_bool	= get_post_meta ( $post->ID, '_coh_location_tues_open_bool', true );
-	$tuesday_open	= date( "g:i A", strtotime ( get_post_meta ( $post->ID, '_coh_location_tues_open_time', true ) ) );
-	$tuesday_close	= date( "g:i A", strtotime ( get_post_meta ( $post->ID, '_coh_location_tues_close_time', true ) ) );
+	$tuesday_open	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_tues_open_time', true ) ) );
+	$tuesday_close	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_tues_close_time', true ) ) );
 
-	$wednesday_bool	= get_post_meta ( $post->ID, '_coh_location_wed_open_bool', true );
-	$wednesday_open	= date( "g:i A", strtotime ( get_post_meta ( $post->ID, '_coh_location_wed_open_time', true ) ) );
-	$wednesday_close	= date( "g:i A", strtotime ( get_post_meta ( $post->ID, '_coh_location_wed_close_time', true ) ) );
+	$wednesday_bool		= get_post_meta ( $post->ID, '_coh_location_wed_open_bool', true );
+	$wednesday_open		= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_wed_open_time', true ) ) );
+	$wednesday_close	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_wed_close_time', true ) ) );
 
 	$thursday_bool	= get_post_meta ( $post->ID, '_coh_location_thurs_open_bool', true );
-	$thursday_open	= date( "g:i A", strtotime ( get_post_meta ( $post->ID, '_coh_location_thurs_open_time', true ) ) );
-	$thursday_close	= date( "g:i A", strtotime ( get_post_meta ( $post->ID, '_coh_location_thurs_close_time', true ) ) );
+	$thursday_open	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_thurs_open_time', true ) ) );
+	$thursday_close	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_thurs_close_time', true ) ) );
 
 	$friday_bool	= get_post_meta ( $post->ID, '_coh_location_fri_open_bool', true );
-	$friday_open	= date( "g:i A", strtotime ( get_post_meta ( $post->ID, '_coh_location_fri_open_time', true ) ) );
-	$friday_close	= date( "g:i A", strtotime ( get_post_meta ( $post->ID, '_coh_location_fri_close_time', true ) ) );
+	$friday_open	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_fri_open_time', true ) ) );
+	$friday_close	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_fri_close_time', true ) ) );
 
 	$saturday_bool	= get_post_meta ( $post->ID, '_coh_location_sat_open_bool', true );
-	$saturday_open	= date( "g:i A", strtotime ( get_post_meta ( $post->ID, '_coh_location_sat_open_time', true ) ) );
-	$saturday_close	= date( "g:i A", strtotime ( get_post_meta ( $post->ID, '_coh_location_sat_close_time', true ) ) );
+	$saturday_open	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_sat_open_time', true ) ) );
+	$saturday_close	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_sat_close_time', true ) ) );
 
 	$sunday_bool	= get_post_meta ( $post->ID, '_coh_location_sun_open_bool', true );
-	$sunday_open	= date( "g:i A", strtotime ( get_post_meta ( $post->ID, '_coh_location_sun_open_time', true ) ) );
-	$sunday_close	= date( "g:i A", strtotime ( get_post_meta ( $post->ID, '_coh_location_sun_close_time', true ) ) );
+	$sunday_open	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_sun_open_time', true ) ) );
+	$sunday_close	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_sun_close_time', true ) ) );
 
 	$closed			= '<span class="hours">Closed</span>';
 
@@ -306,18 +314,42 @@ function coh_output_we_are_open() {
  *
  * @package   Captain Opening Hours
  * @author    Captain Theme <info@captaintheme.com>
- * @since 	  1.1
+ * @since 	  1.3.0
  */
 
 function coh_ouput_manual_available_image() {
 
 	if ( cmb_get_option( 'coh_options', '_coh_manual_available_image' ) ) {
 		
-		echo '<img class="manual-open-image" title="' . __( 'We Are Available!', 'coh' ) . '" src="' . cmb_get_option( 'coh_options', '_coh_available_image' ) . '" />';
+		if ( cmb_get_option( 'coh_options', '_coh_available_image' ) ) {
+
+			echo '<img class="manual-open-image" title="' . __( 'We Are Available!', 'coh' ) . '" src="' . cmb_get_option( 'coh_options', '_coh_available_image' ) . '" />';
+		
+		} elseif ( cmb_get_option( 'coh_options', '_coh_man_available_text' ) ) {
+		
+			echo cmb_get_option( 'coh_options', '_coh_man_available_text' );
+		
+		} else {
+		
+			_e( 'We Are Available!', 'coh' );
+		
+		}
 
 	} else {
 		
-		echo '<img class="manual-closed-image" title="' . __( 'We Are Not Available!', 'coh' ) . '" src="' . cmb_get_option( 'coh_options', '_coh_not_available_image' ) . '" />';
+		if ( cmb_get_option( 'coh_options', '_coh_not_available_image' ) ) {
+		
+			echo '<img class="manual-closed-image" title="' . __( 'We Are Not Available!', 'coh' ) . '" src="' . cmb_get_option( 'coh_options', '_coh_not_available_image' ) . '" />';
+		
+		} elseif ( cmb_get_option( 'coh_options', '_coh_man_not_available_text' ) ) {
+		
+			echo cmb_get_option( 'coh_options', '_coh_man_not_available_text' );
+		
+		} else {
+		
+			_e( 'We Are Not Available!', 'coh' );
+		
+		}
 
 	}
 
