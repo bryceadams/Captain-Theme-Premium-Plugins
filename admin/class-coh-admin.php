@@ -71,7 +71,7 @@ class COH_Admin {
 
 		// Let's make the magic happen on the backend
 	 	require_once( COH_PLUGIN_DIR . 'admin/includes/coh-tweaks.php' );
-
+	 	require_once( COH_PLUGIN_DIR . 'admin/includes/coh-columns.php' );
 
 
 	}
@@ -134,15 +134,6 @@ class COH_Admin {
 			wp_enqueue_script( $this->plugin_slug . '-admin-script', plugins_url( 'assets/js/admin.js', __FILE__ ), array( 'jquery' ), coh::VERSION );
 		//}
 
-	}
-
-	/**
-	 * Render the settings page for this plugin.
-	 *
-	 * @since    1.0.0
-	 */
-	public function display_plugin_admin_page() {
-		include_once( 'views/admin.php' );
 	}
 
 	/**

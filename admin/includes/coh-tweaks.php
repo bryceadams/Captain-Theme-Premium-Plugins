@@ -13,31 +13,44 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 /**
  * Change 'Enter title here' title placeholder text to something more fitting.
- * @package Recipe Hero
+ * @package Captain Opening Hours
  * @author  Captain Theme <info@captaintheme.com>
- * @since   1.1.1
+ * @since   1.3.0
  */
 
-function coh_change_default_title( $title ){
-    $screen = get_current_screen();
-    if ( 'coh_location' == $screen->post_type ){
-        $title = 'Enter Location Name';
-    }
-    return $title;
+if ( ! function_exists( 'coh_change_default_title' ) ) {
+
+	function coh_change_default_title( $title ) {
+
+	    $screen = get_current_screen();
+	    if ( 'coh_location' == $screen->post_type ){
+	        $title = __( 'Enter Location Name', 'coh' );
+	    }
+	    return $title;
+
+	}
+
 }
 add_filter( 'enter_title_here', 'coh_change_default_title' );
 
 
 /**
- * Rename Featured Image Meta Box to 'Recipe Completed Photo'.
+ * Rename Featured Image Meta Box to 'Location Photo'.
  *
- * @package Recipe Hero
+ * @package Captain Opening Hours
  * @author  Captain Theme <info@captaintheme.com>
- * @since   1.1.1
+ * @since   1.3.0
  */
 
-function coh_ftimg_metabox_name() {
-	remove_meta_box( 'postimagediv', 'coh_location', 'side' );
-	add_meta_box('postimagediv', __('Location Photo'), 'post_thumbnail_meta_box', 'coh_location', 'side', 'low');
+if ( ! function_exists( 'coh_ftimg_metabox_name' ) ) {
+
+	function coh_ftimg_metabox_name() {
+
+		remove_meta_box( 'postimagediv', 'coh_location', 'side' );
+		add_meta_box('postimagediv', __( 'Location Photo', 'coh' ), 'post_thumbnail_meta_box', 'coh_location', 'side', 'low');
+
+	}
+
 }
+
 add_action( 'add_meta_boxes_coh_location', 'coh_ftimg_metabox_name' );
