@@ -16,23 +16,23 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  *
  * @package   Captain Opening Hours
  * @author    Captain Theme <info@captaintheme.com>
- * @since 	  1.1.1
+ * @since 	  1.3.1
  */
 
 	function coh_register_location_posttype() {
 		$labels = array(
-			'name' 				=> _x( 'Locations', 'post type general name' ),
-			'singular_name'		=> _x( 'Location', 'post type singular name' ),
-			'add_new' 			=> __( 'Add New Location' ),
-			'add_new_item' 		=> __( 'Add New Location' ),
-			'edit_item' 		=> __( 'Edit Location' ),
-			'new_item' 			=> __( 'New Location' ),
-			'view_item' 		=> __( 'View Location' ),
-			'search_items' 		=> __( 'Search Locations' ),
-			'not_found' 		=> __( 'No Locations found' ),
-			'not_found_in_trash'=> __( 'No Locations found in the trash' ),
+			'name' 				=> __( 'Locations', 'coh' ),
+			'singular_name'		=> __( 'Location', 'coh' ),
+			'add_new' 			=> __( 'Add New Location', 'coh' ),
+			'add_new_item' 		=> __( 'Add New Location', 'coh' ),
+			'edit_item' 		=> __( 'Edit Location', 'coh' ),
+			'new_item' 			=> __( 'New Location', 'coh' ),
+			'view_item' 		=> __( 'View Location', 'coh' ),
+			'search_items' 		=> __( 'Search Locations', 'coh' ),
+			'not_found' 		=> __( 'No Locations found', 'coh' ),
+			'not_found_in_trash'=> __( 'No Locations found in the trash', 'coh' ),
 			'parent_item_colon' => __( '' ),
-			'menu_name'			=> __( 'Locations' )
+			'menu_name'			=> __( 'Locations', 'coh' )
 		);
 		
 		$taxonomies = array();
@@ -41,7 +41,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 		
 		$post_type_args = array(
 			'labels' 			=> $labels,
-			'singular_label' 	=> __('Location'),
+			'singular_label' 	=> __('Location', 'coh'),
 			'public' 			=> true,
 			'show_ui' 			=> true,
 			'publicly_queryable'=> true,

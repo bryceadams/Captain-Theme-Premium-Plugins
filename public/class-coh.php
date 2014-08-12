@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 /**
  * @package Captain Opening Hours
  * @author  Captain Theme <info@captaintheme.com>
- * @since  	1.3.0
+ * @since  	1.3.1
  * @todo 	Make if Class Exists (?)
  */
 class COH {
@@ -20,11 +20,11 @@ class COH {
 	/**
 	 * Plugin version, used for cache-busting of style and script file references.
 	 *
-	 * @since   1.3.0
+	 * @since   1.3.1
 	 *
 	 * @var     string
 	 */
-	const VERSION = '1.3.0';
+	const VERSION = '1.3.1';
 
 	/**
 	 * The variable name is used as the text domain when internationalizing strings

@@ -31,7 +31,7 @@ function coh_sample_metaboxes( array $meta_boxes ) {
 	 */
 	$meta_boxes['location_details'] = array(
 		'id'         => 'details_container',
-		'title'      => __( 'Location Details', 'cmb' ),
+		'title'      => __( 'Location Details', 'coh' ),
 		'pages'      => array( 'coh_location', ), // Post type
 		'context'    => 'normal',
 		'priority'   => 'high',
@@ -39,166 +39,166 @@ function coh_sample_metaboxes( array $meta_boxes ) {
 		'fields'     => array(
 			// Add Store Type select?
 			array(
-				'name' => __( 'Address', 'cmb' ),
-				'desc' => __( 'Where is this location located? You should format the address properly.', 'cmb' ),
+				'name' => __( 'Address', 'coh' ),
+				'desc' => __( 'Where is this location located? You should format the address properly.', 'coh' ),
 				'id'   => $prefix . 'location_address',
 				'type' => 'text'
 			),
 			array(
-				'name' => __( 'Location Timezone', 'cmb' ),
-				'desc' => __( 'What is the timezone for this location? It can be different to other locations and your website\'s current location.', 'cmb' ),
+				'name' => __( 'Location Timezone', 'coh' ),
+				'desc' => __( 'What is the timezone for this location? It can be different to other locations and your website\'s current location.', 'coh' ),
 				'id'   => $prefix . 'location_timezone',
 				'type' => 'select_timezone',
 			),
 			array(
-				'name' => __( 'Monday Open', 'cmb' ),
-				'desc' => __( 'Is this location open on a Monday?', 'cmb' ),
+				'name' => __( 'Monday Open', 'coh' ),
+				'desc' => __( 'Is this location open on a Monday?', 'coh' ),
 				'id'   => $prefix . 'location_mon_open_bool',
 				'type' => 'checkbox',
 			),
 			array(
-				'name' => __( 'Monday Opening Time', 'cmb' ),
-				'desc' => __( 'What time does this store open on a Monday?', 'cmb' ),
+				'name' => __( 'Monday Opening Time', 'coh' ),
+				'desc' => __( 'What time does this store open on a Monday?', 'coh' ),
 				'id'   => $prefix . 'location_mon_open_time',
 				'type' => 'text_time',
 				'timezone_meta_key' => $prefix . 'location_timezone',
 				//'show_on_cb' => 'location_mon_open_bool'
 			),
 			array(
-				'name' => __( 'Monday Closing Time', 'cmb' ),
-				'desc' => __( 'What time does this store close on a Monday?', 'cmb' ),
+				'name' => __( 'Monday Closing Time', 'coh' ),
+				'desc' => __( 'What time does this store close on a Monday?', 'coh' ),
 				'id'   => $prefix . 'location_mon_close_time',
 				'type' => 'text_time',
 				'timezone_meta_key' => $prefix . 'location_timezone',
 				//'show_on_cb' => 'location_mon_open_bool'
 			),
 			array(
-				'name' => __( 'Tuesday Open', 'cmb' ),
-				'desc' => __( 'Is this location open on a Tuesday?', 'cmb' ),
+				'name' => __( 'Tuesday Open', 'coh' ),
+				'desc' => __( 'Is this location open on a Tuesday?', 'coh' ),
 				'id'   => $prefix . 'location_tues_open_bool',
 				'type' => 'checkbox',
 			),
 			array(
-				'name' => __( 'Tuesday Opening Time', 'cmb' ),
-				'desc' => __( 'What time does this store open on a Tuesday?', 'cmb' ),
+				'name' => __( 'Tuesday Opening Time', 'coh' ),
+				'desc' => __( 'What time does this store open on a Tuesday?', 'coh' ),
 				'id'   => $prefix . 'location_tues_open_time',
 				'type' => 'text_time',
 				'timezone_meta_key' => $prefix . 'location_timezone',
 				//'show_on_cb' => 'location_mon_open_bool'
 			),
 			array(
-				'name' => __( 'Tuesday Closing Time', 'cmb' ),
-				'desc' => __( 'What time does this store close on a Tuesday?', 'cmb' ),
+				'name' => __( 'Tuesday Closing Time', 'coh' ),
+				'desc' => __( 'What time does this store close on a Tuesday?', 'coh' ),
 				'id'   => $prefix . 'location_tues_close_time',
 				'type' => 'text_time',
 				'timezone_meta_key' => $prefix . 'location_timezone',
 				//'show_on_cb' => 'location_mon_open_bool'
 			),
 			array(
-				'name' => __( 'Wednesday Open', 'cmb' ),
-				'desc' => __( 'Is this location open on a Wednesday?', 'cmb' ),
+				'name' => __( 'Wednesday Open', 'coh' ),
+				'desc' => __( 'Is this location open on a Wednesday?', 'coh' ),
 				'id'   => $prefix . 'location_wed_open_bool',
 				'type' => 'checkbox',
 			),
 			array(
-				'name' => __( 'Wednesday Opening Time', 'cmb' ),
-				'desc' => __( 'What time does this store open on a Wednesday?', 'cmb' ),
+				'name' => __( 'Wednesday Opening Time', 'coh' ),
+				'desc' => __( 'What time does this store open on a Wednesday?', 'coh' ),
 				'id'   => $prefix . 'location_wed_open_time',
 				'type' => 'text_time',
 				'timezone_meta_key' => $prefix . 'location_timezone',
 				//'show_on_cb' => 'location_mon_open_bool'
 			),
 			array(
-				'name' => __( 'Wednesday Closing Time', 'cmb' ),
-				'desc' => __( 'What time does this store close on a Wednesday?', 'cmb' ),
+				'name' => __( 'Wednesday Closing Time', 'coh' ),
+				'desc' => __( 'What time does this store close on a Wednesday?', 'coh' ),
 				'id'   => $prefix . 'location_wed_close_time',
 				'type' => 'text_time',
 				'timezone_meta_key' => $prefix . 'location_timezone',
 				//'show_on_cb' => 'location_mon_open_bool'
 			),
 			array(
-				'name' => __( 'Thursday Open', 'cmb' ),
-				'desc' => __( 'Is this location open on a Thursday?', 'cmb' ),
+				'name' => __( 'Thursday Open', 'coh' ),
+				'desc' => __( 'Is this location open on a Thursday?', 'coh' ),
 				'id'   => $prefix . 'location_thurs_open_bool',
 				'type' => 'checkbox',
 			),
 			array(
-				'name' => __( 'Thursday Opening Time', 'cmb' ),
-				'desc' => __( 'What time does this store open on a Thursday?', 'cmb' ),
+				'name' => __( 'Thursday Opening Time', 'coh' ),
+				'desc' => __( 'What time does this store open on a Thursday?', 'coh' ),
 				'id'   => $prefix . 'location_thurs_open_time',
 				'type' => 'text_time',
 				'timezone_meta_key' => $prefix . 'location_timezone',
 				//'show_on_cb' => 'location_mon_open_bool'
 			),
 			array(
-				'name' => __( 'Thursday Closing Time', 'cmb' ),
-				'desc' => __( 'What time does this store close on a Thursday?', 'cmb' ),
+				'name' => __( 'Thursday Closing Time', 'coh' ),
+				'desc' => __( 'What time does this store close on a Thursday?', 'coh' ),
 				'id'   => $prefix . 'location_thurs_close_time',
 				'type' => 'text_time',
 				'timezone_meta_key' => $prefix . 'location_timezone',
 				//'show_on_cb' => 'location_mon_open_bool'
 			),
 			array(
-				'name' => __( 'Friday Open', 'cmb' ),
-				'desc' => __( 'Is this location open on a Friday?', 'cmb' ),
+				'name' => __( 'Friday Open', 'coh' ),
+				'desc' => __( 'Is this location open on a Friday?', 'coh' ),
 				'id'   => $prefix . 'location_fri_open_bool',
 				'type' => 'checkbox',
 			),
 			array(
-				'name' => __( 'Friday Opening Time', 'cmb' ),
-				'desc' => __( 'What time does this store open on a Friday?', 'cmb' ),
+				'name' => __( 'Friday Opening Time', 'coh' ),
+				'desc' => __( 'What time does this store open on a Friday?', 'coh' ),
 				'id'   => $prefix . 'location_fri_open_time',
 				'type' => 'text_time',
 				'timezone_meta_key' => $prefix . 'location_timezone',
 				//'show_on_cb' => 'location_mon_open_bool'
 			),
 			array(
-				'name' => __( 'Friday Closing Time', 'cmb' ),
-				'desc' => __( 'What time does this store close on a Friday?', 'cmb' ),
+				'name' => __( 'Friday Closing Time', 'coh' ),
+				'desc' => __( 'What time does this store close on a Friday?', 'coh' ),
 				'id'   => $prefix . 'location_fri_close_time',
 				'type' => 'text_time',
 				'timezone_meta_key' => $prefix . 'location_timezone',
 				//'show_on_cb' => 'location_mon_open_bool'
 			),
 			array(
-				'name' => __( 'Saturday Open', 'cmb' ),
-				'desc' => __( 'Is this location open on a Saturday?', 'cmb' ),
+				'name' => __( 'Saturday Open', 'coh' ),
+				'desc' => __( 'Is this location open on a Saturday?', 'coh' ),
 				'id'   => $prefix . 'location_sat_open_bool',
 				'type' => 'checkbox',
 			),
 			array(
-				'name' => __( 'Saturday Opening Time', 'cmb' ),
-				'desc' => __( 'What time does this store open on a Saturday?', 'cmb' ),
+				'name' => __( 'Saturday Opening Time', 'coh' ),
+				'desc' => __( 'What time does this store open on a Saturday?', 'coh' ),
 				'id'   => $prefix . 'location_sat_open_time',
 				'type' => 'text_time',
 				'timezone_meta_key' => $prefix . 'location_timezone',
 				//'show_on_cb' => 'location_mon_open_bool'
 			),
 			array(
-				'name' => __( 'Saturday Closing Time', 'cmb' ),
-				'desc' => __( 'What time does this store close on a Saturday?', 'cmb' ),
+				'name' => __( 'Saturday Closing Time', 'coh' ),
+				'desc' => __( 'What time does this store close on a Saturday?', 'coh' ),
 				'id'   => $prefix . 'location_sat_close_time',
 				'type' => 'text_time',
 				'timezone_meta_key' => $prefix . 'location_timezone',
 				//'show_on_cb' => 'location_mon_open_bool'
 			),
 			array(
-				'name' => __( 'Sunday Open', 'cmb' ),
-				'desc' => __( 'Is this location open on a Sunday?', 'cmb' ),
+				'name' => __( 'Sunday Open', 'coh' ),
+				'desc' => __( 'Is this location open on a Sunday?', 'coh' ),
 				'id'   => $prefix . 'location_sun_open_bool',
 				'type' => 'checkbox',
 			),
 			array(
-				'name' => __( 'Sunday Opening Time', 'cmb' ),
-				'desc' => __( 'What time does this store open on a Sunday?', 'cmb' ),
+				'name' => __( 'Sunday Opening Time', 'coh' ),
+				'desc' => __( 'What time does this store open on a Sunday?', 'coh' ),
 				'id'   => $prefix . 'location_sun_open_time',
 				'type' => 'text_time',
 				'timezone_meta_key' => $prefix . 'location_timezone',
 				//'show_on_cb' => 'location_mon_open_bool'
 			),
 			array(
-				'name' => __( 'Sunday Closing Time', 'cmb' ),
-				'desc' => __( 'What time does this store close on a Sunday?', 'cmb' ),
+				'name' => __( 'Sunday Closing Time', 'coh' ),
+				'desc' => __( 'What time does this store close on a Sunday?', 'coh' ),
 				'id'   => $prefix . 'location_sun_close_time',
 				'type' => 'text_time',
 				'timezone_meta_key' => $prefix . 'location_timezone',
@@ -212,17 +212,17 @@ function coh_sample_metaboxes( array $meta_boxes ) {
 	 */
 	$meta_boxes['location_special_dates'] = array(
 		'id'         => 'special_dates_container',
-		'title'      => __( 'Special Dates / Holidays', 'cmb' ),
+		'title'      => __( 'Special Dates / Holidays', 'coh' ),
 		'pages'      => array( 'coh_location', ),
 		'fields'     => array(
 			array(
 				'id'          => $prefix . 'custom_date_group',
 				'type'        => 'group',
-				'description' => __( 'Special Dates that will appear in the Special Dates Widget & Shortcode', 'cmb' ),
+				'description' => __( 'Special Dates that will appear in the Special Dates Widget & Shortcode', 'coh' ),
 				'options'     => array(
-					'group_title'   => __( 'Special Date #{#}', 'cmb' ), // {#} gets replaced by row number
-					'add_button'    => __( 'Add Another Special Date', 'cmb' ),
-					'remove_button' => __( 'Remove Special Date', 'cmb' ),
+					'group_title'   => __( 'Special Date #{#}', 'coh' ), // {#} gets replaced by row number
+					'add_button'    => __( 'Add Another Special Date', 'coh' ),
+					'remove_button' => __( 'Remove Special Date', 'coh' ),
 					'sortable'      => true, // beta
 				),
 				// Fields array works the same, except id's only need to be unique for this group. Prefix is not needed.
@@ -234,26 +234,26 @@ function coh_sample_metaboxes( array $meta_boxes ) {
 						'type' => 'text_medium',
 					),
 					array(
-						'name' => __( 'Date', 'cmb' ),
-						'desc' => __( 'The date for this special date - the year does not matter.', 'cmb' ),
+						'name' => __( 'Date', 'coh' ),
+						'desc' => __( 'The date for this special date - the year does not matter.', 'coh' ),
 						'id'   => 'date_date',
 						'type' => 'text_date',
 					),
 					array(
-						'name' => __( 'Date Open?', 'cmb' ),
-						'desc' => __( 'Are you open at this location on this special date? If closed, do not check this option.', 'cmb' ),
+						'name' => __( 'Date Open?', 'coh' ),
+						'desc' => __( 'Are you open at this location on this special date? If closed, do not check this option.', 'coh' ),
 						'id'   => 'date_open_bool',
 						'type' => 'checkbox',
 					),
 					array(
-						'name' => __( 'Opening Time', 'cmb' ),
-						'desc' => __( 'The opening time for this special date - ignore if you are closed on this date', 'cmb' ),
+						'name' => __( 'Opening Time', 'coh' ),
+						'desc' => __( 'The opening time for this special date - ignore if you are closed on this date', 'coh' ),
 						'id'   => 'date_opening_time',
 						'type' => 'text_time',
 					),
 					array(
-						'name' => __( 'Closing Time', 'cmb' ),
-						'desc' => __( 'The closing time for this special date - ignore if you are closed on this date', 'cmb' ),
+						'name' => __( 'Closing Time', 'coh' ),
+						'desc' => __( 'The closing time for this special date - ignore if you are closed on this date', 'coh' ),
 						'id'   => 'date_closing_time',
 						'type' => 'text_time',
 					),
