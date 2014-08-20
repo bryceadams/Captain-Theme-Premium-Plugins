@@ -2,759 +2,754 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Captain Opening Hours v1.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-11 18:42+0700\n"
-"PO-Revision-Date: 2014-08-12 14:07:48+0000\n"
-"Last-Translator: Recipe Hero <info@recipehero.in>\n"
+"POT-Creation-Date: 2014-08-13 10:15+0100\n"
+"PO-Revision-Date: 2014-08-13 10:15+0100\n"
+"Last-Translator: iApply Services <info@iapply.nl>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 1.6.4\n"
-"X-Poedit-Language: \n"
-"X-Poedit-Country: \n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
 "X-Poedit-Basepath: .\n"
-"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
 "X-Poedit-SearchPath-0: ..\n"
-"X-Textdomain-Support: yes"
 
-#: admin/class-coh-admin.php:148
-#: public/includes/coh-settings.php:46
-#@ coh
+# @ coh
+#: ../admin/class-coh-admin.php:148 ../public/includes/coh-settings.php:46
 msgid "Settings"
 msgstr "Instellingen"
 
-#: admin/includes/coh-columns.php:29
-#@ coh
+# @ coh
+#: ../admin/includes/coh-columns.php:29
 msgid "Location Title"
 msgstr "Locatie Titel"
 
-#: admin/includes/coh-columns.php:30
-#@ coh
+# @ coh
+#: ../admin/includes/coh-columns.php:30
 msgid "Location ID"
 msgstr "Locatie ID"
 
-#: admin/includes/coh-columns.php:31
-#: admin/includes/coh-tweaks.php:50
-#@ coh
+# @ coh
+#: ../admin/includes/coh-columns.php:31 ../admin/includes/coh-tweaks.php:50
 msgid "Location Photo"
 msgstr "Locatie foto"
 
-#: admin/includes/coh-columns.php:32
-#: public/includes/coh-fields.php:237
-#@ coh
-#@ cmb
+# @ coh
+# @ cmb
+#: ../admin/includes/coh-columns.php:32 ../public/includes/coh-fields.php:237
 msgid "Date"
 msgstr "Datum"
 
-#: admin/includes/coh-tweaks.php:27
-#@ coh
+# @ coh
+#: ../admin/includes/coh-tweaks.php:27
 msgid "Enter Location Name"
 msgstr "Voer locatie naam in"
 
-#: public/includes/coh-cpt.php:26
-#: public/includes/coh-cpt.php:27
-#@ default
-msgid "Add New Location"
-msgstr "Voeg nieuwe locatie toe"
-
-#: public/includes/coh-cpt.php:28
-#@ default
-msgid "Edit Location"
-msgstr "Wijzig locatie"
-
-#: public/includes/coh-cpt.php:29
-#@ default
-msgid "New Location"
-msgstr "Nieuwe locatie"
-
-#: public/includes/coh-cpt.php:30
-#@ default
-msgid "View Location"
-msgstr "Bekijk locatie"
-
-#: public/includes/coh-cpt.php:31
-#@ default
-msgid "Search Locations"
-msgstr "Zoek locatie"
-
-#: public/includes/coh-cpt.php:32
-#@ default
-msgid "No Locations found"
-msgstr "Geen locaties gevonden"
-
-#: public/includes/coh-cpt.php:33
-#@ default
-msgid "No Locations found in the trash"
-msgstr "Geen locaties in de prullenbak"
-
-#: public/includes/coh-cpt.php:35
-#@ default
+# @ default
+#: ../public/includes/coh-cpt.php:24 ../public/includes/coh-cpt.php:35
 msgid "Locations"
 msgstr "Locaties"
 
-#: public/includes/coh-cpt.php:44
-#@ default
+# @ default
+#: ../public/includes/coh-cpt.php:25 ../public/includes/coh-cpt.php:44
 msgid "Location"
 msgstr "Locatie"
 
-#: public/includes/coh-fields.php:34
-#@ cmb
+# @ default
+#: ../public/includes/coh-cpt.php:26 ../public/includes/coh-cpt.php:27
+msgid "Add New Location"
+msgstr "Nieuwe locatie"
+
+# @ default
+#: ../public/includes/coh-cpt.php:28
+msgid "Edit Location"
+msgstr "Wijzig locatie"
+
+# @ default
+#: ../public/includes/coh-cpt.php:29
+msgid "New Location"
+msgstr "Nieuwe locatie"
+
+# @ default
+#: ../public/includes/coh-cpt.php:30
+msgid "View Location"
+msgstr "Bekijk locatie"
+
+# @ default
+#: ../public/includes/coh-cpt.php:31
+msgid "Search Locations"
+msgstr "Zoek locatie"
+
+# @ default
+#: ../public/includes/coh-cpt.php:32
+msgid "No Locations found"
+msgstr "Geen locaties gevonden"
+
+# @ default
+#: ../public/includes/coh-cpt.php:33
+msgid "No Locations found in the trash"
+msgstr "Geen locaties in de prullenbak"
+
+# @ cmb
+#: ../public/includes/coh-fields.php:34
 msgid "Location Details"
 msgstr "Lokatie Details"
 
-#: public/includes/coh-fields.php:42
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:42
 msgid "Address"
 msgstr "Adres"
 
-#: public/includes/coh-fields.php:43
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:43
 msgid "Where is this location located? You should format the address properly."
-msgstr "Wat is het adres van de locatie? "
+msgstr ""
+"Wat is het adres van de locatie? Gebruik komma's om de straatnaam en plaats "
+"te scheiden."
 
-#: public/includes/coh-fields.php:48
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:48
 msgid "Location Timezone"
 msgstr "Locatie Tijdzone"
 
-#: public/includes/coh-fields.php:49
-#@ cmb
-msgid "What is the timezone for this location? It can be different to other locations and your website's current location."
-msgstr "What is de tijdzone van de locatie? Deze kan afwijken van andere locaties of de website standaard instellingen."
+# @ cmb
+#: ../public/includes/coh-fields.php:49
+msgid ""
+"What is the timezone for this location? It can be different to other "
+"locations and your website's current location."
+msgstr ""
+"What is de tijdzone van de locatie? Deze kan afwijken van andere locaties of "
+"de website standaard instellingen."
 
-#: public/includes/coh-fields.php:54
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:54
 msgid "Monday Open"
 msgstr "Maandag Open"
 
-#: public/includes/coh-fields.php:55
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:55
 msgid "Is this location open on a Monday?"
 msgstr "Is deze locatie open op Maandag?"
 
-#: public/includes/coh-fields.php:60
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:60
 msgid "Monday Opening Time"
 msgstr "Maandag openingstijden"
 
-#: public/includes/coh-fields.php:61
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:61
 msgid "What time does this store open on a Monday?"
 msgstr "Hoe laat gaat de locatie open op Maandag?"
 
-#: public/includes/coh-fields.php:68
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:68
 msgid "Monday Closing Time"
 msgstr "Maandag sluitingstijd"
 
-#: public/includes/coh-fields.php:69
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:69
 msgid "What time does this store close on a Monday?"
 msgstr "Hoe laat gaat de locatie dicht op Maandag?"
 
-#: public/includes/coh-fields.php:76
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:76
 msgid "Tuesday Open"
 msgstr "Dinsdag Open"
 
-#: public/includes/coh-fields.php:77
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:77
 msgid "Is this location open on a Tuesday?"
 msgstr "Is deze locatie open op Dinsdag?"
 
-#: public/includes/coh-fields.php:82
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:82
 msgid "Tuesday Opening Time"
 msgstr "Dinsdag Openingstijd"
 
-#: public/includes/coh-fields.php:83
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:83
 msgid "What time does this store open on a Tuesday?"
 msgstr "Hoe laat gaat de locatie open op Dinsdag?"
 
-#: public/includes/coh-fields.php:90
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:90
 msgid "Tuesday Closing Time"
 msgstr "Dinsdag Sluitingstijd"
 
-#: public/includes/coh-fields.php:91
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:91
 msgid "What time does this store close on a Tuesday?"
 msgstr "Hoe laat gaat de locatie dicht op Dinsdag?"
 
-#: public/includes/coh-fields.php:98
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:98
 msgid "Wednesday Open"
 msgstr "Woensdag open"
 
-#: public/includes/coh-fields.php:99
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:99
 msgid "Is this location open on a Wednesday?"
 msgstr "Is deze locatie geopend op Woensdag?"
 
-#: public/includes/coh-fields.php:104
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:104
 msgid "Wednesday Opening Time"
 msgstr "Woensdag openingstijd"
 
-#: public/includes/coh-fields.php:105
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:105
 msgid "What time does this store open on a Wednesday?"
 msgstr "Hoe laat gaat de locatie open op Woensdag?"
 
-#: public/includes/coh-fields.php:112
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:112
 msgid "Wednesday Closing Time"
 msgstr "Woensdag sluitingstijd"
 
-#: public/includes/coh-fields.php:113
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:113
 msgid "What time does this store close on a Wednesday?"
 msgstr "Hoe laat gaat de locatie dicht op Woensdag?"
 
-#: public/includes/coh-fields.php:120
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:120
 msgid "Thursday Open"
 msgstr "Donderdag open"
 
-#: public/includes/coh-fields.php:121
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:121
 msgid "Is this location open on a Thursday?"
 msgstr "Is deze locatie geopend op Donderdag?"
 
-#: public/includes/coh-fields.php:126
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:126
 msgid "Thursday Opening Time"
 msgstr "donderdag openingstijd"
 
-#: public/includes/coh-fields.php:127
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:127
 msgid "What time does this store open on a Thursday?"
 msgstr "Hoe laat gaat de locatie open op Donderdag?"
 
-#: public/includes/coh-fields.php:134
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:134
 msgid "Thursday Closing Time"
 msgstr "Donderdag sluitingstijd"
 
-#: public/includes/coh-fields.php:135
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:135
 msgid "What time does this store close on a Thursday?"
 msgstr "Hoe laat gaat de locatie dicht op Donderdag?"
 
-#: public/includes/coh-fields.php:142
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:142
 msgid "Friday Open"
 msgstr "Vrijdag open"
 
-#: public/includes/coh-fields.php:143
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:143
 msgid "Is this location open on a Friday?"
 msgstr "Is deze locatie geopend op Vrijdag?"
 
-#: public/includes/coh-fields.php:148
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:148
 msgid "Friday Opening Time"
 msgstr "Vrijdag openingstijd"
 
-#: public/includes/coh-fields.php:149
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:149
 msgid "What time does this store open on a Friday?"
 msgstr "Hoe laat gaat de locatie open op Vrijdag?"
 
-#: public/includes/coh-fields.php:156
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:156
 msgid "Friday Closing Time"
 msgstr "Vrijdag openingtijd"
 
-#: public/includes/coh-fields.php:157
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:157
 msgid "What time does this store close on a Friday?"
 msgstr "Hoe laat gaat de locatie dicht op Vrijdag"
 
-#: public/includes/coh-fields.php:164
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:164
 msgid "Saturday Open"
 msgstr "Zaterdag open"
 
-#: public/includes/coh-fields.php:165
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:165
 msgid "Is this location open on a Saturday?"
 msgstr "Is deze locatie geopend op Zaterdag?"
 
-#: public/includes/coh-fields.php:170
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:170
 msgid "Saturday Opening Time"
 msgstr "Zaterdag openingstijd"
 
-#: public/includes/coh-fields.php:171
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:171
 msgid "What time does this store open on a Saturday?"
 msgstr "Hoe laat gaat de locatie open op Zaterdag?"
 
-#: public/includes/coh-fields.php:178
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:178
 msgid "Saturday Closing Time"
 msgstr "Zaterdag sluitingstijd"
 
-#: public/includes/coh-fields.php:179
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:179
 msgid "What time does this store close on a Saturday?"
 msgstr "Hoe laat gaat de locatie dicht op Zaterdag?"
 
-#: public/includes/coh-fields.php:186
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:186
 msgid "Sunday Open"
 msgstr "Zondag open"
 
-#: public/includes/coh-fields.php:187
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:187
 msgid "Is this location open on a Sunday?"
 msgstr "Is deze locatie geopend op Zondag?"
 
-#: public/includes/coh-fields.php:192
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:192
 msgid "Sunday Opening Time"
 msgstr "Zondag openingstijd"
 
-#: public/includes/coh-fields.php:193
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:193
 msgid "What time does this store open on a Sunday?"
 msgstr "Hoe laat gaat de locatie open op Zondag"
 
-#: public/includes/coh-fields.php:200
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:200
 msgid "Sunday Closing Time"
 msgstr "Zondag sluitingstijd"
 
-#: public/includes/coh-fields.php:201
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:201
 msgid "What time does this store close on a Sunday?"
 msgstr "Hoe laat gaat de locatie dicht op Zondag?"
 
-#: public/includes/coh-fields.php:215
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:215
 msgid "Special Dates / Holidays"
 msgstr "Speciale data / Vakanties"
 
-#: public/includes/coh-fields.php:221
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:221
 msgid "Special Dates that will appear in the Special Dates Widget & Shortcode"
-msgstr "Speciale data die zichtbaar worden in de 'speciale data' widget & shortcodes"
+msgstr ""
+"Speciale data die zichtbaar worden in de 'speciale data' widget & shortcodes"
 
-#: public/includes/coh-fields.php:223
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:223
 msgid "Special Date #{#}"
 msgstr "Speciale Datum #{#}"
 
-#: public/includes/coh-fields.php:224
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:224
 msgid "Add Another Special Date"
 msgstr "Nieuwe speciale datum"
 
-#: public/includes/coh-fields.php:225
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:225
 msgid "Remove Special Date"
 msgstr "Verwijder speciale datum"
 
-#: public/includes/coh-fields.php:238
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:238
 msgid "The date for this special date - the year does not matter."
 msgstr "De datum voor deze speciale datum - het jaar maakt niet uit"
 
-#: public/includes/coh-fields.php:243
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:243
 msgid "Date Open?"
 msgstr "Datum open?"
 
-#: public/includes/coh-fields.php:244
-#@ cmb
-msgid "Are you open at this location on this special date? If closed, do not check this option."
+# @ cmb
+#: ../public/includes/coh-fields.php:244
+msgid ""
+"Are you open at this location on this special date? If closed, do not check "
+"this option."
 msgstr ""
+"Is deze locatie geopend op deze speciale datum? Zo nee, vind deze optie niet "
+"aan."
 
-#: public/includes/coh-fields.php:249
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:249
 msgid "Opening Time"
-msgstr ""
+msgstr "Openingstijd"
 
-#: public/includes/coh-fields.php:250
-#@ cmb
-msgid "The opening time for this special date - ignore if you are closed on this date"
+# @ cmb
+#: ../public/includes/coh-fields.php:250
+msgid ""
+"The opening time for this special date - ignore if you are closed on this "
+"date"
 msgstr ""
+"The openingstijd voor deze speciale datum - negeren als je gesloten bent op "
+"deze datum"
 
-#: public/includes/coh-fields.php:255
-#@ cmb
+# @ cmb
+#: ../public/includes/coh-fields.php:255
 msgid "Closing Time"
-msgstr ""
+msgstr "Sluitingstijd"
 
-#: public/includes/coh-fields.php:256
-#@ cmb
-msgid "The closing time for this special date - ignore if you are closed on this date"
+# @ cmb
+#: ../public/includes/coh-fields.php:256
+msgid ""
+"The closing time for this special date - ignore if you are closed on this "
+"date"
 msgstr ""
+"The sluitingstijd voor deze speciale datum - negeren als je gesloten bent op "
+"deze datum"
 
-#: public/includes/coh-settings.php:47
-#@ coh
+# @ coh
+#: ../public/includes/coh-settings.php:47
 msgid "Captain Opening Hours Settings"
-msgstr ""
+msgstr "Captain Opening Hours Settings"
 
-#: public/includes/coh-settings.php:114
-#@ coh
+# @ coh
+#: ../public/includes/coh-settings.php:114
 msgid "Hide Open / Closed Light"
-msgstr ""
+msgstr "Verberg Geopend / Gesloten Licht"
 
-#: public/includes/coh-settings.php:115
-#@ coh
-msgid "Checkong this option will hide the green/red circle that appears showing if the location is open or closed."
+# @ coh
+#: ../public/includes/coh-settings.php:115
+msgid ""
+"Checkong this option will hide the green/red circle that appears showing if "
+"the location is open or closed."
 msgstr ""
+"Aanvinken van deze optie zal het groene / rode rondje dat naast de "
+"openingstijden wordt getoond verbergen."
 
-#: public/includes/coh-settings.php:120
-#@ coh
+# @ coh
+#: ../public/includes/coh-settings.php:120
 msgid "Hide Closed Days"
-msgstr ""
+msgstr "Verberg gesloten dagen"
 
-#: public/includes/coh-settings.php:121
-#@ coh
-msgid "Checking this option will hide the closed days from the opening hours info widget/shortcode - only showing the open days."
+# @ coh
+#: ../public/includes/coh-settings.php:121
+msgid ""
+"Checking this option will hide the closed days from the opening hours info "
+"widget/shortcode - only showing the open days."
 msgstr ""
+"Aanvinken van deze optie zal de gesloten dagen verbergen in de 'opening "
+"tijden info widget' - alleen geopende dagen zijn zichtbaar."
 
-#: public/includes/coh-settings.php:126
-#@ coh
+# @ coh
+#: ../public/includes/coh-settings.php:126
 msgid "12 / 24 Hour Time"
-msgstr ""
+msgstr "12 / 24 uur tijdsindeling"
 
-#: public/includes/coh-settings.php:127
-#@ coh
+# @ coh
+#: ../public/includes/coh-settings.php:127
 msgid "How would you like to display the opening hours?"
-msgstr ""
+msgstr "Hoe wil je dat de openingstijden getoond worden?"
 
-#: public/includes/coh-settings.php:131
-#@ coh
+# @ coh
+#: ../public/includes/coh-settings.php:131
 msgid "12 Hour Time (eg. 5:00 PM)"
-msgstr ""
+msgstr "12 uur indeling (b.v.: 5:00 PM)"
 
-#: public/includes/coh-settings.php:132
-#@ coh
+# @ coh
+#: ../public/includes/coh-settings.php:132
 msgid "24 Hour Time (eg. 17:00)"
-msgstr ""
+msgstr "24 uur indeling (b.v.: 17:00)"
 
-#: public/includes/coh-settings.php:133
-#@ coh
+# @ coh
+#: ../public/includes/coh-settings.php:133
 msgid "24 Hour Time without leading zero (eg. 9:00)"
-msgstr ""
+msgstr "24 uur indeling zonder voorafgaande nul (b.v.: 9:00)"
 
-#: public/includes/coh-settings.php:138
-#@ coh
+# @ coh
+#: ../public/includes/coh-settings.php:138
 msgid "We're Open - Image"
-msgstr ""
+msgstr "Wij zijn Geopend - afbeelding"
 
-#: public/includes/coh-settings.php:139
-#: public/includes/coh-settings.php:151
-#: public/includes/coh-settings.php:169
-#: public/includes/coh-settings.php:181
-#@ coh
-msgid "Upload an image or enter a URL - this will override the text option below."
+# @ coh
+#: ../public/includes/coh-settings.php:139
+#: ../public/includes/coh-settings.php:151
+#: ../public/includes/coh-settings.php:169
+#: ../public/includes/coh-settings.php:181
+msgid ""
+"Upload an image or enter a URL - this will override the text option below."
 msgstr ""
+"Upload een afbeelding of voeg een URL toe - Dit schakelt de tekstoptie "
+"hieronder uit."
 
-#: public/includes/coh-settings.php:144
-#@ coh
+# @ coh
+#: ../public/includes/coh-settings.php:144
 msgid "We're Open - Text"
-msgstr ""
+msgstr "Wij zijn Geopend - Tekst"
 
-#: public/includes/coh-settings.php:145
-#@ coh
+# @ coh
+#: ../public/includes/coh-settings.php:145
 msgid "A small amount of text to display when you are open."
-msgstr ""
+msgstr "Een korte tekst die zichtbaar is als de locatie Geopend is."
 
-#: public/includes/coh-settings.php:150
-#@ coh
+# @ coh
+#: ../public/includes/coh-settings.php:150
 msgid "We're Closed - Image"
-msgstr ""
+msgstr "Wij zijn Gesloten - Afbeelding"
 
-#: public/includes/coh-settings.php:156
-#@ coh
+# @ coh
+#: ../public/includes/coh-settings.php:156
 msgid "We're Closed - Text"
-msgstr ""
+msgstr "Wij zijn Gesloten - Tekst"
 
-#: public/includes/coh-settings.php:157
-#@ coh
+# @ coh
+#: ../public/includes/coh-settings.php:157
 msgid "A small amount of text to display when you are closed."
-msgstr ""
+msgstr "Een korte tekst die zichtbaar is als de locatie Gesloten is."
 
-#: public/includes/coh-settings.php:162
-#@ coh
+# @ coh
+#: ../public/includes/coh-settings.php:162
 msgid "Are you open / available? - Manual"
-msgstr ""
+msgstr "Ben je geopend / beschikbaar - Handmatig"
 
-#: public/includes/coh-settings.php:163
-#@ coh
-msgid "There is an additional widget/shortcode that will show the images below for being open or not. For example, it could be used to show an image for when you're available for work or hire, etc. or maybe just to show an 'open image' all of the time, regardless of each location's opening hours."
+# @ coh
+#: ../public/includes/coh-settings.php:163
+msgid ""
+"There is an additional widget/shortcode that will show the images below for "
+"being open or not. For example, it could be used to show an image for when "
+"you're available for work or hire, etc. or maybe just to show an 'open "
+"image' all of the time, regardless of each location's opening hours."
 msgstr ""
+"Er is een extra widget die handmatig een afbeelding laat zien als je zelf "
+"wilt schakellen tussen open en gesloten zijn, als voorbeeld kan de "
+"afbeelding altijd 'Geopend' tonen, of de 'beschikbaar' afbeelding als je als "
+"freelancer ingehuurd kan worden. Deze optie staat los van de locatie "
+"openingstijden."
 
-#: public/includes/coh-settings.php:168
-#@ coh
+# @ coh
+#: ../public/includes/coh-settings.php:168
 msgid "Manual Open / Available - Image"
-msgstr ""
+msgstr "Handmatig Open / beschikbaar - Afbeelding"
 
-#: public/includes/coh-settings.php:174
-#@ coh
+# @ coh
+#: ../public/includes/coh-settings.php:174
 msgid "Manual Open / Available  - Text"
-msgstr ""
+msgstr "Handmatige Open / beschikbaar - tekst"
 
-#: public/includes/coh-settings.php:175
-#@ coh
+# @ coh
+#: ../public/includes/coh-settings.php:175
 msgid "A small amount of text to display when you are manually available."
-msgstr ""
+msgstr "Een korte tekst die zichtbaar is als je handmatig beschikbaar bent."
 
-#: public/includes/coh-settings.php:180
-#@ coh
+# @ coh
+#: ../public/includes/coh-settings.php:180
 msgid "Manual Not Open / Not Available - Image"
-msgstr ""
+msgstr "Handmatig gesloten / niet beschikbaar - afbeelding"
 
-#: public/includes/coh-settings.php:186
-#@ coh
+# @ coh
+#: ../public/includes/coh-settings.php:186
 msgid "Manual Not Open / Not Available - Text"
-msgstr ""
+msgstr "Handmatig gesloten / niet beschikbaar - tekst"
 
-#: public/includes/coh-settings.php:187
-#@ coh
+# @ coh
+#: ../public/includes/coh-settings.php:187
 msgid "A small amount of text to display when you are manually not available."
 msgstr ""
+"Een korte tekst die zichtbaar is als je handmatig niet beschikbaar bent."
 
-#: public/includes/coh-templates-parts.php:281
-#: public/includes/coh-templates-parts.php:289
-#@ coh
+# @ coh
+#: ../public/includes/coh-templates-parts.php:281
+#: ../public/includes/coh-templates-parts.php:289
 msgid "We Are Open!"
-msgstr ""
+msgstr "Wij Zijn Geopend!"
 
-#: public/includes/coh-templates-parts.php:297
-#: public/includes/coh-templates-parts.php:305
-#@ coh
+# @ coh
+#: ../public/includes/coh-templates-parts.php:297
+#: ../public/includes/coh-templates-parts.php:305
 msgid "We Are Closed!"
-msgstr ""
+msgstr "Wij zijn Gesloten!"
 
-#: public/includes/coh-templates-parts.php:326
-#: public/includes/coh-templates-parts.php:334
-#@ coh
+# @ coh
+#: ../public/includes/coh-templates-parts.php:326
+#: ../public/includes/coh-templates-parts.php:334
 msgid "We Are Available!"
-msgstr ""
+msgstr "Wij Zijn Beschikbaar!"
 
-#: public/includes/coh-templates-parts.php:342
-#: public/includes/coh-templates-parts.php:350
-#@ coh
+# @ coh
+#: ../public/includes/coh-templates-parts.php:342
+#: ../public/includes/coh-templates-parts.php:350
 msgid "We Are Not Available!"
-msgstr ""
+msgstr "Wij zijn Niet Beschikbaar!"
 
-#: public/includes/coh-templates-parts.php:426
-#@ coh
+# @ coh
+#: ../public/includes/coh-templates-parts.php:426
 msgid "Closed"
-msgstr ""
+msgstr "Gesloten"
 
-#: public/includes/coh-widgets.php:40
-#@ coh
+# @ coh
+#: ../public/includes/coh-widgets.php:40
 msgid "A widget for displaying the \"We Are Open/Closed\" image."
 msgstr ""
+"Een widget voor het tonen van de \"Wij zijn Geopend/Gesloten\" afbeelding"
 
-#: public/includes/coh-widgets.php:44
+#: ../public/includes/coh-widgets.php:44
 msgid "COH - We're Open"
-msgstr ""
+msgstr "COH - Wij zijn Geopend"
 
-#: public/includes/coh-widgets.php:84
-#: public/includes/coh-widgets.php:192
-#: public/includes/coh-widgets.php:365
-#@ coh
+# @ coh
+#: ../public/includes/coh-widgets.php:84
+#: ../public/includes/coh-widgets.php:192
+#: ../public/includes/coh-widgets.php:365
 msgid "all"
-msgstr ""
+msgstr "Alles"
 
-#: public/includes/coh-widgets.php:88
-#: public/includes/coh-widgets.php:196
-#: public/includes/coh-widgets.php:302
-#: public/includes/coh-widgets.php:369
-#@ coh
+# @ coh
+#: ../public/includes/coh-widgets.php:88
+#: ../public/includes/coh-widgets.php:196
+#: ../public/includes/coh-widgets.php:302
+#: ../public/includes/coh-widgets.php:369
 msgid "Widget Title"
-msgstr ""
+msgstr "Widget Titel"
 
-#: public/includes/coh-widgets.php:96
-#: public/includes/coh-widgets.php:204
-#: public/includes/coh-widgets.php:377
-#@ coh
+# @ coh
+#: ../public/includes/coh-widgets.php:96
+#: ../public/includes/coh-widgets.php:204
+#: ../public/includes/coh-widgets.php:377
 msgid "Location/s to Show"
-msgstr ""
+msgstr "Getoonde Locatie/s"
 
-#: public/includes/coh-widgets.php:150
-#@ coh
-msgid "A widget for display your different location's opening hours and other location info."
+# @ coh
+#: ../public/includes/coh-widgets.php:150
+msgid ""
+"A widget for display your different location's opening hours and other "
+"location info."
 msgstr ""
+"Een widget voor het tonen van de openingstijden en andere infomatie van de "
+"geselecteerde locatie."
 
-#: public/includes/coh-widgets.php:154
-#@ coh
+# @ coh
+#: ../public/includes/coh-widgets.php:154
 msgid "COH - Info & Opening Hours"
-msgstr ""
+msgstr "COH - Info & Openingstijden"
 
-#: public/includes/coh-widgets.php:258
-#@ coh
-msgid "A widget for displaying the \"Manual We Are Available / Not Available\" image."
+# @ coh
+#: ../public/includes/coh-widgets.php:258
+msgid ""
+"A widget for displaying the \"Manual We Are Available / Not Available\" "
+"image."
 msgstr ""
+"Een widget voor het tonen van de \"Handmatig wij zijn beschikbaar / niet "
+"beschikbaar\" afbeelding."
 
-#: public/includes/coh-widgets.php:262
+#: ../public/includes/coh-widgets.php:262
 msgid "COH - Manual Available"
-msgstr ""
+msgstr "COH - Handmatig beschikbaar"
 
-#: public/includes/coh-widgets.php:323
-#@ coh
+# @ coh
+#: ../public/includes/coh-widgets.php:323
 msgid "A widget for display your special dates set for a location"
-msgstr ""
+msgstr "Een widget voor het tonen van speciale data voor een locatie"
 
-#: public/includes/coh-widgets.php:327
-#@ coh
+# @ coh
+#: ../public/includes/coh-widgets.php:327
 msgid "COH - Special Dates"
-msgstr ""
+msgstr "COH - Speciale Data"
 
-#: public/includes/fields/helpers/cmb_Meta_Box_ajax.php:47
-#@ cmb
-msgid "Please Try Again"
-msgstr ""
-
-#: public/includes/fields/helpers/cmb_Meta_Box_ajax.php:131
-#@ cmb
-msgid "Remove Embed"
-msgstr ""
-
-#: public/includes/fields/helpers/cmb_Meta_Box_ajax.php:134
-#, php-format
-#@ cmb
-msgid "No oEmbed Results Found for %s. View more info at"
-msgstr ""
-
-#: public/includes/fields/helpers/cmb_Meta_Box_field.php:459
-#@ cmb
-msgid "Add Group"
-msgstr ""
-
-#: public/includes/fields/helpers/cmb_Meta_Box_field.php:460
-#@ cmb
-msgid "Remove Group"
-msgstr ""
-
-#: public/includes/fields/helpers/cmb_Meta_Box_types.php:250
-#@ cmb
-msgid "Add Row"
-msgstr ""
-
-#: public/includes/fields/helpers/cmb_Meta_Box_types.php:306
-#: public/includes/fields/helpers/cmb_Meta_Box_types.php:706
-#: public/includes/fields/helpers/cmb_Meta_Box_types.php:768
-#@ cmb
-msgid "Remove"
-msgstr ""
-
-#: public/includes/fields/helpers/cmb_Meta_Box_types.php:601
-#: public/includes/fields/helpers/cmb_Meta_Box_types.php:635
-#@ cmb
-msgid "No terms"
-msgstr ""
-
-#: public/includes/fields/helpers/cmb_Meta_Box_types.php:674
-#: public/includes/fields/helpers/cmb_Meta_Box_types.php:728
-#@ cmb
-msgid "Add or Upload File"
-msgstr ""
-
-#: public/includes/fields/helpers/cmb_Meta_Box_types.php:695
-#: public/includes/fields/helpers/cmb_Meta_Box_types.php:760
-#@ cmb
-msgid "Remove Image"
-msgstr ""
-
-#: public/includes/fields/helpers/cmb_Meta_Box_types.php:706
-#: public/includes/fields/helpers/cmb_Meta_Box_types.php:768
-#@ cmb
-msgid "File:"
-msgstr ""
-
-#: public/includes/fields/helpers/cmb_Meta_Box_types.php:706
-#: public/includes/fields/helpers/cmb_Meta_Box_types.php:768
-#@ cmb
-msgid "Download"
-msgstr ""
-
-#: public/includes/fields/init.php:258
-#@ default
+# @ default
+#: ../public/includes/fields/init.php:258
 msgid "Clear"
-msgstr ""
+msgstr "Reset"
 
-#: public/includes/fields/init.php:259
-#@ default
+# @ default
+#: ../public/includes/fields/init.php:259
 msgid "Default"
-msgstr ""
+msgstr "Standaard"
 
-#: public/includes/fields/init.php:260
-#@ default
+# @ default
+#: ../public/includes/fields/init.php:260
 msgid "Select Color"
-msgstr ""
+msgstr "Selecteer kleur"
 
-#: public/includes/fields/init.php:261
-#@ default
+# @ default
+#: ../public/includes/fields/init.php:261
 msgid "Current Color"
-msgstr ""
+msgstr "Huidige kleur"
 
-#: public/includes/fields/init.php:288
-#@ cmb
+# @ cmb
+#: ../public/includes/fields/init.php:288
 msgid "Select / Deselect All"
-msgstr ""
+msgstr "Selecteer / de-selecteer alles"
 
-#: public/includes/fields/init.php:1177
-#@ default
+# @ default
+#: ../public/includes/fields/init.php:1177
 msgid "Save"
-msgstr ""
+msgstr "Opslaan"
 
-#. translators: plugin header field 'Name'
-#: captain-opening-hours.php:0
-#@ coh
-msgid "Captain Opening Hours"
-msgstr ""
+# @ cmb
+#: ../public/includes/fields/helpers/cmb_Meta_Box_ajax.php:47
+msgid "Please Try Again"
+msgstr "Probeer opnieuw"
 
-#. translators: plugin header field 'PluginURI'
-#: captain-opening-hours.php:0
-#@ coh
-msgid "http://captaintheme.com/plugins/opening-hours"
-msgstr ""
+# @ cmb
+#: ../public/includes/fields/helpers/cmb_Meta_Box_ajax.php:131
+msgid "Remove Embed"
+msgstr "Verwijder Embed"
 
-#. translators: plugin header field 'Description'
-#: captain-opening-hours.php:0
-#@ coh
-msgid "Show off your store's opening hours easily."
-msgstr ""
+# @ cmb
+#: ../public/includes/fields/helpers/cmb_Meta_Box_ajax.php:134
+#, php-format
+msgid "No oEmbed Results Found for %s. View more info at"
+msgstr "Geen Embed gevonden voor %s. Bekijk meer info op"
 
-#. translators: plugin header field 'Author'
-#: captain-opening-hours.php:0
-#@ coh
-msgid "Captain Theme"
-msgstr ""
+# @ cmb
+#: ../public/includes/fields/helpers/cmb_Meta_Box_field.php:459
+msgid "Add Group"
+msgstr "Nieuwe Groep"
 
-#. translators: plugin header field 'AuthorURI'
-#: captain-opening-hours.php:0
-#@ coh
-msgid "http://captaintheme.com/"
-msgstr ""
+# @ cmb
+#: ../public/includes/fields/helpers/cmb_Meta_Box_field.php:460
+msgid "Remove Group"
+msgstr "Verwijder Groep"
 
-#. translators: plugin header field 'Version'
-#: captain-opening-hours.php:0
-#@ coh
-msgid "1.3.0"
-msgstr ""
+# @ cmb
+#: ../public/includes/fields/helpers/cmb_Meta_Box_types.php:250
+msgid "Add Row"
+msgstr "Nieuwe Rij"
 
-#: public/includes/coh-cpt.php:24
-#@ default
-msgctxt "post type general name"
-msgid "Locations"
-msgstr ""
+# @ cmb
+#: ../public/includes/fields/helpers/cmb_Meta_Box_types.php:306
+#: ../public/includes/fields/helpers/cmb_Meta_Box_types.php:706
+#: ../public/includes/fields/helpers/cmb_Meta_Box_types.php:768
+msgid "Remove"
+msgstr "Verwijder"
 
-#: public/includes/coh-cpt.php:25
-#@ default
-msgctxt "post type singular name"
-msgid "Location"
-msgstr ""
+# @ cmb
+#: ../public/includes/fields/helpers/cmb_Meta_Box_types.php:601
+#: ../public/includes/fields/helpers/cmb_Meta_Box_types.php:635
+msgid "No terms"
+msgstr "Geen voorwaarden"
+
+# @ cmb
+#: ../public/includes/fields/helpers/cmb_Meta_Box_types.php:674
+#: ../public/includes/fields/helpers/cmb_Meta_Box_types.php:728
+msgid "Add or Upload File"
+msgstr "Nieuw bestand (of uploaden)"
+
+# @ cmb
+#: ../public/includes/fields/helpers/cmb_Meta_Box_types.php:695
+#: ../public/includes/fields/helpers/cmb_Meta_Box_types.php:760
+msgid "Remove Image"
+msgstr "Verwijder afbeelding"
+
+# @ cmb
+#: ../public/includes/fields/helpers/cmb_Meta_Box_types.php:706
+#: ../public/includes/fields/helpers/cmb_Meta_Box_types.php:768
+msgid "File:"
+msgstr "Bestand:"
+
+# @ cmb
+#: ../public/includes/fields/helpers/cmb_Meta_Box_types.php:706
+#: ../public/includes/fields/helpers/cmb_Meta_Box_types.php:768
+msgid "Download"
+msgstr "Download"
 

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Captain Opening Hours 1.0.0\n"
-"POT-Creation-Date: 2014-08-11 18:42+0700\n"
-"PO-Revision-Date: 2014-08-11 18:42+0700\n"
+"POT-Creation-Date: 2014-08-13 16:37+0700\n"
+"PO-Revision-Date: 2014-08-13 16:37+0700\n"
 "Last-Translator: Recipe Hero <info@recipehero.in>\n"
 "Language-Team: Captain Theme <info@captaintheme.com>\n"
 "Language: en\n"
@@ -39,6 +39,14 @@ msgstr ""
 msgid "Enter Location Name"
 msgstr ""
 
+#: ../public/includes/coh-cpt.php:24 ../public/includes/coh-cpt.php:35
+msgid "Locations"
+msgstr ""
+
+#: ../public/includes/coh-cpt.php:25 ../public/includes/coh-cpt.php:44
+msgid "Location"
+msgstr ""
+
 #: ../public/includes/coh-cpt.php:26 ../public/includes/coh-cpt.php:27
 msgid "Add New Location"
 msgstr ""
@@ -65,14 +73,6 @@ msgstr ""
 
 #: ../public/includes/coh-cpt.php:33
 msgid "No Locations found in the trash"
-msgstr ""
-
-#: ../public/includes/coh-cpt.php:35
-msgid "Locations"
-msgstr ""
-
-#: ../public/includes/coh-cpt.php:44
-msgid "Location"
 msgstr ""
 
 #: ../public/includes/coh-fields.php:34
@@ -431,28 +431,57 @@ msgstr ""
 msgid "A small amount of text to display when you are manually not available."
 msgstr ""
 
-#: ../public/includes/coh-templates-parts.php:281
-#: ../public/includes/coh-templates-parts.php:289
+#: ../public/includes/coh-templates-parts.php:135
+#: ../public/includes/coh-templates-parts.php:448
+msgid "Closed"
+msgstr ""
+
+#: ../public/includes/coh-templates-parts.php:147
+msgid "Monday"
+msgstr ""
+
+#: ../public/includes/coh-templates-parts.php:167
+msgid "Tuesday"
+msgstr ""
+
+#: ../public/includes/coh-templates-parts.php:187
+msgid "Wednesday"
+msgstr ""
+
+#: ../public/includes/coh-templates-parts.php:207
+msgid "Thursday"
+msgstr ""
+
+#: ../public/includes/coh-templates-parts.php:227
+msgid "Friday"
+msgstr ""
+
+#: ../public/includes/coh-templates-parts.php:247
+msgid "Saturday"
+msgstr ""
+
+#: ../public/includes/coh-templates-parts.php:267
+msgid "Sunday"
+msgstr ""
+
+#: ../public/includes/coh-templates-parts.php:295
+#: ../public/includes/coh-templates-parts.php:303
 msgid "We Are Open!"
 msgstr ""
 
-#: ../public/includes/coh-templates-parts.php:297
-#: ../public/includes/coh-templates-parts.php:305
+#: ../public/includes/coh-templates-parts.php:311
+#: ../public/includes/coh-templates-parts.php:319
 msgid "We Are Closed!"
 msgstr ""
 
-#: ../public/includes/coh-templates-parts.php:326
-#: ../public/includes/coh-templates-parts.php:334
+#: ../public/includes/coh-templates-parts.php:340
+#: ../public/includes/coh-templates-parts.php:348
 msgid "We Are Available!"
 msgstr ""
 
-#: ../public/includes/coh-templates-parts.php:342
-#: ../public/includes/coh-templates-parts.php:350
+#: ../public/includes/coh-templates-parts.php:356
+#: ../public/includes/coh-templates-parts.php:364
 msgid "We Are Not Available!"
-msgstr ""
-
-#: ../public/includes/coh-templates-parts.php:426
-msgid "Closed"
 msgstr ""
 
 #: ../public/includes/coh-widgets.php:40

@@ -85,8 +85,8 @@ function coh_output_single_address() {
  *
  * @package   Captain Opening Hours
  * @author    Captain Theme <info@captaintheme.com>
- * @since 	  1.0
- * @todo 	  Is a foreach better? Worth doing for the sake of DRY?
+ * @since 	  1.3.1
+ * @todo 	  Is a foreach or switch better? Worth doing for the sake of DRY?
  */
 
 function coh_output_opening_hours() {
@@ -132,7 +132,7 @@ function coh_output_opening_hours() {
 	$sunday_open	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_sun_open_time', true ) ) );
 	$sunday_close	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_sun_close_time', true ) ) );
 
-	$closed			= '<span class="hours">Closed</span>';
+	$closed			= '<span class="hours">' . __( 'Closed', 'coh' ) . '</span>';
 
 	// MONDAY
 	echo '<li ';
@@ -143,7 +143,9 @@ function coh_output_opening_hours() {
 		echo ' id="closed-location" ';
 	}
 	echo '>';
-	echo '<span class="day">Monday</span>';
+	echo '<span class="day">';
+	_e( 'Monday', 'coh' );
+	echo '</span>';
 	if ( $monday_bool ) {
 		echo '<span class="hours">' . $monday_open . ' - ' . $monday_close . '</span>';
 	} else {
@@ -161,7 +163,9 @@ function coh_output_opening_hours() {
 		echo ' id="closed-location" ';
 	}
 	echo '>';
-	echo '<span class="day">Tuesday</span>';
+	echo '<span class="day">';
+	_e( 'Tuesday', 'coh' );
+	echo '</span>';
 	if ( $tuesday_bool ) {
 		echo '<span class="hours">' . $tuesday_open . ' - ' . $tuesday_close . '</span>';
 	} else {
@@ -179,7 +183,9 @@ function coh_output_opening_hours() {
 		echo ' id="closed-location" ';
 	}
 	echo '>';
-	echo '<span class="day">Wednesday</span>';
+	echo '<span class="day">';
+	_e( 'Wednesday', 'coh' );
+	echo '</span>';
 	if ( $wednesday_bool ) {
 		echo '<span class="hours">' . $wednesday_open . ' - ' . $wednesday_close . '</span>';
 	} else {
@@ -197,7 +203,9 @@ function coh_output_opening_hours() {
 		echo ' id="closed-location" ';
 	}
 	echo '>';
-	echo '<span class="day">Thursday</span>';
+	echo '<span class="day">';
+	_e( 'Thursday', 'coh' );
+	echo '</span>';
 	if ( $thursday_bool ) {
 		echo '<span class="hours">' . $thursday_open . ' - ' . $thursday_close . '</span>';
 	} else {
@@ -215,7 +223,9 @@ function coh_output_opening_hours() {
 		echo ' id="closed-location" ';
 	}
 	echo '>';
-	echo '<span class="day">Friday</span>';
+	echo '<span class="day">';
+	_e( 'Friday', 'coh' );
+	echo '</span>';
 	if ( $friday_bool ) {
 		echo '<span class="hours">' . $friday_open . ' - ' . $friday_close . '</span>';
 	} else {
@@ -233,7 +243,9 @@ function coh_output_opening_hours() {
 		echo ' id="closed-location" ';
 	}
 	echo '>';
-	echo '<span class="day">Saturday</span>';
+	echo '<span class="day">';
+	_e( 'Saturday', 'coh' );
+	echo '</span>';
 	if ( $saturday_bool ) {
 		echo '<span class="hours">' . $saturday_open . ' - ' . $saturday_close . '</span>';
 	} else {
@@ -251,7 +263,9 @@ function coh_output_opening_hours() {
 		echo ' id="closed-location" ';
 	}
 	echo '>';
-	echo '<span class="day">Sunday</span>';
+	echo '<span class="day">';
+	_e( 'Sunday', 'coh' );
+	echo '</span>';
 	if ( $sunday_bool ) {
 		echo '<span class="hours">' . $sunday_open . ' - ' . $sunday_close . '</span>';
 	} else {
@@ -360,7 +374,7 @@ function coh_ouput_manual_available_image() {
  *
  * @package   Captain Opening Hours
  * @author    Captain Theme <info@captaintheme.com>
- * @since 	  1.1
+ * @since 	  1.3.1
  */
 
 function coh_output_special_dates() {
@@ -368,6 +382,14 @@ function coh_output_special_dates() {
 	// Variables
 	global $post;
 	$special_dates = get_post_meta( $post->ID, '_coh_custom_date_group', true );
+
+	if ( cmb_get_option( 'coh_options', '_coh_twelve_twentyfour_time' ) == 'twelve' ) {
+		$time_format = 'g:i A';
+	} elseif ( cmb_get_option( 'coh_options', '_coh_twelve_twentyfour_time' ) == 'twentyfour' ) {
+		$time_format = 'H:i';
+	} else {
+		$time_format = 'G:i';
+	}
 
 	if ( $special_dates ) {
 
@@ -390,7 +412,7 @@ function coh_output_special_dates() {
 				    }
 
 				    if ( isset( $special_date['date_date'] ) ) {
-				        $sd_date = date ( 'F jS', strtotime ( $special_date['date_date'] ) );
+				        $sd_date = date_i18n( get_option('date_format'), strtotime ( $special_date['date_date'] ) );
 				    }
 
 				    if ( isset( $special_date['date_open_bool'] ) ) {
@@ -418,9 +440,9 @@ function coh_output_special_dates() {
 					<div class="date-time">
 					<?php
 					    if ( $sd_open_bool ) {
-					    	echo date( "g:i A", strtotime ( $sd_open_time ) );
+					    	echo date( $time_format, strtotime ( $sd_open_time ) );
 					    	echo ' - ';
-					    	echo date( "g:i A", strtotime ( $sd_close_time ) );
+					    	echo date( $time_format, strtotime ( $sd_close_time ) );
 					    } else {
 					    	echo '<span class="closed">';
 					    	echo __( 'Closed', 'coh' );
@@ -433,10 +455,5 @@ function coh_output_special_dates() {
 		}
 
 	}
-	
-
-	/*$monday_bool	= get_post_meta ( $post->ID, '_coh_location_mon_open_bool', true );
-	$monday_open	= date( "g:i A", strtotime ( get_post_meta ( $post->ID, '_coh_location_mon_open_time', true ) ) );
-	$monday_close	= date( "g:i A", strtotime ( get_post_meta ( $post->ID, '_coh_location_mon_close_time', true ) ) );*/
 
 }
