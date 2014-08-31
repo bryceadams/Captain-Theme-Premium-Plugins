@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Captain Opening Hours v1.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-13 10:15+0100\n"
-"PO-Revision-Date: 2014-08-13 10:15+0100\n"
+"POT-Creation-Date: 2014-08-26 12:26+0100\n"
+"PO-Revision-Date: 2014-08-26 12:30+0100\n"
 "Last-Translator: iApply Services <info@iapply.nl>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -40,7 +40,7 @@ msgstr "Locatie foto"
 
 # @ coh
 # @ cmb
-#: ../admin/includes/coh-columns.php:32 ../public/includes/coh-fields.php:237
+#: ../admin/includes/coh-columns.php:32 ../public/includes/coh-fields.php:375
 msgid "Date"
 msgstr "Datum"
 
@@ -106,10 +106,10 @@ msgstr "Adres"
 
 # @ cmb
 #: ../public/includes/coh-fields.php:43
-msgid "Where is this location located? You should format the address properly."
-msgstr ""
-"Wat is het adres van de locatie? Gebruik komma's om de straatnaam en plaats "
-"te scheiden."
+msgid ""
+"Where is this location located? You should format the address properly. HTML "
+"allowed."
+msgstr "Wat is het adres van de locatie? Gebruik van HTML code is toegestaan."
 
 # @ cmb
 #: ../public/includes/coh-fields.php:48
@@ -141,238 +141,334 @@ msgid "Monday Opening Time"
 msgstr "Maandag openingstijden"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:61
+#: ../public/includes/coh-fields.php:61 ../public/includes/coh-fields.php:81
 msgid "What time does this store open on a Monday?"
 msgstr "Hoe laat gaat de locatie open op Maandag?"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:68
+#: ../public/includes/coh-fields.php:67
 msgid "Monday Closing Time"
 msgstr "Maandag sluitingstijd"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:69
+#: ../public/includes/coh-fields.php:68 ../public/includes/coh-fields.php:88
 msgid "What time does this store close on a Monday?"
 msgstr "Hoe laat gaat de locatie dicht op Maandag?"
 
+#: ../public/includes/coh-fields.php:74 ../public/includes/coh-fields.php:116
+#: ../public/includes/coh-fields.php:158 ../public/includes/coh-fields.php:200
+#: ../public/includes/coh-fields.php:242 ../public/includes/coh-fields.php:284
+#: ../public/includes/coh-fields.php:326
+msgid "Split Hours?"
+msgstr "Gesplitste uren?"
+
+#: ../public/includes/coh-fields.php:75 ../public/includes/coh-fields.php:117
+#: ../public/includes/coh-fields.php:159 ../public/includes/coh-fields.php:201
+#: ../public/includes/coh-fields.php:243 ../public/includes/coh-fields.php:285
+#: ../public/includes/coh-fields.php:327
+msgid "Does this day have split hours? (Close and reopen the same day)"
+msgstr ""
+"Heeft deze dag gesplitste openingstijden? (meerdere keren open en dicht op 1 "
+"dag)"
+
 # @ cmb
-#: ../public/includes/coh-fields.php:76
+#: ../public/includes/coh-fields.php:80
+msgid "Monday Opening Time #2"
+msgstr "Maandag Openingstijden #2"
+
+#: ../public/includes/coh-fields.php:81 ../public/includes/coh-fields.php:88
+#: ../public/includes/coh-fields.php:123 ../public/includes/coh-fields.php:130
+#: ../public/includes/coh-fields.php:165 ../public/includes/coh-fields.php:172
+#: ../public/includes/coh-fields.php:207 ../public/includes/coh-fields.php:214
+#: ../public/includes/coh-fields.php:249 ../public/includes/coh-fields.php:256
+#: ../public/includes/coh-fields.php:291 ../public/includes/coh-fields.php:298
+#: ../public/includes/coh-fields.php:333 ../public/includes/coh-fields.php:340
+msgid "(For the 2nd time)"
+msgstr "(voor de 2e keer)"
+
+# @ cmb
+#: ../public/includes/coh-fields.php:87
+msgid "Monday Closing Time #2"
+msgstr "Maandag Sluitingstijd #2"
+
+# @ cmb
+#: ../public/includes/coh-fields.php:94
 msgid "Tuesday Open"
 msgstr "Dinsdag Open"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:77
+#: ../public/includes/coh-fields.php:95
 msgid "Is this location open on a Tuesday?"
 msgstr "Is deze locatie open op Dinsdag?"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:82
+#: ../public/includes/coh-fields.php:100
 msgid "Tuesday Opening Time"
 msgstr "Dinsdag Openingstijd"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:83
+#: ../public/includes/coh-fields.php:101 ../public/includes/coh-fields.php:123
 msgid "What time does this store open on a Tuesday?"
 msgstr "Hoe laat gaat de locatie open op Dinsdag?"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:90
+#: ../public/includes/coh-fields.php:108
 msgid "Tuesday Closing Time"
 msgstr "Dinsdag Sluitingstijd"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:91
+#: ../public/includes/coh-fields.php:109 ../public/includes/coh-fields.php:130
 msgid "What time does this store close on a Tuesday?"
 msgstr "Hoe laat gaat de locatie dicht op Dinsdag?"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:98
+#: ../public/includes/coh-fields.php:122
+msgid "Tuesday Opening Time #2"
+msgstr "Dinsdag Openingstijd #2"
+
+# @ cmb
+#: ../public/includes/coh-fields.php:129
+msgid "Tuesday Closing Time #2"
+msgstr "Dinsdag Sluitingstijd #2"
+
+# @ cmb
+#: ../public/includes/coh-fields.php:136
 msgid "Wednesday Open"
 msgstr "Woensdag open"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:99
+#: ../public/includes/coh-fields.php:137
 msgid "Is this location open on a Wednesday?"
 msgstr "Is deze locatie geopend op Woensdag?"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:104
+#: ../public/includes/coh-fields.php:142
 msgid "Wednesday Opening Time"
 msgstr "Woensdag openingstijd"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:105
+#: ../public/includes/coh-fields.php:143 ../public/includes/coh-fields.php:165
 msgid "What time does this store open on a Wednesday?"
 msgstr "Hoe laat gaat de locatie open op Woensdag?"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:112
+#: ../public/includes/coh-fields.php:150
 msgid "Wednesday Closing Time"
 msgstr "Woensdag sluitingstijd"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:113
+#: ../public/includes/coh-fields.php:151 ../public/includes/coh-fields.php:172
 msgid "What time does this store close on a Wednesday?"
 msgstr "Hoe laat gaat de locatie dicht op Woensdag?"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:120
+#: ../public/includes/coh-fields.php:164
+msgid "Wednesday Opening Time #2"
+msgstr "Woensdag Openingstijd #2"
+
+# @ cmb
+#: ../public/includes/coh-fields.php:171
+msgid "Wednesday Closing Time #2"
+msgstr " Woensdag Sluitingstijd #2"
+
+# @ cmb
+#: ../public/includes/coh-fields.php:178
 msgid "Thursday Open"
 msgstr "Donderdag open"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:121
+#: ../public/includes/coh-fields.php:179
 msgid "Is this location open on a Thursday?"
 msgstr "Is deze locatie geopend op Donderdag?"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:126
+#: ../public/includes/coh-fields.php:184
 msgid "Thursday Opening Time"
 msgstr "donderdag openingstijd"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:127
+#: ../public/includes/coh-fields.php:185 ../public/includes/coh-fields.php:207
 msgid "What time does this store open on a Thursday?"
 msgstr "Hoe laat gaat de locatie open op Donderdag?"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:134
+#: ../public/includes/coh-fields.php:192
 msgid "Thursday Closing Time"
 msgstr "Donderdag sluitingstijd"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:135
+#: ../public/includes/coh-fields.php:193 ../public/includes/coh-fields.php:214
 msgid "What time does this store close on a Thursday?"
 msgstr "Hoe laat gaat de locatie dicht op Donderdag?"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:142
+#: ../public/includes/coh-fields.php:206
+msgid "Thursday Opening Time #2"
+msgstr "donderdag Openingstijd #2"
+
+# @ cmb
+#: ../public/includes/coh-fields.php:213
+msgid "Thursday Closing Time #2"
+msgstr "Donderdag Sluitingstijd #2"
+
+# @ cmb
+#: ../public/includes/coh-fields.php:220
 msgid "Friday Open"
 msgstr "Vrijdag open"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:143
+#: ../public/includes/coh-fields.php:221
 msgid "Is this location open on a Friday?"
 msgstr "Is deze locatie geopend op Vrijdag?"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:148
+#: ../public/includes/coh-fields.php:226
 msgid "Friday Opening Time"
 msgstr "Vrijdag openingstijd"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:149
+#: ../public/includes/coh-fields.php:227 ../public/includes/coh-fields.php:249
 msgid "What time does this store open on a Friday?"
 msgstr "Hoe laat gaat de locatie open op Vrijdag?"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:156
+#: ../public/includes/coh-fields.php:234
 msgid "Friday Closing Time"
 msgstr "Vrijdag openingtijd"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:157
+#: ../public/includes/coh-fields.php:235 ../public/includes/coh-fields.php:256
 msgid "What time does this store close on a Friday?"
 msgstr "Hoe laat gaat de locatie dicht op Vrijdag"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:164
+#: ../public/includes/coh-fields.php:248
+msgid "Friday Opening Time #2"
+msgstr "Vrijdag Openingstijd #2"
+
+# @ cmb
+#: ../public/includes/coh-fields.php:255
+msgid "Friday Closing Time #2"
+msgstr "Vrijdag Sluitingstijd #2"
+
+# @ cmb
+#: ../public/includes/coh-fields.php:262
 msgid "Saturday Open"
 msgstr "Zaterdag open"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:165
+#: ../public/includes/coh-fields.php:263
 msgid "Is this location open on a Saturday?"
 msgstr "Is deze locatie geopend op Zaterdag?"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:170
+#: ../public/includes/coh-fields.php:268
 msgid "Saturday Opening Time"
 msgstr "Zaterdag openingstijd"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:171
+#: ../public/includes/coh-fields.php:269 ../public/includes/coh-fields.php:291
 msgid "What time does this store open on a Saturday?"
 msgstr "Hoe laat gaat de locatie open op Zaterdag?"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:178
+#: ../public/includes/coh-fields.php:276
 msgid "Saturday Closing Time"
 msgstr "Zaterdag sluitingstijd"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:179
+#: ../public/includes/coh-fields.php:277 ../public/includes/coh-fields.php:298
 msgid "What time does this store close on a Saturday?"
 msgstr "Hoe laat gaat de locatie dicht op Zaterdag?"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:186
+#: ../public/includes/coh-fields.php:290
+msgid "Saturday Opening Time #2"
+msgstr "Zaterdag Openingstijd #2"
+
+# @ cmb
+#: ../public/includes/coh-fields.php:297
+msgid "Saturday Closing Time #2"
+msgstr "Zaterdag Sluitingstijd #2"
+
+# @ cmb
+#: ../public/includes/coh-fields.php:304
 msgid "Sunday Open"
 msgstr "Zondag open"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:187
+#: ../public/includes/coh-fields.php:305
 msgid "Is this location open on a Sunday?"
 msgstr "Is deze locatie geopend op Zondag?"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:192
+#: ../public/includes/coh-fields.php:310
 msgid "Sunday Opening Time"
 msgstr "Zondag openingstijd"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:193
+#: ../public/includes/coh-fields.php:311 ../public/includes/coh-fields.php:333
 msgid "What time does this store open on a Sunday?"
 msgstr "Hoe laat gaat de locatie open op Zondag"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:200
+#: ../public/includes/coh-fields.php:318
 msgid "Sunday Closing Time"
 msgstr "Zondag sluitingstijd"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:201
+#: ../public/includes/coh-fields.php:319 ../public/includes/coh-fields.php:340
 msgid "What time does this store close on a Sunday?"
 msgstr "Hoe laat gaat de locatie dicht op Zondag?"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:215
+#: ../public/includes/coh-fields.php:332
+msgid "Sunday Opening Time #2"
+msgstr "Zondag Openingstijd #2"
+
+# @ cmb
+#: ../public/includes/coh-fields.php:339
+msgid "Sunday Closing Time #2"
+msgstr "Zondag Sluitingstijd #2"
+
+# @ cmb
+#: ../public/includes/coh-fields.php:353
 msgid "Special Dates / Holidays"
 msgstr "Speciale data / Vakanties"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:221
+#: ../public/includes/coh-fields.php:359
 msgid "Special Dates that will appear in the Special Dates Widget & Shortcode"
 msgstr ""
 "Speciale data die zichtbaar worden in de 'speciale data' widget & shortcodes"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:223
+#: ../public/includes/coh-fields.php:361
 msgid "Special Date #{#}"
 msgstr "Speciale Datum #{#}"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:224
+#: ../public/includes/coh-fields.php:362
 msgid "Add Another Special Date"
 msgstr "Nieuwe speciale datum"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:225
+#: ../public/includes/coh-fields.php:363
 msgid "Remove Special Date"
 msgstr "Verwijder speciale datum"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:238
+#: ../public/includes/coh-fields.php:376
 msgid "The date for this special date - the year does not matter."
 msgstr "De datum voor deze speciale datum - het jaar maakt niet uit"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:243
+#: ../public/includes/coh-fields.php:381
 msgid "Date Open?"
 msgstr "Datum open?"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:244
+#: ../public/includes/coh-fields.php:382
 msgid ""
 "Are you open at this location on this special date? If closed, do not check "
 "this option."
@@ -381,12 +477,12 @@ msgstr ""
 "aan."
 
 # @ cmb
-#: ../public/includes/coh-fields.php:249
+#: ../public/includes/coh-fields.php:387
 msgid "Opening Time"
 msgstr "Openingstijd"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:250
+#: ../public/includes/coh-fields.php:388
 msgid ""
 "The opening time for this special date - ignore if you are closed on this "
 "date"
@@ -395,12 +491,12 @@ msgstr ""
 "deze datum"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:255
+#: ../public/includes/coh-fields.php:393
 msgid "Closing Time"
 msgstr "Sluitingstijd"
 
 # @ cmb
-#: ../public/includes/coh-fields.php:256
+#: ../public/includes/coh-fields.php:394
 msgid ""
 "The closing time for this special date - ignore if you are closed on this "
 "date"
@@ -558,33 +654,69 @@ msgstr ""
 "Een korte tekst die zichtbaar is als je handmatig niet beschikbaar bent."
 
 # @ coh
-#: ../public/includes/coh-templates-parts.php:281
-#: ../public/includes/coh-templates-parts.php:289
+#: ../public/includes/coh-templates-parts.php:155
+#: ../public/includes/coh-templates-parts.php:437
+msgid "Closed"
+msgstr "Gesloten"
+
+# @ cmb
+#: ../public/includes/coh-templates-parts.php:160
+msgid "Monday"
+msgstr "Maandag"
+
+# @ cmb
+#: ../public/includes/coh-templates-parts.php:170
+msgid "Tuesday"
+msgstr "Dinsdag"
+
+# @ cmb
+#: ../public/includes/coh-templates-parts.php:180
+msgid "Wednesday"
+msgstr "Woensdag"
+
+# @ cmb
+#: ../public/includes/coh-templates-parts.php:190
+msgid "Thursday"
+msgstr "Donderdag"
+
+# @ cmb
+#: ../public/includes/coh-templates-parts.php:200
+msgid "Friday"
+msgstr "Vrijdag"
+
+# @ cmb
+#: ../public/includes/coh-templates-parts.php:210
+msgid "Saturday"
+msgstr "Zaterdag"
+
+# @ cmb
+#: ../public/includes/coh-templates-parts.php:220
+msgid "Sunday"
+msgstr "Zondag"
+
+# @ coh
+#: ../public/includes/coh-templates-parts.php:285
+#: ../public/includes/coh-templates-parts.php:293
 msgid "We Are Open!"
 msgstr "Wij Zijn Geopend!"
 
 # @ coh
-#: ../public/includes/coh-templates-parts.php:297
-#: ../public/includes/coh-templates-parts.php:305
+#: ../public/includes/coh-templates-parts.php:301
+#: ../public/includes/coh-templates-parts.php:309
 msgid "We Are Closed!"
 msgstr "Wij zijn Gesloten!"
 
 # @ coh
-#: ../public/includes/coh-templates-parts.php:326
-#: ../public/includes/coh-templates-parts.php:334
+#: ../public/includes/coh-templates-parts.php:330
+#: ../public/includes/coh-templates-parts.php:338
 msgid "We Are Available!"
 msgstr "Wij Zijn Beschikbaar!"
 
 # @ coh
-#: ../public/includes/coh-templates-parts.php:342
-#: ../public/includes/coh-templates-parts.php:350
+#: ../public/includes/coh-templates-parts.php:346
+#: ../public/includes/coh-templates-parts.php:354
 msgid "We Are Not Available!"
 msgstr "Wij zijn Niet Beschikbaar!"
-
-# @ coh
-#: ../public/includes/coh-templates-parts.php:426
-msgid "Closed"
-msgstr "Gesloten"
 
 # @ coh
 #: ../public/includes/coh-widgets.php:40

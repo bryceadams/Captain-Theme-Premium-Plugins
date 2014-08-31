@@ -26,6 +26,9 @@
       color: #444; }
     .locations-display .locations-single ul.location-hours li .hours {
       color: #888; }
+      .locations-display .locations-single ul.location-hours li .hours.split {
+        display: block;
+        margin-left: 110px; }
     .locations-display .locations-single ul.location-hours li .coh-circle {
       display: none; }
 .locations-display .locations-single .location-photo {
@@ -71,7 +74,7 @@
   width: 12px !important;
   height: 12px;
   vertical-align: bottom;
-  margin-left: 6px;
+  margin-left: 8px;
   margin-bottom: 4px;
   border-radius: 15px;
   -moz-border-radius: 15px;

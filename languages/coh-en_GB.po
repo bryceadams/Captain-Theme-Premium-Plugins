@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Captain Opening Hours 1.0.0\n"
-"POT-Creation-Date: 2014-08-13 16:37+0700\n"
-"PO-Revision-Date: 2014-08-13 16:37+0700\n"
+"POT-Creation-Date: 2014-08-24 22:22+0700\n"
+"PO-Revision-Date: 2014-08-24 22:22+0700\n"
 "Last-Translator: Recipe Hero <info@recipehero.in>\n"
 "Language-Team: Captain Theme <info@captaintheme.com>\n"
 "Language: en\n"
@@ -31,7 +31,7 @@ msgstr ""
 msgid "Location Photo"
 msgstr ""
 
-#: ../admin/includes/coh-columns.php:32 ../public/includes/coh-fields.php:237
+#: ../admin/includes/coh-columns.php:32 ../public/includes/coh-fields.php:375
 msgid "Date"
 msgstr ""
 
@@ -84,7 +84,9 @@ msgid "Address"
 msgstr ""
 
 #: ../public/includes/coh-fields.php:43
-msgid "Where is this location located? You should format the address properly."
+msgid ""
+"Where is this location located? You should format the address properly. HTML "
+"allowed."
 msgstr ""
 
 #: ../public/includes/coh-fields.php:48
@@ -109,211 +111,291 @@ msgstr ""
 msgid "Monday Opening Time"
 msgstr ""
 
-#: ../public/includes/coh-fields.php:61
+#: ../public/includes/coh-fields.php:61 ../public/includes/coh-fields.php:81
 msgid "What time does this store open on a Monday?"
 msgstr ""
 
-#: ../public/includes/coh-fields.php:68
+#: ../public/includes/coh-fields.php:67
 msgid "Monday Closing Time"
 msgstr ""
 
-#: ../public/includes/coh-fields.php:69
+#: ../public/includes/coh-fields.php:68 ../public/includes/coh-fields.php:88
 msgid "What time does this store close on a Monday?"
 msgstr ""
 
-#: ../public/includes/coh-fields.php:76
+#: ../public/includes/coh-fields.php:74 ../public/includes/coh-fields.php:116
+#: ../public/includes/coh-fields.php:158 ../public/includes/coh-fields.php:200
+#: ../public/includes/coh-fields.php:242 ../public/includes/coh-fields.php:284
+#: ../public/includes/coh-fields.php:326
+msgid "Split Hours?"
+msgstr ""
+
+#: ../public/includes/coh-fields.php:75 ../public/includes/coh-fields.php:117
+#: ../public/includes/coh-fields.php:159 ../public/includes/coh-fields.php:201
+#: ../public/includes/coh-fields.php:243 ../public/includes/coh-fields.php:285
+#: ../public/includes/coh-fields.php:327
+msgid "Does this day have split hours? (Close and reopen the same day)"
+msgstr ""
+
+#: ../public/includes/coh-fields.php:80
+msgid "Monday Opening Time #2"
+msgstr ""
+
+#: ../public/includes/coh-fields.php:81 ../public/includes/coh-fields.php:88
+#: ../public/includes/coh-fields.php:123 ../public/includes/coh-fields.php:130
+#: ../public/includes/coh-fields.php:165 ../public/includes/coh-fields.php:172
+#: ../public/includes/coh-fields.php:207 ../public/includes/coh-fields.php:214
+#: ../public/includes/coh-fields.php:249 ../public/includes/coh-fields.php:256
+#: ../public/includes/coh-fields.php:291 ../public/includes/coh-fields.php:298
+#: ../public/includes/coh-fields.php:333 ../public/includes/coh-fields.php:340
+msgid "(For the 2nd time)"
+msgstr ""
+
+#: ../public/includes/coh-fields.php:87
+msgid "Monday Closing Time #2"
+msgstr ""
+
+#: ../public/includes/coh-fields.php:94
 msgid "Tuesday Open"
 msgstr ""
 
-#: ../public/includes/coh-fields.php:77
+#: ../public/includes/coh-fields.php:95
 msgid "Is this location open on a Tuesday?"
 msgstr ""
 
-#: ../public/includes/coh-fields.php:82
+#: ../public/includes/coh-fields.php:100
 msgid "Tuesday Opening Time"
 msgstr ""
 
-#: ../public/includes/coh-fields.php:83
+#: ../public/includes/coh-fields.php:101 ../public/includes/coh-fields.php:123
 msgid "What time does this store open on a Tuesday?"
 msgstr ""
 
-#: ../public/includes/coh-fields.php:90
+#: ../public/includes/coh-fields.php:108
 msgid "Tuesday Closing Time"
 msgstr ""
 
-#: ../public/includes/coh-fields.php:91
+#: ../public/includes/coh-fields.php:109 ../public/includes/coh-fields.php:130
 msgid "What time does this store close on a Tuesday?"
 msgstr ""
 
-#: ../public/includes/coh-fields.php:98
+#: ../public/includes/coh-fields.php:122
+msgid "Tuesday Opening Time #2"
+msgstr ""
+
+#: ../public/includes/coh-fields.php:129
+msgid "Tuesday Closing Time #2"
+msgstr ""
+
+#: ../public/includes/coh-fields.php:136
 msgid "Wednesday Open"
 msgstr ""
 
-#: ../public/includes/coh-fields.php:99
+#: ../public/includes/coh-fields.php:137
 msgid "Is this location open on a Wednesday?"
 msgstr ""
 
-#: ../public/includes/coh-fields.php:104
+#: ../public/includes/coh-fields.php:142
 msgid "Wednesday Opening Time"
 msgstr ""
 
-#: ../public/includes/coh-fields.php:105
+#: ../public/includes/coh-fields.php:143 ../public/includes/coh-fields.php:165
 msgid "What time does this store open on a Wednesday?"
 msgstr ""
 
-#: ../public/includes/coh-fields.php:112
+#: ../public/includes/coh-fields.php:150
 msgid "Wednesday Closing Time"
 msgstr ""
 
-#: ../public/includes/coh-fields.php:113
+#: ../public/includes/coh-fields.php:151 ../public/includes/coh-fields.php:172
 msgid "What time does this store close on a Wednesday?"
 msgstr ""
 
-#: ../public/includes/coh-fields.php:120
-msgid "Thursday Open"
-msgstr ""
-
-#: ../public/includes/coh-fields.php:121
-msgid "Is this location open on a Thursday?"
-msgstr ""
-
-#: ../public/includes/coh-fields.php:126
-msgid "Thursday Opening Time"
-msgstr ""
-
-#: ../public/includes/coh-fields.php:127
-msgid "What time does this store open on a Thursday?"
-msgstr ""
-
-#: ../public/includes/coh-fields.php:134
-msgid "Thursday Closing Time"
-msgstr ""
-
-#: ../public/includes/coh-fields.php:135
-msgid "What time does this store close on a Thursday?"
-msgstr ""
-
-#: ../public/includes/coh-fields.php:142
-msgid "Friday Open"
-msgstr ""
-
-#: ../public/includes/coh-fields.php:143
-msgid "Is this location open on a Friday?"
-msgstr ""
-
-#: ../public/includes/coh-fields.php:148
-msgid "Friday Opening Time"
-msgstr ""
-
-#: ../public/includes/coh-fields.php:149
-msgid "What time does this store open on a Friday?"
-msgstr ""
-
-#: ../public/includes/coh-fields.php:156
-msgid "Friday Closing Time"
-msgstr ""
-
-#: ../public/includes/coh-fields.php:157
-msgid "What time does this store close on a Friday?"
-msgstr ""
-
 #: ../public/includes/coh-fields.php:164
-msgid "Saturday Open"
-msgstr ""
-
-#: ../public/includes/coh-fields.php:165
-msgid "Is this location open on a Saturday?"
-msgstr ""
-
-#: ../public/includes/coh-fields.php:170
-msgid "Saturday Opening Time"
+msgid "Wednesday Opening Time #2"
 msgstr ""
 
 #: ../public/includes/coh-fields.php:171
-msgid "What time does this store open on a Saturday?"
+msgid "Wednesday Closing Time #2"
 msgstr ""
 
 #: ../public/includes/coh-fields.php:178
-msgid "Saturday Closing Time"
+msgid "Thursday Open"
 msgstr ""
 
 #: ../public/includes/coh-fields.php:179
-msgid "What time does this store close on a Saturday?"
+msgid "Is this location open on a Thursday?"
 msgstr ""
 
-#: ../public/includes/coh-fields.php:186
-msgid "Sunday Open"
+#: ../public/includes/coh-fields.php:184
+msgid "Thursday Opening Time"
 msgstr ""
 
-#: ../public/includes/coh-fields.php:187
-msgid "Is this location open on a Sunday?"
+#: ../public/includes/coh-fields.php:185 ../public/includes/coh-fields.php:207
+msgid "What time does this store open on a Thursday?"
 msgstr ""
 
 #: ../public/includes/coh-fields.php:192
-msgid "Sunday Opening Time"
+msgid "Thursday Closing Time"
 msgstr ""
 
-#: ../public/includes/coh-fields.php:193
-msgid "What time does this store open on a Sunday?"
+#: ../public/includes/coh-fields.php:193 ../public/includes/coh-fields.php:214
+msgid "What time does this store close on a Thursday?"
 msgstr ""
 
-#: ../public/includes/coh-fields.php:200
-msgid "Sunday Closing Time"
+#: ../public/includes/coh-fields.php:206
+msgid "Thursday Opening Time #2"
 msgstr ""
 
-#: ../public/includes/coh-fields.php:201
-msgid "What time does this store close on a Sunday?"
+#: ../public/includes/coh-fields.php:213
+msgid "Thursday Closing Time #2"
 msgstr ""
 
-#: ../public/includes/coh-fields.php:215
-msgid "Special Dates / Holidays"
+#: ../public/includes/coh-fields.php:220
+msgid "Friday Open"
 msgstr ""
 
 #: ../public/includes/coh-fields.php:221
+msgid "Is this location open on a Friday?"
+msgstr ""
+
+#: ../public/includes/coh-fields.php:226
+msgid "Friday Opening Time"
+msgstr ""
+
+#: ../public/includes/coh-fields.php:227 ../public/includes/coh-fields.php:249
+msgid "What time does this store open on a Friday?"
+msgstr ""
+
+#: ../public/includes/coh-fields.php:234
+msgid "Friday Closing Time"
+msgstr ""
+
+#: ../public/includes/coh-fields.php:235 ../public/includes/coh-fields.php:256
+msgid "What time does this store close on a Friday?"
+msgstr ""
+
+#: ../public/includes/coh-fields.php:248
+msgid "Friday Opening Time #2"
+msgstr ""
+
+#: ../public/includes/coh-fields.php:255
+msgid "Friday Closing Time #2"
+msgstr ""
+
+#: ../public/includes/coh-fields.php:262
+msgid "Saturday Open"
+msgstr ""
+
+#: ../public/includes/coh-fields.php:263
+msgid "Is this location open on a Saturday?"
+msgstr ""
+
+#: ../public/includes/coh-fields.php:268
+msgid "Saturday Opening Time"
+msgstr ""
+
+#: ../public/includes/coh-fields.php:269 ../public/includes/coh-fields.php:291
+msgid "What time does this store open on a Saturday?"
+msgstr ""
+
+#: ../public/includes/coh-fields.php:276
+msgid "Saturday Closing Time"
+msgstr ""
+
+#: ../public/includes/coh-fields.php:277 ../public/includes/coh-fields.php:298
+msgid "What time does this store close on a Saturday?"
+msgstr ""
+
+#: ../public/includes/coh-fields.php:290
+msgid "Saturday Opening Time #2"
+msgstr ""
+
+#: ../public/includes/coh-fields.php:297
+msgid "Saturday Closing Time #2"
+msgstr ""
+
+#: ../public/includes/coh-fields.php:304
+msgid "Sunday Open"
+msgstr ""
+
+#: ../public/includes/coh-fields.php:305
+msgid "Is this location open on a Sunday?"
+msgstr ""
+
+#: ../public/includes/coh-fields.php:310
+msgid "Sunday Opening Time"
+msgstr ""
+
+#: ../public/includes/coh-fields.php:311 ../public/includes/coh-fields.php:333
+msgid "What time does this store open on a Sunday?"
+msgstr ""
+
+#: ../public/includes/coh-fields.php:318
+msgid "Sunday Closing Time"
+msgstr ""
+
+#: ../public/includes/coh-fields.php:319 ../public/includes/coh-fields.php:340
+msgid "What time does this store close on a Sunday?"
+msgstr ""
+
+#: ../public/includes/coh-fields.php:332
+msgid "Sunday Opening Time #2"
+msgstr ""
+
+#: ../public/includes/coh-fields.php:339
+msgid "Sunday Closing Time #2"
+msgstr ""
+
+#: ../public/includes/coh-fields.php:353
+msgid "Special Dates / Holidays"
+msgstr ""
+
+#: ../public/includes/coh-fields.php:359
 msgid "Special Dates that will appear in the Special Dates Widget & Shortcode"
 msgstr ""
 
-#: ../public/includes/coh-fields.php:223
+#: ../public/includes/coh-fields.php:361
 msgid "Special Date #{#}"
 msgstr ""
 
-#: ../public/includes/coh-fields.php:224
+#: ../public/includes/coh-fields.php:362
 msgid "Add Another Special Date"
 msgstr ""
 
-#: ../public/includes/coh-fields.php:225
+#: ../public/includes/coh-fields.php:363
 msgid "Remove Special Date"
 msgstr ""
 
-#: ../public/includes/coh-fields.php:238
+#: ../public/includes/coh-fields.php:376
 msgid "The date for this special date - the year does not matter."
 msgstr ""
 
-#: ../public/includes/coh-fields.php:243
+#: ../public/includes/coh-fields.php:381
 msgid "Date Open?"
 msgstr ""
 
-#: ../public/includes/coh-fields.php:244
+#: ../public/includes/coh-fields.php:382
 msgid ""
 "Are you open at this location on this special date? If closed, do not check "
 "this option."
 msgstr ""
 
-#: ../public/includes/coh-fields.php:249
+#: ../public/includes/coh-fields.php:387
 msgid "Opening Time"
 msgstr ""
 
-#: ../public/includes/coh-fields.php:250
+#: ../public/includes/coh-fields.php:388
 msgid ""
 "The opening time for this special date - ignore if you are closed on this "
 "date"
 msgstr ""
 
-#: ../public/includes/coh-fields.php:255
+#: ../public/includes/coh-fields.php:393
 msgid "Closing Time"
 msgstr ""
 
-#: ../public/includes/coh-fields.php:256
+#: ../public/includes/coh-fields.php:394
 msgid ""
 "The closing time for this special date - ignore if you are closed on this "
 "date"
@@ -431,56 +513,56 @@ msgstr ""
 msgid "A small amount of text to display when you are manually not available."
 msgstr ""
 
-#: ../public/includes/coh-templates-parts.php:135
-#: ../public/includes/coh-templates-parts.php:448
+#: ../public/includes/coh-templates-parts.php:155
+#: ../public/includes/coh-templates-parts.php:437
 msgid "Closed"
 msgstr ""
 
-#: ../public/includes/coh-templates-parts.php:147
+#: ../public/includes/coh-templates-parts.php:160
 msgid "Monday"
 msgstr ""
 
-#: ../public/includes/coh-templates-parts.php:167
+#: ../public/includes/coh-templates-parts.php:170
 msgid "Tuesday"
 msgstr ""
 
-#: ../public/includes/coh-templates-parts.php:187
+#: ../public/includes/coh-templates-parts.php:180
 msgid "Wednesday"
 msgstr ""
 
-#: ../public/includes/coh-templates-parts.php:207
+#: ../public/includes/coh-templates-parts.php:190
 msgid "Thursday"
 msgstr ""
 
-#: ../public/includes/coh-templates-parts.php:227
+#: ../public/includes/coh-templates-parts.php:200
 msgid "Friday"
 msgstr ""
 
-#: ../public/includes/coh-templates-parts.php:247
+#: ../public/includes/coh-templates-parts.php:210
 msgid "Saturday"
 msgstr ""
 
-#: ../public/includes/coh-templates-parts.php:267
+#: ../public/includes/coh-templates-parts.php:220
 msgid "Sunday"
 msgstr ""
 
-#: ../public/includes/coh-templates-parts.php:295
-#: ../public/includes/coh-templates-parts.php:303
+#: ../public/includes/coh-templates-parts.php:285
+#: ../public/includes/coh-templates-parts.php:293
 msgid "We Are Open!"
 msgstr ""
 
-#: ../public/includes/coh-templates-parts.php:311
-#: ../public/includes/coh-templates-parts.php:319
+#: ../public/includes/coh-templates-parts.php:301
+#: ../public/includes/coh-templates-parts.php:309
 msgid "We Are Closed!"
 msgstr ""
 
-#: ../public/includes/coh-templates-parts.php:340
-#: ../public/includes/coh-templates-parts.php:348
+#: ../public/includes/coh-templates-parts.php:330
+#: ../public/includes/coh-templates-parts.php:338
 msgid "We Are Available!"
 msgstr ""
 
-#: ../public/includes/coh-templates-parts.php:356
-#: ../public/includes/coh-templates-parts.php:364
+#: ../public/includes/coh-templates-parts.php:346
+#: ../public/includes/coh-templates-parts.php:354
 msgid "We Are Not Available!"
 msgstr ""
 

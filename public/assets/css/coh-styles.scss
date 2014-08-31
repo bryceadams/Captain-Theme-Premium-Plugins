@@ -35,6 +35,10 @@
 				}
 				.hours {
 					color: #888;
+					&.split {
+						display: block;
+						margin-left: 110px;
+					}
 				}
 				.coh-circle {
 					display: none;
@@ -105,7 +109,7 @@
     width: 12px !important;
     height: 12px;
     vertical-align: bottom;
-    margin-left: 6px;
+    margin-left: 8px;
     margin-bottom: 4px;
     border-radius: 15px;
     -moz-border-radius: 15px;

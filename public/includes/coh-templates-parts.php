@@ -85,8 +85,7 @@ function coh_output_single_address() {
  *
  * @package   Captain Opening Hours
  * @author    Captain Theme <info@captaintheme.com>
- * @since 	  1.3.1
- * @todo 	  Is a foreach or switch better? Worth doing for the sake of DRY?
+ * @since 	  1.4.0
  */
 
 function coh_output_opening_hours() {
@@ -107,174 +106,165 @@ function coh_output_opening_hours() {
 	$monday_bool	= get_post_meta ( $post->ID, '_coh_location_mon_open_bool', true );
 	$monday_open	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_mon_open_time', true ) ) );
 	$monday_close	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_mon_close_time', true ) ) );
+	$monday_split_bool = get_post_meta( $post->ID, '_coh_location_mon_split_hours_bool', true );
+	$monday_open2	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_mon_open_time_2', true ) ) );
+	$monday_close2	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_mon_close_time_2', true ) ) );
 
 	$tuesday_bool	= get_post_meta ( $post->ID, '_coh_location_tues_open_bool', true );
 	$tuesday_open	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_tues_open_time', true ) ) );
 	$tuesday_close	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_tues_close_time', true ) ) );
+	$tuesday_split_bool = get_post_meta( $post->ID, '_coh_location_tues_split_hours_bool', true );
+	$tuesday_open2	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_tues_open_time_2', true ) ) );
+	$tuesday_close2	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_tues_close_time_2', true ) ) );
 
 	$wednesday_bool		= get_post_meta ( $post->ID, '_coh_location_wed_open_bool', true );
 	$wednesday_open		= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_wed_open_time', true ) ) );
 	$wednesday_close	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_wed_close_time', true ) ) );
+	$wednesday_split_bool = get_post_meta( $post->ID, '_coh_location_wed_split_hours_bool', true );
+	$wednesday_open2	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_wed_open_time_2', true ) ) );
+	$wednesday_close2	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_wed_close_time_2', true ) ) );
 
 	$thursday_bool	= get_post_meta ( $post->ID, '_coh_location_thurs_open_bool', true );
 	$thursday_open	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_thurs_open_time', true ) ) );
 	$thursday_close	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_thurs_close_time', true ) ) );
+	$thursday_split_bool = get_post_meta( $post->ID, '_coh_location_thurs_split_hours_bool', true );
+	$thursday_open2	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_thurs_open_time_2', true ) ) );
+	$thursday_close2	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_thurs_close_time_2', true ) ) );
 
 	$friday_bool	= get_post_meta ( $post->ID, '_coh_location_fri_open_bool', true );
 	$friday_open	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_fri_open_time', true ) ) );
 	$friday_close	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_fri_close_time', true ) ) );
+	$friday_split_bool = get_post_meta( $post->ID, '_coh_location_fri_split_hours_bool', true );
+	$friday_open2	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_fri_open_time_2', true ) ) );
+	$friday_close2	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_fri_close_time_2', true ) ) );
 
 	$saturday_bool	= get_post_meta ( $post->ID, '_coh_location_sat_open_bool', true );
 	$saturday_open	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_sat_open_time', true ) ) );
 	$saturday_close	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_sat_close_time', true ) ) );
+	$saturday_split_bool = get_post_meta( $post->ID, '_coh_location_sat_split_hours_bool', true );
+	$saturday_open2	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_sat_open_time_2', true ) ) );
+	$saturday_close2	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_sat_close_time_2', true ) ) );
 
 	$sunday_bool	= get_post_meta ( $post->ID, '_coh_location_sun_open_bool', true );
 	$sunday_open	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_sun_open_time', true ) ) );
 	$sunday_close	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_sun_close_time', true ) ) );
+	$sunday_split_bool = get_post_meta( $post->ID, '_coh_location_sun_split_hours_bool', true );
+	$sunday_open2	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_sun_open_time_2', true ) ) );
+	$sunday_close2	= date( $time_format, strtotime ( get_post_meta ( $post->ID, '_coh_location_sun_close_time_2', true ) ) );
 
 	$closed			= '<span class="hours">' . __( 'Closed', 'coh' ) . '</span>';
 
-	// MONDAY
-	echo '<li ';
-	if ( date( 'l' ) == 'Monday' ) echo 'class="open-today" ';
-	if ( $monday_bool ) {
-		echo 'itemprop="openingHours" content="Mo ' . date( "H:i", strtotime( $monday_open ) ) . '-' . date( "H:i", strtotime( $monday_close ) ) . '"';
-	} else {
-		echo ' id="closed-location" ';
-	}
-	echo '>';
-	echo '<span class="day">';
-	_e( 'Monday', 'coh' );
-	echo '</span>';
-	if ( $monday_bool ) {
-		echo '<span class="hours">' . $monday_open . ' - ' . $monday_close . '</span>';
-	} else {
-		echo $closed;
-	}
-	echo coh_location_is_open_circle();
-	echo '</li>';
+	$days = array(
 
-	// TUESDAY
-	echo '<li ';
-	if ( date( 'l' ) == 'Tuesday' ) echo 'class="open-today" ';
-	if ( $tuesday_bool ) {
-		echo 'itemprop="openingHours" content="Tu ' . date( "H:i", strtotime( $tuesday_open ) ) . '-' . date( "H:i", strtotime( $tuesday_close ) ) . '"';
-	} else {
-		echo ' id="closed-location" ';
-	}
-	echo '>';
-	echo '<span class="day">';
-	_e( 'Tuesday', 'coh' );
-	echo '</span>';
-	if ( $tuesday_bool ) {
-		echo '<span class="hours">' . $tuesday_open . ' - ' . $tuesday_close . '</span>';
-	} else {
-		echo $closed;
-	}
-	echo coh_location_is_open_circle();
-	echo '</li>';
+							'monday' 		=> array(
+																'day'			=> __( 'Monday', 'coh' ),
+																'bool' 		=> $monday_bool,
+																'open' 		=> $monday_open,
+																'close' 	=> $monday_close,
+																'split'		=> $monday_split_bool,
+																'open2'		=> $monday_open2,
+																'close2'	=> $monday_close2,
+																'schema' 	=> 'Mo',
+														),
+							'tuesday' 		=> array(
+																'day'			=> __( 'Tuesday', 'coh' ),
+																'bool' 		=> $tuesday_bool,
+																'open' 		=> $tuesday_open,
+																'close' 	=> $tuesday_close,
+																'split'		=> $tuesday_split_bool,
+																'open2'		=> $tuesday_open2,
+																'close2'	=> $tuesday_close2,
+																'schema' 	=> 'Tu',
+														),
+							'wednesday' 		=> array(
+																'day'			=> __( 'Wednesday', 'coh' ),
+																'bool' 		=> $wednesday_bool,
+																'open' 		=> $wednesday_open,
+																'close' 	=> $wednesday_close,
+																'split'		=> $wednesday_split_bool,
+																'open2'		=> $wednesday_open2,
+																'close2'	=> $wednesday_close2,
+																'schema' 	=> 'We',
+														),
+							'thursday' 		=> array(
+																'day'			=> __( 'Thursday', 'coh' ),
+																'bool' 		=> $thursday_bool,
+																'open' 		=> $thursday_open,
+																'close' 	=> $thursday_close,
+																'split'		=> $thursday_split_bool,
+																'open2'		=> $thursday_open2,
+																'close2'	=> $thursday_close2,
+																'schema' 	=> 'Th',
+														),
+							'friday' 		=> array(
+																'day'			=> __( 'Friday', 'coh' ),
+																'bool' 		=> $friday_bool,
+																'open' 		=> $friday_open,
+																'close' 	=> $friday_close,
+																'split'		=> $friday_split_bool,
+																'open2'		=> $friday_open2,
+																'close2'	=> $friday_close2,
+																'schema' 	=> 'Fr',
+														),
+							'saturday' 		=> array(
+																'day'			=> __( 'Saturday', 'coh' ),
+																'bool' 		=> $saturday_bool,
+																'open' 		=> $saturday_open,
+																'close' 	=> $saturday_close,
+																'split'		=> $saturday_split_bool,
+																'open2'		=> $saturday_open2,
+																'close2'	=> $saturday_close2,
+																'schema' 	=> 'Sa',
+														),
+							'sunday' 		=> array(
+																'day'			=> __( 'Sunday', 'coh' ),
+																'bool' 		=> $sunday_bool,
+																'open' 		=> $sunday_open,
+																'close' 	=> $sunday_close,
+																'split'		=> $sunday_split_bool,
+																'open2'		=> $sunday_open2,
+																'close2'	=> $sunday_close2,
+																'schema' 	=> 'Su',
+														),
 
-	// WEDNESDAY
-	echo '<li ';
-	if ( date( 'l' ) == 'Wednesday' ) echo 'class="open-today" ';
-	if ( $wednesday_bool ) {
-		echo 'itemprop="openingHours" content="We ' . date( "H:i", strtotime( $wednesday_open ) ) . '-' . date( "H:i", strtotime( $wednesday_close ) ) . '"';
-	} else {
-		echo ' id="closed-location" ';
+	);
+
+	foreach ( $days as $key => $day ) {
+
+		if ( $day['split'] ) {
+			$schema_content = $day['schema'] . ' ' . date( "H:i", strtotime( $day['open'] ) ) . '-' . date( "H:i", strtotime( $day['close2'] ) );
+		} else {
+			$schema_content = $day['schema'] . ' ' . date( "H:i", strtotime( $day['open'] ) ) . '-' . date( "H:i", strtotime( $day['close'] ) );
+		}
+
+		echo '<li ';
+			if ( strtolower( date( 'l' ) ) == $key ) {
+				echo 'class="open-today" ';
+			}
+			if ( $day['bool'] ) {
+				echo 'itemprop="openingHours" content="' . $schema_content . '"';
+			} else {
+				echo ' id="closed-location" ';
+			}
+		echo '>';
+
+			echo '<span class="day">';
+				echo $day['day'];
+				echo coh_location_is_open_circle();
+			echo '</span>';
+
+			if ( $day['bool'] ) {
+				echo '<span class="hours">' . $day['open'] . ' - ' . $day['close'] . '</span>';
+				if ( $day['split'] ) {
+					echo '<span class="hours split">' . $day['open2'] . ' - ' . $day['close2'] . '</span>';
+				}
+			} else {
+				echo $closed;
+			}
+
+		echo '</li>';
+
 	}
-	echo '>';
-	echo '<span class="day">';
-	_e( 'Wednesday', 'coh' );
-	echo '</span>';
-	if ( $wednesday_bool ) {
-		echo '<span class="hours">' . $wednesday_open . ' - ' . $wednesday_close . '</span>';
-	} else {
-		echo $closed;
-	}
-	echo coh_location_is_open_circle();
-	echo '</li>';
-	
-	// THURSDAY
-	echo '<li ';
-	if ( date( 'l' ) == 'Thursday' ) echo 'class="open-today" ';
-	if ( $thursday_bool ) {
-		echo 'itemprop="openingHours" content="Th ' . date( "H:i", strtotime( $thursday_open ) ) . '-' . date( "H:i", strtotime( $thursday_close ) ) . '"';
-	} else {
-		echo ' id="closed-location" ';
-	}
-	echo '>';
-	echo '<span class="day">';
-	_e( 'Thursday', 'coh' );
-	echo '</span>';
-	if ( $thursday_bool ) {
-		echo '<span class="hours">' . $thursday_open . ' - ' . $thursday_close . '</span>';
-	} else {
-		echo $closed;
-	}
-	echo coh_location_is_open_circle();
-	echo '</li>';
-	
-	// FRIDAY
-	echo '<li ';
-	if ( date( 'l' ) == 'Friday' ) echo 'class="open-today" ';
-	if ( $friday_bool ) {
-		echo 'itemprop="openingHours" content="Fr ' . date( "H:i", strtotime( $friday_open ) ) . '-' . date( "H:i", strtotime( $friday_close ) ) . '"';
-	} else {
-		echo ' id="closed-location" ';
-	}
-	echo '>';
-	echo '<span class="day">';
-	_e( 'Friday', 'coh' );
-	echo '</span>';
-	if ( $friday_bool ) {
-		echo '<span class="hours">' . $friday_open . ' - ' . $friday_close . '</span>';
-	} else {
-		echo $closed;
-	}
-	echo coh_location_is_open_circle();
-	echo '</li>';
-	
-	// SATURDAY
-	echo '<li ';
-	if ( date( 'l' ) == 'Saturday' ) echo 'class="open-today" ';
-	if ( $saturday_bool ) {
-		echo 'itemprop="openingHours" content="Sa ' . date( "H:i", strtotime( $saturday_open ) ) . '-' . date( "H:i", strtotime( $saturday_close ) ) . '"';
-	} else {
-		echo ' id="closed-location" ';
-	}
-	echo '>';
-	echo '<span class="day">';
-	_e( 'Saturday', 'coh' );
-	echo '</span>';
-	if ( $saturday_bool ) {
-		echo '<span class="hours">' . $saturday_open . ' - ' . $saturday_close . '</span>';
-	} else {
-		echo $closed;
-	}
-	echo coh_location_is_open_circle();
-	echo '</li>';
-	
-	// SUNDAY
-	echo '<li ';
-	if ( date( 'l' ) == 'Sunday' ) echo 'class="open-today" ';
-	if ( $sunday_bool ) {
-		echo 'itemprop="openingHours" content="Su ' . date( "H:i", strtotime( $sunday_open ) ) . '-' . date( "H:i", strtotime( $sunday_close ) ) . '"';
-	} else {
-		echo ' id="closed-location" ';
-	}
-	echo '>';
-	echo '<span class="day">';
-	_e( 'Sunday', 'coh' );
-	echo '</span>';
-	if ( $sunday_bool ) {
-		echo '<span class="hours">' . $sunday_open . ' - ' . $sunday_close . '</span>';
-	} else {
-		echo $closed;
-	}
-	echo coh_location_is_open_circle();
-	echo '</li>';
-	
-	echo '</ul>';
 
 }
 
@@ -291,7 +281,7 @@ function coh_output_we_are_open() {
 	if ( coh_location_is_open() ) {
 
 		if ( cmb_get_option( 'coh_options', '_coh_open_image' ) ) {
-		
+
 			echo '<img class="we-open-image" title="' . __( 'We Are Open!', 'coh' ) . '" src="' . cmb_get_option( 'coh_options', '_coh_open_image' ) . '" />';
 
 		} elseif ( cmb_get_option( 'coh_options',  '_coh_open_text' ) ) {
@@ -307,7 +297,7 @@ function coh_output_we_are_open() {
 	} else {
 
 		if ( cmb_get_option( 'coh_options', '_coh_closed_image' ) ) {
-		
+
 			echo '<img class="we-closed-image" title="' . __( 'We Are Closed!', 'coh' ) . '" src="' . cmb_get_option( 'coh_options', '_coh_closed_image' ) . '" />';
 
 		} elseif ( cmb_get_option( 'coh_options',  '_coh_closed_text' ) ) {
@@ -334,35 +324,35 @@ function coh_output_we_are_open() {
 function coh_ouput_manual_available_image() {
 
 	if ( cmb_get_option( 'coh_options', '_coh_manual_available_image' ) ) {
-		
+
 		if ( cmb_get_option( 'coh_options', '_coh_available_image' ) ) {
 
 			echo '<img class="manual-open-image" title="' . __( 'We Are Available!', 'coh' ) . '" src="' . cmb_get_option( 'coh_options', '_coh_available_image' ) . '" />';
-		
+
 		} elseif ( cmb_get_option( 'coh_options', '_coh_man_available_text' ) ) {
-		
+
 			echo cmb_get_option( 'coh_options', '_coh_man_available_text' );
-		
+
 		} else {
-		
+
 			_e( 'We Are Available!', 'coh' );
-		
+
 		}
 
 	} else {
-		
+
 		if ( cmb_get_option( 'coh_options', '_coh_not_available_image' ) ) {
-		
+
 			echo '<img class="manual-closed-image" title="' . __( 'We Are Not Available!', 'coh' ) . '" src="' . cmb_get_option( 'coh_options', '_coh_not_available_image' ) . '" />';
-		
+
 		} elseif ( cmb_get_option( 'coh_options', '_coh_man_not_available_text' ) ) {
-		
+
 			echo cmb_get_option( 'coh_options', '_coh_man_not_available_text' );
-		
+
 		} else {
-		
+
 			_e( 'We Are Not Available!', 'coh' );
-		
+
 		}
 
 	}
@@ -428,7 +418,6 @@ function coh_output_special_dates() {
 				    }
 
 				    ?>
-
 
 				    <div class="date-head">
 				    	<?php if ( $sd_desc ) { ?>

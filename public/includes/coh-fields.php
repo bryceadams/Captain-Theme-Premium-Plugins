@@ -40,9 +40,9 @@ function coh_sample_metaboxes( array $meta_boxes ) {
 			// Add Store Type select?
 			array(
 				'name' => __( 'Address', 'coh' ),
-				'desc' => __( 'Where is this location located? You should format the address properly.', 'coh' ),
+				'desc' => __( 'Where is this location located? You should format the address properly. HTML allowed.', 'coh' ),
 				'id'   => $prefix . 'location_address',
-				'type' => 'text'
+				'type' => 'textarea'
 			),
 			array(
 				'name' => __( 'Location Timezone', 'coh' ),
@@ -62,7 +62,6 @@ function coh_sample_metaboxes( array $meta_boxes ) {
 				'id'   => $prefix . 'location_mon_open_time',
 				'type' => 'text_time',
 				'timezone_meta_key' => $prefix . 'location_timezone',
-				//'show_on_cb' => 'location_mon_open_bool'
 			),
 			array(
 				'name' => __( 'Monday Closing Time', 'coh' ),
@@ -70,7 +69,26 @@ function coh_sample_metaboxes( array $meta_boxes ) {
 				'id'   => $prefix . 'location_mon_close_time',
 				'type' => 'text_time',
 				'timezone_meta_key' => $prefix . 'location_timezone',
-				//'show_on_cb' => 'location_mon_open_bool'
+			),
+			array(
+				'name' => __( 'Split Hours?', 'coh' ),
+				'desc' => __( 'Does this day have split hours? (Close and reopen the same day)', 'coh' ),
+				'id'   => $prefix . 'location_mon_split_hours_bool',
+				'type' => 'checkbox',
+			),
+			array(
+				'name' => __( 'Monday Opening Time #2', 'coh' ),
+				'desc' => __( 'What time does this store open on a Monday?', 'coh' ) . ' ' . __( '(For the 2nd time)', 'coh' ),
+				'id'   => $prefix . 'location_mon_open_time_2',
+				'type' => 'text_time',
+				'timezone_meta_key' => $prefix . 'location_timezone',
+			),
+			array(
+				'name' => __( 'Monday Closing Time #2', 'coh' ),
+				'desc' => __( 'What time does this store close on a Monday?', 'coh' ) . ' ' . __( '(For the 2nd time)', 'coh' ),
+				'id'   => $prefix . 'location_mon_close_time_2',
+				'type' => 'text_time',
+				'timezone_meta_key' => $prefix . 'location_timezone',
 			),
 			array(
 				'name' => __( 'Tuesday Open', 'coh' ),
@@ -95,6 +113,26 @@ function coh_sample_metaboxes( array $meta_boxes ) {
 				//'show_on_cb' => 'location_mon_open_bool'
 			),
 			array(
+				'name' => __( 'Split Hours?', 'coh' ),
+				'desc' => __( 'Does this day have split hours? (Close and reopen the same day)', 'coh' ),
+				'id'   => $prefix . 'location_tues_split_hours_bool',
+				'type' => 'checkbox',
+			),
+			array(
+				'name' => __( 'Tuesday Opening Time #2', 'coh' ),
+				'desc' => __( 'What time does this store open on a Tuesday?', 'coh' ) . ' ' . __( '(For the 2nd time)', 'coh' ),
+				'id'   => $prefix . 'location_tues_open_time_2',
+				'type' => 'text_time',
+				'timezone_meta_key' => $prefix . 'location_timezone',
+			),
+			array(
+				'name' => __( 'Tuesday Closing Time #2', 'coh' ),
+				'desc' => __( 'What time does this store close on a Tuesday?', 'coh' ) . ' ' . __( '(For the 2nd time)', 'coh' ),
+				'id'   => $prefix . 'location_tues_close_time_2',
+				'type' => 'text_time',
+				'timezone_meta_key' => $prefix . 'location_timezone',
+			),
+			array(
 				'name' => __( 'Wednesday Open', 'coh' ),
 				'desc' => __( 'Is this location open on a Wednesday?', 'coh' ),
 				'id'   => $prefix . 'location_wed_open_bool',
@@ -115,6 +153,26 @@ function coh_sample_metaboxes( array $meta_boxes ) {
 				'type' => 'text_time',
 				'timezone_meta_key' => $prefix . 'location_timezone',
 				//'show_on_cb' => 'location_mon_open_bool'
+			),
+			array(
+				'name' => __( 'Split Hours?', 'coh' ),
+				'desc' => __( 'Does this day have split hours? (Close and reopen the same day)', 'coh' ),
+				'id'   => $prefix . 'location_wed_split_hours_bool',
+				'type' => 'checkbox',
+			),
+			array(
+				'name' => __( 'Wednesday Opening Time #2', 'coh' ),
+				'desc' => __( 'What time does this store open on a Wednesday?', 'coh' ) . ' ' . __( '(For the 2nd time)', 'coh' ),
+				'id'   => $prefix . 'location_wed_open_time_2',
+				'type' => 'text_time',
+				'timezone_meta_key' => $prefix . 'location_timezone',
+			),
+			array(
+				'name' => __( 'Wednesday Closing Time #2', 'coh' ),
+				'desc' => __( 'What time does this store close on a Wednesday?', 'coh' ) . ' ' . __( '(For the 2nd time)', 'coh' ),
+				'id'   => $prefix . 'location_wed_close_time_2',
+				'type' => 'text_time',
+				'timezone_meta_key' => $prefix . 'location_timezone',
 			),
 			array(
 				'name' => __( 'Thursday Open', 'coh' ),
@@ -139,6 +197,26 @@ function coh_sample_metaboxes( array $meta_boxes ) {
 				//'show_on_cb' => 'location_mon_open_bool'
 			),
 			array(
+				'name' => __( 'Split Hours?', 'coh' ),
+				'desc' => __( 'Does this day have split hours? (Close and reopen the same day)', 'coh' ),
+				'id'   => $prefix . 'location_thurs_split_hours_bool',
+				'type' => 'checkbox',
+			),
+			array(
+				'name' => __( 'Thursday Opening Time #2', 'coh' ),
+				'desc' => __( 'What time does this store open on a Thursday?', 'coh' ) . ' ' . __( '(For the 2nd time)', 'coh' ),
+				'id'   => $prefix . 'location_thurs_open_time_2',
+				'type' => 'text_time',
+				'timezone_meta_key' => $prefix . 'location_timezone',
+			),
+			array(
+				'name' => __( 'Thursday Closing Time #2', 'coh' ),
+				'desc' => __( 'What time does this store close on a Thursday?', 'coh' ) . ' ' . __( '(For the 2nd time)', 'coh' ),
+				'id'   => $prefix . 'location_thurs_close_time_2',
+				'type' => 'text_time',
+				'timezone_meta_key' => $prefix . 'location_timezone',
+			),
+			array(
 				'name' => __( 'Friday Open', 'coh' ),
 				'desc' => __( 'Is this location open on a Friday?', 'coh' ),
 				'id'   => $prefix . 'location_fri_open_bool',
@@ -159,6 +237,26 @@ function coh_sample_metaboxes( array $meta_boxes ) {
 				'type' => 'text_time',
 				'timezone_meta_key' => $prefix . 'location_timezone',
 				//'show_on_cb' => 'location_mon_open_bool'
+			),
+			array(
+				'name' => __( 'Split Hours?', 'coh' ),
+				'desc' => __( 'Does this day have split hours? (Close and reopen the same day)', 'coh' ),
+				'id'   => $prefix . 'location_fri_split_hours_bool',
+				'type' => 'checkbox',
+			),
+			array(
+				'name' => __( 'Friday Opening Time #2', 'coh' ),
+				'desc' => __( 'What time does this store open on a Friday?', 'coh' ) . ' ' . __( '(For the 2nd time)', 'coh' ),
+				'id'   => $prefix . 'location_fri_open_time_2',
+				'type' => 'text_time',
+				'timezone_meta_key' => $prefix . 'location_timezone',
+			),
+			array(
+				'name' => __( 'Friday Closing Time #2', 'coh' ),
+				'desc' => __( 'What time does this store close on a Friday?', 'coh' ) . ' ' . __( '(For the 2nd time)', 'coh' ),
+				'id'   => $prefix . 'location_fri_close_time_2',
+				'type' => 'text_time',
+				'timezone_meta_key' => $prefix . 'location_timezone',
 			),
 			array(
 				'name' => __( 'Saturday Open', 'coh' ),
@@ -183,6 +281,26 @@ function coh_sample_metaboxes( array $meta_boxes ) {
 				//'show_on_cb' => 'location_mon_open_bool'
 			),
 			array(
+				'name' => __( 'Split Hours?', 'coh' ),
+				'desc' => __( 'Does this day have split hours? (Close and reopen the same day)', 'coh' ),
+				'id'   => $prefix . 'location_sat_split_hours_bool',
+				'type' => 'checkbox',
+			),
+			array(
+				'name' => __( 'Saturday Opening Time #2', 'coh' ),
+				'desc' => __( 'What time does this store open on a Saturday?', 'coh' ) . ' ' . __( '(For the 2nd time)', 'coh' ),
+				'id'   => $prefix . 'location_sat_open_time_2',
+				'type' => 'text_time',
+				'timezone_meta_key' => $prefix . 'location_timezone',
+			),
+			array(
+				'name' => __( 'Saturday Closing Time #2', 'coh' ),
+				'desc' => __( 'What time does this store close on a Saturday?', 'coh' ) . ' ' . __( '(For the 2nd time)', 'coh' ),
+				'id'   => $prefix . 'location_sat_close_time_2',
+				'type' => 'text_time',
+				'timezone_meta_key' => $prefix . 'location_timezone',
+			),
+			array(
 				'name' => __( 'Sunday Open', 'coh' ),
 				'desc' => __( 'Is this location open on a Sunday?', 'coh' ),
 				'id'   => $prefix . 'location_sun_open_bool',
@@ -203,6 +321,26 @@ function coh_sample_metaboxes( array $meta_boxes ) {
 				'type' => 'text_time',
 				'timezone_meta_key' => $prefix . 'location_timezone',
 				//'show_on_cb' => 'location_mon_open_bool'
+			),
+			array(
+				'name' => __( 'Split Hours?', 'coh' ),
+				'desc' => __( 'Does this day have split hours? (Close and reopen the same day)', 'coh' ),
+				'id'   => $prefix . 'location_sun_split_hours_bool',
+				'type' => 'checkbox',
+			),
+			array(
+				'name' => __( 'Sunday Opening Time #2', 'coh' ),
+				'desc' => __( 'What time does this store open on a Sunday?', 'coh' ) . ' ' . __( '(For the 2nd time)', 'coh' ),
+				'id'   => $prefix . 'location_sun_open_time_2',
+				'type' => 'text_time',
+				'timezone_meta_key' => $prefix . 'location_timezone',
+			),
+			array(
+				'name' => __( 'Sunday Closing Time #2', 'coh' ),
+				'desc' => __( 'What time does this store close on a Sunday?', 'coh' ) . ' ' . __( '(For the 2nd time)', 'coh' ),
+				'id'   => $prefix . 'location_sun_close_time_2',
+				'type' => 'text_time',
+				'timezone_meta_key' => $prefix . 'location_timezone',
 			),
 		),
 	);
