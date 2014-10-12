@@ -86,61 +86,112 @@ function coh_location_is_open() {
 	$sunday_open2	= strtotime ( get_post_meta ( $post->ID, '_coh_location_sun_open_time_2', true ) );
 	$sunday_close2	= strtotime ( get_post_meta ( $post->ID, '_coh_location_sun_close_time_2', true ) );
 
+	$return = '';
+
 	if ( ( $current_day == 'monday' ) && ( $monday_bool ) ) {
         if ( ( $monday_open <= $now ) && ( $now <= $monday_close ) ) {
-            return true;
+            $return = true;
         } elseif ( ( $monday_open2 <= $now ) && ( $now <= $monday_close2 ) ) {
-						return true;
+						$return = true;
 				}
     }
 
     if ( ( $current_day == 'tuesday' ) && ( $tuesday_bool ) ) {
         if ( ( $tuesday_open <= $now ) && ( $now <= $tuesday_close ) ) {
-            return true;
+            $return = true;
         } elseif ( ( $tuesday_open2 <= $now ) && ( $now <= $tuesday_close2 ) ) {
-						return true;
+						$return = true;
 				}
     }
 
     if ( ( $current_day == 'wednesday' ) && ( $wednesday_bool ) ) {
         if ( ( $wednesday_open <= $now ) && ( $now <= $wednesday_close ) ) {
-            return true;
+            $return = true;
         } elseif ( ( $wednesday_open2 <= $now ) && ( $now <= $wednesday_close2 ) ) {
-						return true;
+						$return = true;
 				}
     }
 
     if ( ( $current_day == 'thursday' ) && ( $thursday_bool ) ) {
         if ( ( $thursday_open <= $now ) && ( $now <= $thursday_close ) ) {
-            return true;
+            $return = true;
         } elseif ( ( $thursday_open2 <= $now ) && ( $now <= $thursday_close2 ) ) {
-						return true;
+						$return = true;
 				}
     }
 
     if ( ( $current_day == 'friday' ) && ( $friday_bool ) ) {
         if ( ( $friday_open <= $now ) && ( $now <= $friday_close ) ) {
-            return true;
+            $return = true;
         } elseif ( ( $friday_open2 <= $now ) && ( $now <= $friday_close2 ) ) {
-						return true;
+						$return = true;
 				}
     }
 
     if ( ( $current_day == 'saturday' ) && ( $saturday_bool ) ) {
         if ( ( $saturday_open <= $now ) && ( $now <= $saturday_close ) ) {
-            return true;
+            $return = true;
         } elseif ( ( $saturday_open2 <= $now ) && ( $now <= $saturday_close2 ) ) {
-						return true;
+						$return = true;
 				}
     }
 
     if ( ( $current_day == 'sunday' ) && ( $sunday_bool ) ) {
         if ( ( $sunday_open <= $now ) && ( $now <= $sunday_close ) ) {
-            return true;
+            $return = true;
         } elseif ( ( $sunday_open2 <= $now ) && ( $now <= $sunday_close2 ) ) {
-						return true;
+						$return = true;
 				}
     }
+
+	$special_dates = get_post_meta( $post->ID, '_coh_custom_date_group', true );
+
+	if ( $special_dates ) {
+
+		foreach ( (array) $special_dates as $key => $special_date ) {
+
+			$sd_date = $sd_open_bool = $sd_open_time = $sd_close_time = '';
+
+		    if ( isset( $special_date['date_date'] ) ) {
+		        $sd_date = strtotime ( $special_date['date_date'] );
+		    }
+
+		    if ( isset( $special_date['date_open_bool'] ) ) {
+		        $sd_open_bool = $special_date['date_open_bool'];
+		    }
+
+		    if ( isset( $special_date['date_opening_time'] ) ) {
+		        $sd_open_time = $special_date['date_opening_time'];
+		    }
+
+		    if ( isset( $special_date['date_closing_time'] ) ) {
+		        $sd_close_time = $special_date['date_closing_time'];
+		    }
+
+		    if ( $sd_date = strtotime( $current_date ) ) {
+
+		    	if ( $sd_open_bool ) {
+			    	
+			    	if ( ( strtotime ( $sd_open_time ) <= $now ) && ( $now <= strtotime ( $sd_close_time ) ) ) {
+            			$return = true;
+            		} else {
+            			$return = false;
+            		}
+
+			    } else {
+			    	$return = false;
+			    }
+
+			}
+
+			?>
+
+		<?php
+		}
+
+	}
+
+    return $return;
 
 }
 
