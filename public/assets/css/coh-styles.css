@@ -5,6 +5,8 @@
     float: none; }
 .locations-display .locations-single .location-address {
   padding-bottom: 10px; }
+  .locations-display .locations-single .location-address div {
+    padding-bottom: 10px; }
 .locations-display .locations-single ul.location-hours {
   font-size: 15px;
   list-style-type: none;

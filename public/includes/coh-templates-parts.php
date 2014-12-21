@@ -62,7 +62,7 @@ function coh_output_single_photo() {
  *
  * @package   Captain Opening Hours
  * @author    Captain Theme <info@captaintheme.com>
- * @since 	  1.0
+ * @since 	  1.5.3
  * @todo 	  Add Size for Opening Hours Display
  */
 
@@ -72,10 +72,18 @@ function coh_output_single_address() {
 	// Variables
 	global $post;
 
-	$address = get_post_meta ( $post->ID, '_coh_location_address', true );
+	$streetAddress	 	= get_post_meta ( $post->ID, '_coh_location_address', true );
+	$addressLocality 	= get_post_meta ( $post->ID, '_coh_location_address_suburb', true );
+	$addressRegion		= get_post_meta ( $post->ID, '_coh_location_address_region', true );
+	$postalCode			= get_post_meta ( $post->ID, '_coh_location_address_code', true );
+	$addressCountry		= get_post_meta ( $post->ID, '_coh_location_address_country', true );
 
-	if ( $address ) {
-		echo '<div class="location-address">' . $address . '</div>';
+	if ( $streetAddress || $addressLocality || $addressRegion ) {
+		echo '<div class="location-address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">';
+	    	echo '<div itemprop="streetAddress">' . $streetAddress . '</div>';
+	    	echo '<div><span itemprop="addressLocality">' . $addressLocality . '</span>, <span itemprop="addressRegion">' . $addressRegion . '</span></div>';
+	    	echo '<div><span itemprop="addressCountry">' . $addressCountry . '</span> <span itemprop="postalCode">' . $postalCode . '</span></div>';
+	    echo '</div>';
 	}
 
 }

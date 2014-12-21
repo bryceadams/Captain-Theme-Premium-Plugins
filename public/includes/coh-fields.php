@@ -39,10 +39,34 @@ function coh_sample_metaboxes( array $meta_boxes ) {
 		'fields'     => array(
 			// Add Store Type select?
 			array(
-				'name' => __( 'Address', 'coh' ),
-				'desc' => __( 'Where is this location located? You should format the address properly. HTML allowed.', 'coh' ),
+				'name' => __( 'Street Address', 'coh' ),
+				'desc' => __( 'The street address.', 'coh' ),
 				'id'   => $prefix . 'location_address',
-				'type' => 'textarea'
+				'type' => 'text'
+			),
+			array(
+				'name' => __( 'Suburb / Area', 'coh' ),
+				'desc' => __( 'The suburb / area of the address.', 'coh' ),
+				'id'   => $prefix . 'location_address_suburb',
+				'type' => 'text'
+			),
+			array(
+				'name' => __( 'Region / State', 'coh' ),
+				'desc' => __( 'The region / state of the address (eg. CA).', 'coh' ),
+				'id'   => $prefix . 'location_address_region',
+				'type' => 'text'
+			),
+			array(
+				'name' => __( 'Postal Code / Zip Code', 'coh' ),
+				'desc' => __( 'The post code or ZIP code of the address.', 'coh' ),
+				'id'   => $prefix . 'location_address_code',
+				'type' => 'text'
+			),
+			array(
+				'name' => __( 'Country', 'coh' ),
+				'desc' => __( 'The country of the address. <a href="http://www.wikiwand.com/en/ISO_3166-1">It\'s best to use 2-letter ISO code</a>.', 'coh' ),
+				'id'   => $prefix . 'location_address_country',
+				'type' => 'text'
 			),
 			array(
 				'name' => __( 'Location Timezone', 'coh' ),
