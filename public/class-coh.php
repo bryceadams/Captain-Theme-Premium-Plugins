@@ -12,18 +12,18 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 /**
  * @package Captain Opening Hours
  * @author  Captain Theme <info@captaintheme.com>
- * @since  	1.5.0
+ * @since  	1.5.2
  */
 class COH {
 
 	/**
 	 * Plugin version, used for cache-busting of style and script file references.
 	 *
-	 * @since   1.5.0
+	 * @since   1.5.2
 	 *
 	 * @var     string
 	 */
-	const VERSION = '1.5.0';
+	const VERSION = '1.5.2';
 
 	/**
 	 * The variable name is used as the text domain when internationalizing strings

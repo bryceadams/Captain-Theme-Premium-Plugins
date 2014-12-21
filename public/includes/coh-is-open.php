@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  *
  * @package   Captain Opening Hours
  * @author    Captain Theme <info@captaintheme.com>
- * @since 	  1.4.0
+ * @since 	  1.5.2
  */
 
 function coh_location_is_open() {
@@ -168,7 +168,8 @@ function coh_location_is_open() {
 		        $sd_close_time = $special_date['date_closing_time'];
 		    }
 
-		    if ( $sd_date = strtotime( $current_date ) ) {
+
+		    if ( $sd_date == strtotime( date( 'y-m-d' ) ) ) {
 
 		    	if ( $sd_open_bool ) {
 			    	
