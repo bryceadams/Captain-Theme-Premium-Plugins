@@ -1,0 +1,76 @@
+#dp-wrapper h3.hndle {
+	padding: 20px 12px !important;
+	background: #F9F9F9 !important;
+	background: -webkit-linear-gradient(top, #F9F9F9 0%,#ECECEC 100%)!important;
+	background: linear-gradient(to bottom, #F9F9F9 0%,#ECECEC 100%)!important;
+	background: -moz-linear-gradient(top, #F9F9F9 0%, #ECECEC 100%)!important;
+	background: -ms-linear-gradient(top, #F9F9F9 0%,#ECECEC 100%)!important;
+	background: -o-linear-gradient(top, #F9F9F9 0%,#ECECEC 100%)!important;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F9F9F9), color-stop(100%,#ECECEC))!important;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#ececec',GradientType=0 )!important;
+
+	font-size: 18px !important;
+	font-weight: 600 !important;
+	font-family: sans-serif !important;
+	color: #33373E !important;
+	text-shadow: 0 1px 0 #FFF !important;
+	-webkit-font-smoothing: antialiased !important;
+	text-transform: capitalize !important;
+
+	font-family:Helvetica, Arial, Geneva, sans-serif !important;
+
+
+}
+
+#dp-wrapper h3.hndle span {
+	font-weight: 600 !important;
+}
+
+#dp-wrapper .acf-tab-group {
+	background: #fff;
+}
+
+#dp-wrapper .acf_postbox p.label {
+	font-style: normal;
+font-size: 13px;
+color: #8E8E8E;
+	text-transform: capitalize !important;
+}
+
+#dp-wrapper .acf_postbox p.label label {
+	font-size: 14px;
+font-weight: bold;
+line-height: 20px;
+padding-right: 40px;
+color: #2B2B2B;
+text-shadow: none;
+letter-spacing: -0.0133em;
+}
+
+#dp-wrapper span.version {
+	font-size: 12px;
+padding-left: 15px;
+color: #6C6C6C;
+font-weight: 400;
+float: right;
+margin-top:5px; 
+}
+
+
+#dp-footer {
+background: #F9F9F9;
+background: -webkit-linear-gradient(top, #F9F9F9 0%,#ECECEC 100%);
+background: linear-gradient(to bottom, #F9F9F9 0%,#ECECEC 100%);
+background: -moz-linear-gradient(top, #F9F9F9 0%, #ECECEC 100%);
+background: -ms-linear-gradient(top, #F9F9F9 0%,#ECECEC 100%);
+background: -o-linear-gradient(top, #F9F9F9 0%,#ECECEC 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F9F9F9), color-stop(100%,#ECECEC));
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#ececec',GradientType=0 );
+margin-top: -2px;
+position: relative;
+z-index: 999;
+padding: 15px;
+border: 1px solid #dfdfdf;
+border-bottom-right-radius: 3px;
+border-bottom-left-radius: 3px;
+}

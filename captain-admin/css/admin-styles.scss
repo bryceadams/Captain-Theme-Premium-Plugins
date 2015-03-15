@@ -1,0 +1,267 @@
+// Log In Page
+body.login {
+	#loginform {
+		background: rgba(255,255,255,0.8);
+		label {
+			color: #555;
+		}
+	}
+	p#nav {
+		color: #ddd;
+	}
+}
+
+// Let's Code for Desktops
+#wpwrap {
+	#adminmenuwrap {
+		ul#adminmenu {
+			.menu-logo {
+				max-width: 140px;
+				padding: 30px 0 0 8px;
+			}
+		}
+	}
+
+	#wpcontent {
+		#wpbody {
+			#wpbody-content {
+				h2 {
+					font-size: 28px;
+					line-height: 38px;
+				}
+				.add-new-h2 {
+					top: -7px;
+				}
+				#dashboard-widgets-wrap {
+					// Total Posts Widget
+					#total_posts_widget,
+					#write_a_post_widget,
+					#write_a_page_widget {
+						// Use Mixin Instead
+						border-bottom-left-radius: 0px;
+						border-bottom-right-radius: 0px;
+						h3.hndle {
+							border-bottom: 0;
+							span {
+								display: none;
+							}
+						}
+						.handlediv {
+							display: none;
+						}
+						.inside {
+							margin-top: 0;
+							p {
+								margin-top: 0;
+							}
+							.dashicons {
+								font-size: 32px;
+								line-height: 0.7;
+							}
+							.stats-icon {
+								width: 23%;
+								display: inline-block;
+								padding-left: 10px;
+								margin-top: 13px;
+								i {
+									font-size: 100px;
+									color: #222;
+								}
+							}
+							.post-stats {
+								width: 70%;
+								display: inline-block;
+								vertical-align: top;
+								padding-top: 30px;
+								padding-bottom: 15px;
+								div {
+									display: inline-block;
+									text-align: right;
+									font-size: 16px;
+									span {
+										font-size: 35px;
+										font-weight: 800;
+										display: block;
+										padding-bottom: 5px;
+										color: #222;
+										i {
+											font-size: 30px;
+											line-height: 0;
+											vertical-align: top;
+											padding-top: 8px;
+											padding-right: 11px;
+										}
+									}
+								}
+
+								// First Widget
+								.total-post {
+									width: 21%;
+									padding-left: 15px;
+								}
+								.total-page {
+									width: 32%;
+								}
+								.total-comments {
+									width: 40%;
+								}
+
+
+								// Second Widget
+								.total-sales {
+									width: 45%;
+									span {
+										font-size: 26px;
+										display: inline-block;
+									}
+									i {
+										font-size: 25px;
+										padding-right: 5px;
+									}
+								}
+								.total-orders {
+									width: 45%;
+									span {
+										font-size: 26px;
+									}
+									i {
+										font-size: 20px;
+										padding-right: 5px;
+										line-height: 0.2;
+									}
+								}
+							}
+						}
+					}
+					#write_a_post_widget,
+					#write_a_page_widget {
+						.handlediv {
+							display: none;
+						}	
+						.inside {
+							text-align: center;
+							padding-bottom: 15px;
+							.write-post-text {
+								font-size: 26px;
+								margin-left: 15px;
+								color: #222;
+							}
+						}
+					}
+					#activity-widget {
+						#the-comment-list .comment {
+							background: none;
+							img.avatar {
+								border-radius: 50px;
+								-moz-border-radius: 50px;
+								-webkit-border-radius: 50px;
+							}
+						}
+					}
+				}
+				#ca_acf_acf_plugin-options {
+					background: none;
+					border: 0;
+
+					h3.hndle,
+					.handlediv {
+						display: none;
+					}
+
+					#acf-logo_width,
+					#acf-logo_height {
+						.acf-input-append {
+							height: 18px;
+						}
+						.acf-input-wrap {
+							input {
+								height: 30px;
+							}
+						}
+					}
+					#acf-background_image{ 
+						ul.acf-radio-list {
+							li {
+								label {
+									font-size: 0;
+									input {
+										height: 150px;
+										width: 150px !important;
+										border-radius: 0;
+										background-size: 185px 185px !important;
+										&#acf-field-background_image-Waves {
+											background: url('../images/waves.jpg');
+										}
+										&#acf-field-background_image-Wood {
+											background: url('../images/wood.jpg');
+										}
+										&#acf-field-background_image-Forest {
+											background: url('../images/forest.jpg');
+										}
+										&#acf-field-background_image-Leaf {
+											background: url('../images/leaf.jpg');
+										}
+										&#acf-field-background_image-Rocks {
+											background: url('../images/rocks.jpg');
+										}
+										&#acf-field-background_image-Custom {
+											background: url('../images/custom-bg.png');
+											background-size: 150px 150px !important;
+										}
+										&:before {
+											content: none;
+										}
+									}
+								}
+							}
+						}
+					}
+					#acf-hide_options_page {
+						pre {
+							background: #fff;
+							padding: 10px 5px;
+							border: 1px solid #555;
+							font-weight: bold;
+						}
+					}
+					p.label label {
+						display: block;
+					}
+					textarea.textarea {
+						width: 100%;
+					}
+					input.text {
+						width: 40%;
+					}
+				}
+			}
+		}
+		.post-state .states{
+			font-size:10px;
+			padding:3px 8px 3px 8px;
+			-moz-border-radius:2px;
+			-webkit-border-radius:2px;
+			border-radius:2px;
+			}
+		.post-state {
+			.password {
+				background:#a92129;
+				color:#fff;
+			}
+			.pending {
+				background:#83CF21 !important;
+				color:#fff;
+			}
+			.private {
+				background:#E0A21B;
+				color:#fff;
+			}
+			.draft {
+				background:#006699;
+				color:#fff;
+			}
+		}
+
+
+	}
+}

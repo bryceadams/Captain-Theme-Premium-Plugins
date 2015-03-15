@@ -1,0 +1,730 @@
+@import 'mixins';
+
+.google-maps.group-map {
+	.acf-map {
+		width: 100%;
+		height: 350px;
+		border: #ccc solid 1px;
+		margin: 20px 0;
+		.gm-style-iw {
+			text-align: left;
+			h4 {
+				text-transform: uppercase;
+				font-size: 20px;
+				margin-bottom: 0;
+				margin-top: 6px;
+			}
+			.member-position {
+				font-size: 14px;
+			}
+			.member-location {
+				i.fa-map-marker {
+					padding-right: 6px;
+				}
+			}
+		}
+	}
+}
+
+
+.js #member-group:first {
+	display: none;
+}
+
+ul#member-sort {
+	li {
+		list-style-type: none;
+		display: inline-block;
+		margin-left: 5px;
+		padding: 8px 10px;
+		border: 1px solid #ddd;
+		@include transition(all, 0.3s, ease);
+		&:hover {
+			background: #eee;
+		}
+	}
+}
+
+.sort-container.large_row {
+	.grid {
+		margin-bottom: 20px;
+	}
+}
+
+.large_row .twitter-follow {
+	text-align: left;
+	margin-left: 20px;
+}
+
+.small_row .twitter-follow {
+	margin-top: 8px !important;
+}
+
+#member-single {
+		.box {
+			width: 100%;
+		}
+		margin-bottom: 30px;
+		box-shadow: 1px 1px 5px 1px #eee;
+		@include transition(box-shadow, 0.2s);
+		&:hover {
+			box-shadow: 2px 2px 10px 1px #ddd;
+		}
+		.member-container {
+			.member-header {
+				padding-top: 25px;
+				//background: #1972DD;
+				text-align: center;
+				height: 100px;
+				.circle {
+					line-height: 0;
+					display: inline-block;
+					border-radius: 50%;
+					border: 3px solid #fff;
+					img.member-photo {
+						width: 150px;
+						height: 150px;
+						border-radius: 50%;
+						-moz-border-radius: 150px;
+						-webkit-border-radius: 150px;
+					}
+				}
+				.square {
+					img.member-photo {
+						width: 150px;
+						height: 150px;
+						border: 3px solid #fff;
+					}
+				}
+				.hexagon {
+				    overflow: hidden;
+				    visibility: hidden;
+				    @include transform(rotate(120deg));
+					.hexagon-in1 {
+					    overflow: hidden;
+					    width: 100%;
+					    height: 100%;
+					    @include transform(rotate(-60deg));
+					        -ms-transform: rotate(120deg);
+				    }
+					.hexagon-in2 {
+					    width: 100%;
+					    height: 100%;
+					    background-repeat: no-repeat;
+					    background-position: 50%;
+					    background-size: 180px;
+					    visibility: visible;
+					    @include transform(rotate(-60deg));
+					        -ms-transform: rotate(120deg);
+				    }
+				    &.hexagon1 {
+				    	height: 150px;
+				    }
+				}
+				img.member-photo {
+					margin: 0 auto;
+					&.zoom_out {
+						@include transition(all, 0.5s, ease);
+						&:hover {
+							@include transform(scale(0.8,0.8));
+						}
+					}
+					&.zoom_in {
+						@include transition(all, 0.5s, ease);
+						&:hover {
+							@include transform(scale(1.2,1.2));
+						}
+					}
+					&.rotate {
+						@include transition(all, 0.8s, ease);
+						&:hover {
+							@include transform(rotate(360deg));
+						}
+					}
+					&.tilt {
+						@include transition(all, 0.6s, ease);
+						&:hover {
+							@include transform(rotate(-12deg));
+						}
+					}
+					&.blur {
+						@include transition(all, 0.5s, ease);
+						&:hover {
+							@include filter(blur, 5px);
+						}
+					}
+					&.black_white {
+						@include transition(all, 0.75s, ease);
+						&:hover {
+							@include filter(grayscale, 100%);
+						}
+					}
+					&.darken {
+						@include transition(all, 1s, ease);
+						@include filter(brightness,100%);
+						&:hover {
+							@include filter(brightness,30%);
+						}
+					}
+					&.opacity {
+						@include transition(all, 0.5s, ease);
+						&:hover {
+							opacity: 0.5;
+						}
+					}
+				}
+			}
+			.member-body {
+				padding: 75px 0 25px;
+				background: #fcfcfc;
+				text-align: center;
+				.member-name {
+					text-transform: uppercase;
+					letter-spacing: -0.2pt;
+					font-size: 23px;
+					font-weight: bold;
+				}
+				.member-position {
+					color: #777;
+					margin-bottom: 8px;
+				}
+				.member-bio {
+					font-size: 14px;
+					margin-bottom: 8px;
+					padding: 0 10px 5px;
+				}
+				.member-quote {
+					font-style: italic;
+					font-size: 17px;
+					padding: 5px 10px;
+					i {
+						font-size: 14px;
+						&.fa-quote-left {
+							padding-right: 5px;
+							color: #999;
+						}
+						&.fa-quote-right {
+							padding-left: 5px;
+							vertical-align: top;
+							color: #999;
+						}
+					}
+				}
+				.contact {
+					margin-top: 8px;
+					.member-phone {
+						font-size: 14px;
+					}
+					.member-email {
+						font-size: 14px;
+					}
+					.member-website {
+						font-size: 14px;
+						padding-bottom: 3px;
+					}
+					.member-location {
+						padding-top: 5px;
+						padding-bottom: 8px;
+						font-size: 14px;
+						text-transform: uppercase;
+						i {
+							font-size: 100%;
+						}
+					}
+					i {
+						font-size: 90%;
+						padding-right: 5px;
+					}
+					a {
+						color: #444;
+						text-decoration: none;
+						border-bottom: 1px dotted #444;
+						&:hover {
+							color: #090909;
+							border-bottom: 1px dotted #090909;
+						}
+					}
+				}
+				.social {
+					margin-top: 10px;
+					.fa-circle {
+						&.facebook {
+							color: #3b5998;
+						}
+						&.twitter {
+							color: #55acee;
+						}
+						&.instagram {
+							color: #3f729b;
+						}
+						&.google-plus {
+							color: #dd4b39;
+						}
+						&.github {
+							color: #679BCF;
+						}
+						&.linkedin {
+							color: #007bb6;
+						}
+						&.foursquare {
+							color: #8FD400;
+						}
+						&.tumblr {
+							color: #2B4964;
+						}
+						&.vimeo-square {
+							color: #3f729b;
+						}
+						&.youtube {
+							color: #FF3333;
+						}
+						&.reddit {
+							color: #a1caf2;
+						}
+						&.soundcloud {
+							color: #F60;
+						}
+						&.pinterest {
+							color: #CC2127;
+						}
+						&.dribbble {
+							color: #ea4c89;
+						}
+						&.spotify {
+							color: #81b71a;
+						}
+						&.wordpress {
+							color: #21759b;
+						}
+						&.behance {
+							color: #1769ff;
+						}
+						&.flickr {
+							color: #ff0084;
+						}
+					}
+					.social-single {
+						overflow: hidden;
+						-webkit-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+						-moz-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+						transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+						text-decoration: none;
+						// Effects
+						&:before {
+							speak: none;
+							display: block;
+						}
+   						&:after {
+   							display: none;
+   							pointer-events: none;
+							position: absolute;
+							width: 100%;
+							height: 100%;
+							border-radius: 50%;
+							content: '';
+							-webkit-box-sizing: content-box; 
+							-moz-box-sizing: content-box; 
+							box-sizing: content-box;
+   						}
+   						&:hover {
+   							color: #fff;
+							&:before {
+								-webkit-animation: toRightFromLeft 0.3s forwards;
+								-moz-animation: toRightFromLeft 0.3s forwards;
+								animation: toRightFromLeft 0.3s forwards;
+							}
+   						}
+					}
+				}
+				.twitter-follow {
+					margin-top: 15px;
+					padding: 0 5px;
+				}
+				.google-maps {
+				    .acf-map {
+						width: 100%;
+						height: 250px;
+						border: #ccc solid 1px;
+						margin: 20px 0;
+					}
+				}
+				.skills {
+					margin-top: 20px;
+					.single-skill {
+						width: 90%;
+						margin: 0 auto;
+						p {
+							margin: 0 !important;
+							text-align: left;
+							text-transform: uppercase;
+							font-size: 13px;
+							color: #555;
+						}
+						progress:not(value) {
+						}
+						progress[value] {
+							/* Get rid of the default appearance */
+							appearance: none;
+							/* This unfortunately leaves a trail of border behind in Firefox and Opera. We can remove that by setting the border to none. */
+							border: none;
+							/* Add dimensions */
+							width: 100%; height: 15px;
+							/* Although firefox doesn't provide any additional pseudo class to style the progress element container, any style applied here works on the container. */
+							background-color: whiteSmoke;
+							border-radius: 3px;
+							box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+							/* Of all IE, only IE10 supports progress element that too partially. It only allows to change the background-color of the progress value using the 'color' attribute. */
+							color: royalblue;
+							position: relative;
+							margin: 0 0 0.65em; 
+							&::-webkit-progress-bar {
+								background-color: whiteSmoke;
+								border-radius: 3px;
+								box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+							}
+							&::-webkit-progress-value {
+								position: relative;
+								background-size: 35px 15px, 100% 100%, 100% 100%;
+								border-radius:3px;
+								/* Gradient background with Stripes */
+								background-image:
+									-webkit-linear-gradient( 135deg, transparent, transparent 33%, rgba(0,0,0,.1) 33%, rgba(0,0,0,.1) 66%, transparent 66%),
+								    -webkit-linear-gradient( top, rgba(255, 255, 255, .25), rgba(0,0,0,.2)),
+								    -webkit-linear-gradient( left, #1972DD, #1972DD );
+							}
+							&::-webkit-progress-value:after {
+								/* Only webkit/blink browsers understand pseudo elements on pseudo classes. A rare phenomenon! */
+								content: '';
+								position: absolute;
+								width:5px; height:5px;
+								top:5px; right:7px;
+								background-color: white;
+								border-radius: 100%;
+							}
+							&::-moz-progress-bar {
+								/* Gradient background with Stripes */
+								background-image:
+								-moz-linear-gradient( 135deg, transparent, transparent 33%, rgba(0,0,0,.1) 33%, rgba(0,0,0,.1) 66%, transparent 66%),
+							    -moz-linear-gradient( top, rgba(255, 255, 255, .25), rgba(0,0,0,.2)),
+							     -moz-linear-gradient( left, #09c, #09c);
+								background-size: 35px 15px, 100% 100%, 100% 100%;
+								border-radius:3px;
+							}
+							&.animate {
+								&::-webkit-progress-value {
+									/* Let's animate this */
+									-webkit-animation: animate-stripes 5s linear infinite;
+									animation: animate-stripes 5s linear infinite;
+								}
+							}
+							/* Fallback technique styles */
+							.progress-bar {
+								background-color: whiteSmoke;
+								border-radius: 3px;
+								box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+								/* Dimensions should be similar to the parent progress element. */
+								width: 100%; height:15px;
+								span {
+									background-color: royalblue;
+									border-radius: 3px;
+									display: block;
+									text-indent: -9999px;
+								}
+							}
+						}
+						p[data-value] { 
+							position: relative; 
+							&:after {
+								content: attr(data-value) '%';
+								position: absolute; right:0;
+							}
+						}
+					}
+				}
+			}
+			.member-footer {
+				height: 10px;
+				&#rainbow {
+					background: linear-gradient(90deg, #a85e6c 0%, #a85e6c 12.5%, #e37f52 12.5%, #e37f52 25%, #ef9f48 25%, #ef9f48 37.5%, #9cb641 37.5%, #9cb641 50%, #009484 50%, #009484 62.5%, #21acb8 62.5%, #21acb8 75%, #1972dd 75%, #1972dd 87.5%, #8fa0ae 87.5%, #8fa0ae 100%);
+					background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #a85e6c), color-stop(12.5%, #a85e6c), color-stop(12.5%, #e37f52), color-stop(25%, #e37f52), color-stop(25%, #ef9f48), color-stop(37.5%, #ef9f48), color-stop(37.5%, #9cb641), color-stop(50%, #9cb641), color-stop(50%, #009484), color-stop(62.5%, #009484), color-stop(62.5%, #21acb8), color-stop(75%, #21acb8), color-stop(75%, #1972dd), color-stop(87.5%, #1972dd), color-stop(87.5%, #8fa0ae), color-stop(100%, #8fa0ae));
+					background-image: -webkit-linear-gradient(left, #a85e6c 0%, #a85e6c 12.5%, #e37f52 12.5%, #e37f52 25%, #ef9f48 25%, #ef9f48 37.5%, #9cb641 37.5%, #9cb641 50%, #009484 50%, #009484 62.5%, #21acb8 62.5%, #21acb8 75%, #1972dd 75%, #1972dd 87.5%, #8fa0ae 87.5%, #8fa0ae 100%);
+					background-image: -moz-linear-gradient(left, #a85e6c 0%, #a85e6c 12.5%, #e37f52 12.5%, #e37f52 25%, #ef9f48 25%, #ef9f48 37.5%, #9cb641 37.5%, #9cb641 50%, #009484 50%, #009484 62.5%, #21acb8 62.5%, #21acb8 75%, #1972dd 75%, #1972dd 87.5%, #8fa0ae 87.5%, #8fa0ae 100%);
+					background-image: -o-linear-gradient(left, #a85e6c 0%, #a85e6c 12.5%, #e37f52 12.5%, #e37f52 25%, #ef9f48 25%, #ef9f48 37.5%, #9cb641 37.5%, #9cb641 50%, #009484 50%, #009484 62.5%, #21acb8 62.5%, #21acb8 75%, #1972dd 75%, #1972dd 87.5%, #8fa0ae 87.5%, #8fa0ae 100%);
+					background-image: linear-gradient(left, #a85e6c 0%,#a85e6c 12.5%,#e37f52 12.5%,#e37f52 25%,#ef9f48 25%,#ef9f48 37.5%,#9cb641 37.5%,#9cb641 50%,#009484 50%,#009484 62.5%,#21acb8 62.5%,#21acb8 75%,#1972dd 75%,#1972dd 87.5%,#8fa0ae 87.5%,#8fa0ae 100%);
+				}
+			}
+		}
+		&.style2 {
+			box-shadow: none;
+			.member-header {
+				background-color: #fff !important;
+				background-image: none !important;
+				height: 100%;
+				.photo-container {
+					img {
+						width: 200px !important;
+						height: 200px !important;
+						margin: 0 auto;
+					}
+					&.hexagon {
+						height: 200px;
+						.hexagon-in2 {
+							background-size: 250px;
+						}
+					}
+				}
+			}
+			.member-body {
+				background: #fff;
+				padding-top: 15px;
+			}
+			.member-footer {
+
+			}
+		}
+		&.style3 {
+			box-shadow: none;
+			.member-header {
+				background-color: #fff !important;
+				background-image: none !important;
+				height: 100%;
+				.photo-container {
+					img {
+						width: 200px !important;
+						height: 200px !important;
+					}
+					&.hexagon {
+						height: 200px;
+						.hexagon-in2 {
+							background-size: 250px;
+						}
+					}
+				}
+			}
+			.member-body {
+				background: #fff;
+				padding-top: 15px;
+				margin-top: -90px;
+				.member-name {
+					color: #fff;
+					text-shadow: 1px 1px 2px #333;
+				}
+				.member-position {
+					margin-bottom: 35px;
+					color: #eee;
+					text-shadow: 1px 1px 2px #111;
+				}
+			}
+			.member-footer {
+
+			}
+		}
+		&.style4 {
+			box-shadow: 1px 1px 8px 2px #ddd;
+			.member-header {
+				height: 179px;
+			}
+			.member-body {
+				background: #fefefe;
+				padding-top: 20px;
+				padding-bottom: 0;
+				.member-position {
+					text-transform: uppercase;
+					font-size: 90%;
+				}
+				.social {
+					padding-bottom: 10px;
+				}
+				.skills {
+					padding: 16px 0 8px;
+					margin-top: 10px;
+					.single-skill {
+						p {
+							color: #fff;
+						}
+					}
+				}
+			}
+			.member-footer {
+
+			}
+		}
+		&.style5 {
+			.member-header {
+				height: 0;
+				padding: 0;
+				.photo-container {
+					&.circle {
+						margin-top: 25px;
+					}
+					&.square {
+						padding-top: 25px;
+					}
+					&.hexagon {
+						position: relative;
+						top: 25px;
+					}
+				}
+			}
+			.member-body {
+				padding-top: 0;
+				.member-name {
+					padding-top: 190px;
+					padding-bottom: 45px;
+					color: #fff;
+					text-shadow: 1px 1px 2px #333;
+				}
+				.member-position {
+					padding-bottom: 25px;
+					margin-bottom: 20px;
+					margin-top: -45px;
+					color: #eee;
+					text-shadow: 1px 1px 2px #333;
+				}
+			}
+			.member-footer {
+
+			}
+		}
+	&.small_row {
+		margin-bottom: 30px;
+		box-shadow: none;
+		&:hover {
+			box-shadow: none;
+		}
+		.member-container {
+			.member-header {
+				padding-top: 5px;
+				height: 100%;
+				width: 10%;
+				.photo-container {
+					img {
+						width: 50px !important;
+						height: 50px !important;
+					}
+					&.hexagon {
+						height: 50px;
+						.hexagon-in2 {
+							background-size: 100px;
+						}
+					}
+				}
+			}
+			.member-body {
+				padding: 0;
+				background: #fff;
+				.member-name {
+					font-size: 15px;
+				}
+
+				.name_pos {
+					width: 22%;
+					padding-top: 5px;
+					font-size: 14px;
+				}
+				.phone_email {
+					width: 24%;
+					padding-top: 5px;
+				}
+				.web_location {
+					width: 24%;
+					padding-top: 5px;
+					.member-location {
+						padding-top: 0;
+						font-size: 13px;
+					}
+				}
+				.social_part {
+					padding-top: 5px;
+					.social {
+						margin-top: 0;
+					}
+				}
+			}
+			.member-footer {
+
+			}
+		}
+	}
+	&.large_row {
+		box-shadow: none;
+		&:hover {
+			box-shadow: none;
+		}
+		.member-container {
+			.member-header {
+				padding-top: 20px;
+				padding-left: 0;
+				padding-right: 0;
+				padding-bottom: 20px;
+				height: 100%;
+				// OPTIONAL Style: box-shadow: 4px 0px 6px 1px #ddd;
+			}
+			.member-body {
+				padding: 0;
+				background: none;
+				.member-name {
+					color: #fff;
+					text-shadow: 1px 1px 2px #333;
+					padding-top: 10px;
+				}
+				.member-position {
+					color: #fff;
+					text-shadow: 1px 1px 2px #333;
+				}
+				.social {
+					margin-top: 15px;
+				}
+				.contact {
+					padding: 10px 10px 0 25px;
+					text-align: left;
+					.member-phone,
+					.member-email,
+					.member-website,
+					.member-location {
+						font-size: 16px;
+					}
+					hr {
+						margin-bottom: 10px;
+					}
+				}
+				.member-bio {
+					padding: 10px 10px 10px 25px;
+					text-align: left;
+					font-size: 15px;
+				}
+			}
+			.member-footer {
+
+			}
+		}
+	}
+}
+
+// KEYFRAMES / ANIMATIONS
+@include keyframes(toRightFromLeft) {
+	49% {
+		-webkit-transform: translate(100%);
+	}
+	50% {
+		opacity: 0;
+		-webkit-transform: translate(-100%);
+	}
+	51% {
+		opacity: 1;
+	}
+}
+
+@include keyframes(animate-stripes) {
+	100% {
+		background-position: -100px 0;
+	}
+}
+
+
+#map-canvas,
+#map_canvas {
+        height: 250px;
+        margin: 0px;
+        padding: 0px
+      }

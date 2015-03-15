@@ -1,0 +1,165 @@
+// keyframes mixin
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content; 
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  } 
+}
+
+/*
+ * Apply a CSS3 transition
+ *
+ * $property The property you want to animate, eg opacity
+ * $duration The duration of the animation, eg 1s
+ * $ms Include -ms-transition; default is false because IE does not support transitionEnd callback
+ *
+ * @include transition(opacity, 0.5s);
+ */
+
+@mixin transition($property, $duration, $ms: false) {
+  -webkit-transition: $property $duration ease-in-out;
+  -moz-transition: $property $duration ease-in-out;
+  -o-transition: $property $duration ease-in-out;
+  @if ($ms) {
+    -ms-transition: $property $duration ease-in-out;
+  }
+  transition: $property $duration ease-in-out;
+}
+
+@mixin transitionLong($property, $duration, $easing:ease-in-out, $delay:false) {
+  @include transitionProperty($property);
+  @include transitionDuration($duration);
+
+  @if($delay) {
+    @include transitionDelay($delay);
+  }
+
+  @if($easing) {
+    @include transitionTimingFunction($easing);
+  }
+}
+
+/*
+ * Apply a CSS3 transition-delay
+ * @include transitionDelay(2s);
+ */
+@mixin transitionDelay($delay) {
+  -webkit-transition-delay: $delay;
+  -moz-transition-delay: $delay;
+  -o-transition-delay: $delay;
+  -ms-transition-delay: $delay;
+  transition-delay: $delay;
+}
+
+/*
+ * Apply a CSS3 transition-duration
+ * @include transitionDuration(1s);
+ */
+@mixin transitionDuration($duration) {
+  -webkit-transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  -o-transition-duration: $duration;
+  -ms-transition-duration: $duration;
+  transition-duration: $duration;
+}
+
+/*
+ * Apply a CSS3 transition-property
+ * @include transitionProperty(opacity);
+ * @include transitionProperty((height, width)); Multiple properties can be passed in surrounded by brackets
+ */
+@mixin transitionProperty($property) {
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -o-transition-property: $property;
+  -ms-transition-property: $property;
+  transition-property: $property;
+}
+
+/*
+ * Apply a CSS3 transition-timing-function
+ * @include transitionTimingFunction(easing);
+ */
+@mixin transitionTimingFunction($easing) {
+  -webkit-transition-timing-function: $easing;
+  -moz-transition-timing-function: $easing;
+  -o-transition-timing-function: $easing;
+  -ms-transition-timing-function: $easing;
+  transition-timing-function: $easing;
+}
+
+// Extra Mixins
+
+@mixin transform($string){
+  -webkit-transform: $string;
+  -moz-transform:    $string;
+  -ms-transform:     $string;
+  -o-transform:      $string;
+}
+@mixin scale ($factor) {
+  -webkit-transform: scale($factor);
+  -moz-transform:    scale($factor);
+  -ms-transform:     scale($factor);
+  -o-transform:      scale($factor);
+}
+@mixin rotate ($deg) {
+  -webkit-transform: rotate($deg);
+  -moz-transform:    rotate($deg);
+  -ms-transform:     rotate($deg);
+  -o-transform:      rotate($deg);
+}
+@mixin skew ($deg, $deg2) {
+  -webkit-transform:       skew($deg, $deg2);
+  -moz-transform:    skew($deg, $deg2);
+  -ms-transform:     skew($deg, $deg2);
+  -o-transform:      skew($deg, $deg2);
+}
+@mixin translate ($x, $y:0) {
+  -webkit-transform:       translate($x, $y);
+  -moz-transform:    translate($x, $y);
+  -ms-transform:     translate($x, $y);
+  -o-transform:      translate($x, $y);
+}
+@mixin translate3d ($x, $y: 0, $z: 0) {
+  -webkit-transform:       translate3d($x, $y, $z);
+  -moz-transform:    translate3d($x, $y, $z);
+  -ms-transform:     translate3d($x, $y, $z);
+  -o-transform:      translate3d($x, $y, $z);
+}
+@mixin perspective ($value: 1000) {
+  -webkit-perspective:  $value;
+  -moz-perspective:   $value;
+  -ms-perspective:  $value;
+  perspective:    $value;
+}
+@mixin ransform-origin ($x:center, $y:center) {
+  -webkit-transform-origin: $x $y;
+  -moz-transform-origin:    $x $y;
+  -ms-transform-origin:     $x $y;
+  -o-transform-origin:      $x $y;
+}
+
+// grayscale      ex: filter: grayscale(100%);
+// sepia          ex: filter: sepia(100%);
+// saturate       ex: filter: saturate(0%);
+// hue-rotate     ex: filter: hue-rotate(45deg);
+// invert         ex: filter: invert(100%);
+// brightness     ex: filter: brightness(15%);
+// contrast       ex: filter: contrast(200%);
+// blur           ex: filter: blur(2px);
+ 
+@mixin filter($filter-type,$filter-amount) { 
+  -webkit-filter: $filter-type+unquote('(#{$filter-amount})');
+  -moz-filter: $filter-type+unquote('(#{$filter-amount})');
+  -ms-filter: $filter-type+unquote('(#{$filter-amount})');
+  -o-filter: $filter-type+unquote('(#{$filter-amount})');
+  filter: $filter-type+unquote('(#{$filter-amount})');
+}

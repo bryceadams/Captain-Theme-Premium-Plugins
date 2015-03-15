@@ -1,0 +1,209 @@
+body.login #loginform {
+  background: rgba(255, 255, 255, 0.8); }
+  body.login #loginform label {
+    color: #555; }
+body.login p#nav {
+  color: #ddd; }
+
+#wpwrap #adminmenuwrap ul#adminmenu .menu-logo {
+  max-width: 140px;
+  padding: 30px 0 0 8px; }
+#wpwrap #wpcontent #wpbody #wpbody-content h2 {
+  font-size: 28px;
+  line-height: 38px; }
+#wpwrap #wpcontent #wpbody #wpbody-content .add-new-h2 {
+  top: -7px; }
+#wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #total_posts_widget,
+#wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_post_widget,
+#wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_page_widget {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px; }
+  #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #total_posts_widget h3.hndle,
+  #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_post_widget h3.hndle,
+  #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_page_widget h3.hndle {
+    border-bottom: 0; }
+    #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #total_posts_widget h3.hndle span,
+    #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_post_widget h3.hndle span,
+    #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_page_widget h3.hndle span {
+      display: none; }
+  #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #total_posts_widget .handlediv,
+  #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_post_widget .handlediv,
+  #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_page_widget .handlediv {
+    display: none; }
+  #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #total_posts_widget .inside,
+  #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_post_widget .inside,
+  #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_page_widget .inside {
+    margin-top: 0; }
+    #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #total_posts_widget .inside p,
+    #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_post_widget .inside p,
+    #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_page_widget .inside p {
+      margin-top: 0; }
+    #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #total_posts_widget .inside .dashicons,
+    #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_post_widget .inside .dashicons,
+    #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_page_widget .inside .dashicons {
+      font-size: 32px;
+      line-height: 0.7; }
+    #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #total_posts_widget .inside .stats-icon,
+    #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_post_widget .inside .stats-icon,
+    #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_page_widget .inside .stats-icon {
+      width: 23%;
+      display: inline-block;
+      padding-left: 10px;
+      margin-top: 13px; }
+      #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #total_posts_widget .inside .stats-icon i,
+      #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_post_widget .inside .stats-icon i,
+      #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_page_widget .inside .stats-icon i {
+        font-size: 100px;
+        color: #222; }
+    #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #total_posts_widget .inside .post-stats,
+    #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_post_widget .inside .post-stats,
+    #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_page_widget .inside .post-stats {
+      width: 70%;
+      display: inline-block;
+      vertical-align: top;
+      padding-top: 30px;
+      padding-bottom: 15px; }
+      #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #total_posts_widget .inside .post-stats div,
+      #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_post_widget .inside .post-stats div,
+      #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_page_widget .inside .post-stats div {
+        display: inline-block;
+        text-align: right;
+        font-size: 16px; }
+        #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #total_posts_widget .inside .post-stats div span,
+        #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_post_widget .inside .post-stats div span,
+        #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_page_widget .inside .post-stats div span {
+          font-size: 35px;
+          font-weight: 800;
+          display: block;
+          padding-bottom: 5px;
+          color: #222; }
+          #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #total_posts_widget .inside .post-stats div span i,
+          #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_post_widget .inside .post-stats div span i,
+          #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_page_widget .inside .post-stats div span i {
+            font-size: 30px;
+            line-height: 0;
+            vertical-align: top;
+            padding-top: 8px;
+            padding-right: 11px; }
+      #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #total_posts_widget .inside .post-stats .total-post,
+      #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_post_widget .inside .post-stats .total-post,
+      #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_page_widget .inside .post-stats .total-post {
+        width: 21%;
+        padding-left: 15px; }
+      #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #total_posts_widget .inside .post-stats .total-page,
+      #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_post_widget .inside .post-stats .total-page,
+      #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_page_widget .inside .post-stats .total-page {
+        width: 32%; }
+      #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #total_posts_widget .inside .post-stats .total-comments,
+      #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_post_widget .inside .post-stats .total-comments,
+      #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_page_widget .inside .post-stats .total-comments {
+        width: 40%; }
+      #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #total_posts_widget .inside .post-stats .total-sales,
+      #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_post_widget .inside .post-stats .total-sales,
+      #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_page_widget .inside .post-stats .total-sales {
+        width: 45%; }
+        #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #total_posts_widget .inside .post-stats .total-sales span,
+        #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_post_widget .inside .post-stats .total-sales span,
+        #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_page_widget .inside .post-stats .total-sales span {
+          font-size: 26px;
+          display: inline-block; }
+        #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #total_posts_widget .inside .post-stats .total-sales i,
+        #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_post_widget .inside .post-stats .total-sales i,
+        #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_page_widget .inside .post-stats .total-sales i {
+          font-size: 25px;
+          padding-right: 5px; }
+      #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #total_posts_widget .inside .post-stats .total-orders,
+      #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_post_widget .inside .post-stats .total-orders,
+      #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_page_widget .inside .post-stats .total-orders {
+        width: 45%; }
+        #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #total_posts_widget .inside .post-stats .total-orders span,
+        #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_post_widget .inside .post-stats .total-orders span,
+        #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_page_widget .inside .post-stats .total-orders span {
+          font-size: 26px; }
+        #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #total_posts_widget .inside .post-stats .total-orders i,
+        #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_post_widget .inside .post-stats .total-orders i,
+        #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_page_widget .inside .post-stats .total-orders i {
+          font-size: 20px;
+          padding-right: 5px;
+          line-height: 0.2; }
+#wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_post_widget .handlediv,
+#wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_page_widget .handlediv {
+  display: none; }
+#wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_post_widget .inside,
+#wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_page_widget .inside {
+  text-align: center;
+  padding-bottom: 15px; }
+  #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_post_widget .inside .write-post-text,
+  #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #write_a_page_widget .inside .write-post-text {
+    font-size: 26px;
+    margin-left: 15px;
+    color: #222; }
+#wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #activity-widget #the-comment-list .comment {
+  background: none; }
+  #wpwrap #wpcontent #wpbody #wpbody-content #dashboard-widgets-wrap #activity-widget #the-comment-list .comment img.avatar {
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px; }
+#wpwrap #wpcontent #wpbody #wpbody-content #ca_acf_acf_plugin-options {
+  background: none;
+  border: 0; }
+  #wpwrap #wpcontent #wpbody #wpbody-content #ca_acf_acf_plugin-options h3.hndle,
+  #wpwrap #wpcontent #wpbody #wpbody-content #ca_acf_acf_plugin-options .handlediv {
+    display: none; }
+  #wpwrap #wpcontent #wpbody #wpbody-content #ca_acf_acf_plugin-options #acf-logo_width .acf-input-append,
+  #wpwrap #wpcontent #wpbody #wpbody-content #ca_acf_acf_plugin-options #acf-logo_height .acf-input-append {
+    height: 18px; }
+  #wpwrap #wpcontent #wpbody #wpbody-content #ca_acf_acf_plugin-options #acf-logo_width .acf-input-wrap input,
+  #wpwrap #wpcontent #wpbody #wpbody-content #ca_acf_acf_plugin-options #acf-logo_height .acf-input-wrap input {
+    height: 30px; }
+  #wpwrap #wpcontent #wpbody #wpbody-content #ca_acf_acf_plugin-options #acf-background_image ul.acf-radio-list li label {
+    font-size: 0; }
+    #wpwrap #wpcontent #wpbody #wpbody-content #ca_acf_acf_plugin-options #acf-background_image ul.acf-radio-list li label input {
+      height: 150px;
+      width: 150px !important;
+      border-radius: 0;
+      background-size: 185px 185px !important; }
+      #wpwrap #wpcontent #wpbody #wpbody-content #ca_acf_acf_plugin-options #acf-background_image ul.acf-radio-list li label input#acf-field-background_image-Waves {
+        background: url("../images/waves.jpg"); }
+      #wpwrap #wpcontent #wpbody #wpbody-content #ca_acf_acf_plugin-options #acf-background_image ul.acf-radio-list li label input#acf-field-background_image-Wood {
+        background: url("../images/wood.jpg"); }
+      #wpwrap #wpcontent #wpbody #wpbody-content #ca_acf_acf_plugin-options #acf-background_image ul.acf-radio-list li label input#acf-field-background_image-Forest {
+        background: url("../images/forest.jpg"); }
+      #wpwrap #wpcontent #wpbody #wpbody-content #ca_acf_acf_plugin-options #acf-background_image ul.acf-radio-list li label input#acf-field-background_image-Leaf {
+        background: url("../images/leaf.jpg"); }
+      #wpwrap #wpcontent #wpbody #wpbody-content #ca_acf_acf_plugin-options #acf-background_image ul.acf-radio-list li label input#acf-field-background_image-Rocks {
+        background: url("../images/rocks.jpg"); }
+      #wpwrap #wpcontent #wpbody #wpbody-content #ca_acf_acf_plugin-options #acf-background_image ul.acf-radio-list li label input#acf-field-background_image-Custom {
+        background: url("../images/custom-bg.png");
+        background-size: 150px 150px !important; }
+      #wpwrap #wpcontent #wpbody #wpbody-content #ca_acf_acf_plugin-options #acf-background_image ul.acf-radio-list li label input:before {
+        content: none; }
+  #wpwrap #wpcontent #wpbody #wpbody-content #ca_acf_acf_plugin-options #acf-hide_options_page pre {
+    background: #fff;
+    padding: 10px 5px;
+    border: 1px solid #555;
+    font-weight: bold; }
+  #wpwrap #wpcontent #wpbody #wpbody-content #ca_acf_acf_plugin-options p.label label {
+    display: block; }
+  #wpwrap #wpcontent #wpbody #wpbody-content #ca_acf_acf_plugin-options textarea.textarea {
+    width: 100%; }
+  #wpwrap #wpcontent #wpbody #wpbody-content #ca_acf_acf_plugin-options input.text {
+    width: 40%; }
+#wpwrap #wpcontent .post-state .states {
+  font-size: 10px;
+  padding: 3px 8px 3px 8px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px; }
+#wpwrap #wpcontent .post-state .password {
+  background: #a92129;
+  color: #fff; }
+#wpwrap #wpcontent .post-state .pending {
+  background: #83CF21 !important;
+  color: #fff; }
+#wpwrap #wpcontent .post-state .private {
+  background: #E0A21B;
+  color: #fff; }
+#wpwrap #wpcontent .post-state .draft {
+  background: #006699;
+  color: #fff; }
